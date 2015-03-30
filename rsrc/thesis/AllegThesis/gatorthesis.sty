@@ -1,0 +1,695 @@
+% gatorthesis.sty -- Allegheny Thesis Style
+% Created: Sat May 18 12:43:26 1996 by faith@acm.org
+% Revised: Fri Feb  7 16:49:32 2003 by athall@allegheny.edu
+% Revised:     May 3           2003 by clausej@allegheny.edu
+% Public Domain 1996, 1997 Rickard E. Faith (faith@acm.org)
+%
+% [I'm so sick of copyright restrictions, that I'm putting this in the
+% public domain so that you can steal whatever you need and make your own
+% thesis style.  Hack away...]
+%
+% This program comes with ABSOLUTELY NO WARRANTY.
+% 
+% $Id: gatorthesis.sty,v 1.1 1999/11/19 23:21:33 culver Exp $
+%
+% References in []'s from : ``A Guide to the Preparation and Submission of
+% Theses and Dissertations'' (The Graduate School, The University of North
+% Carolina at Chapel Hill).  See: http://www.unc.edu/pubs/academ/thesdiss/
+%
+% Jim Clause's revisions for Allegheny fix the title page for our tech report
+% style.  Add \thesisnumber{CS04-01} with the correct number to your main.tex
+% document.
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{gatorthesis}[1997/11/25] %[$\mbox{}$Revision: 1.1 $\mbox{}$]
+\typeout{Allegheny Thesis Style, $Revision: 1.0 $, by Andrew Thall (athall@allegheny.edu)}
+
+\RequirePackage{ifthen}
+%\RequirePackage{calc}
+\RequirePackage{doublespace}
+\RequirePackage{comment}
+
+
+% Make copyright use uppercase C
+%\DeclareTextCommandDefault{\copyright}{{\textcircled{C}}}
+
+
+
+% Set up spacing.  Magic numbers are from p. 53 of The LaTeX Companion
+% (Goosens, Mittlebach, Samarin; Addison-Wesley Publishing Co., 1994).
+% [XI. SPACING AND INDENTATION]
+
+
+% Set up one and one-half spacing
+\ifthenelse{\@ptsize = 0}{\setstretch{1.25}}{} % 10-point
+\ifthenelse{\@ptsize = 1}{\setstretch{1.21}}{} % 11-point
+\ifthenelse{\@ptsize = 2}{\setstretch{1.24}}{} % 12-point
+\def\gator@adjusttitlespacing{\vspace*{-\baselineskip}\vspace*{-1ex}}
+\def\gator@adjustabstractspacing{\vspace*{-2\baselineskip}\vspace*{-2ex}}
+\def\gator@adjustchapterspacing{\vspace*{-\baselineskip}}
+\def\gator@adjustbibspacing{\vspace*{-\baselineskip}}
+
+
+\DeclareOption{double}{                  % Set up double spacing
+  \ifthenelse{\@ptsize = 0}{\setstretch{1.67}}{} % 10-point
+  \ifthenelse{\@ptsize = 1}{\setstretch{1.62}}{} % 11-point
+  \ifthenelse{\@ptsize = 2}{\setstretch{1.66}}{} % 12-point
+  \def\gator@adjusttitlespacing{\vspace*{-\baselineskip}\vspace*{-1ex}}
+  \def\gator@adjustabstractspacing{\vspace*{-2\baselineskip}\vspace*{-1.6ex}}
+  \def\gator@adjustchapterspacing{\vspace*{-\baselineskip}\vspace*{0.6ex}}
+  \def\gator@adjustbibspacing{\vspace*{-\baselineskip}\vspace*{-1.2ex}}
+}
+
+
+\DeclareOption{single}{
+  \setstretch{1}                % Set up single spacing
+  \def\gator@adjusttitlespacing{\vspace*{-\baselineskip}\vspace*{-1ex}}
+  \def\gator@adjustabstractspacing{\vspace*{-2\baselineskip}\vspace*{-2ex}}
+  \def\gator@adjustchapterspacing{\vspace*{-\baselineskip}\vspace*{-0.5ex}}
+  \def\gator@adjustbibspacing{\relax}
+}
+
+
+\DeclareOption{nodraft}{\gator@nodraft}
+\DeclareOption{bottom}{\gator@bottom}
+\DeclareOption{draft}{\gator@draft} % timestamp each page
+
+
+\DeclareOption{nofront}{\gator@nofront} % condense front matter
+\DeclareOption{nolists}{\gator@nolists} % condense front matter
+
+
+\DeclareOption{narrow}{\gator@narrow}
+\DeclareOption{debug}{\thesisdebugmargins}
+
+
+% Set up margins [X. MARGINS]
+% These you can change
+\def\gator@pageheight  {11in}
+\def\gator@pagewidth   {8.5in}
+\def\gator@leftmargin  {1.5in}
+\def\gator@rightmargin {1in}
+\def\gator@topmargin   {1in}
+\def\gator@bottommargin{1in}
+
+
+\def\gator@narrow{%
+\typeout{(Using slightly narrow margins for mpar)}
+\def\gator@pageheight  {11in}
+\def\gator@pagewidth   {8.5in}
+\def\gator@leftmargin  {1.75in}
+\def\gator@rightmargin {1.5in}
+\def\gator@topmargin   {1in}
+\def\gator@bottommargin{1in}
+\gator@setmargins
+}
+
+
+\def\gator@setmargins{%
+                        % Don't change these
+\headheight 2ex
+\headsep .5in                 % [XII. PAGINATION]
+\footskip .5in                % [XII. PAGINATION]
+\advance\footskip 1ex
+%  \parindent 5em                % [XI. SPACING AND INDENTATION]
+
+
+%% textheight = gator@pageheight - gator@topmargin - gator@bottommargin - extra
+\textheight\gator@pageheight
+\advance\textheight -\gator@topmargin
+\advance\textheight -\gator@bottommargin
+\advance\textheight -\headheight
+%  \advance\textheight -\headsep
+\advance\textheight -1ex        %extra footskip
+%  \advance\textheight -\footskip
+
+
+%% topmargin = gator@topmargin - 1in - voffset
+\topmargin\gator@topmargin
+\advance\topmargin -1in
+\advance\topmargin -\voffset
+\advance\topmargin -\headsep
+%  \advance\topmargin \headheight
+
+
+%% textwidth = gator@pagewidth - gator@leftmargin - gator@rightmargin
+\textwidth\gator@pagewidth
+\advance\textwidth -\gator@leftmargin
+\advance\textwidth -\gator@rightmargin
+
+
+%% oddsidemargin = gator@leftmargin - 1in - hoffset
+\oddsidemargin\gator@leftmargin
+\advance\oddsidemargin -1in
+\advance\oddsidemargin -\hoffset
+\if@twoside
+\evensidemargin\gator@rightmargin
+\advance\evensidemargin -1in
+\advance\evensidemargin -\hoffset
+\else
+\evensidemargin\oddsidemargin
+\fi
+
+
+\marginparwidth\oddsidemargin
+\advance\marginparwidth -\marginparsep
+}
+
+
+\def\thesisdebugmargins{%
+\typeout{Margins (in inches):}
+\newcount\gator@tmp
+\newcount\gator@inches
+\newcount\gator@hundredths
+\def\gator@convert##1{%
+\gator@tmp=\csname ##1\endcsname
+\gator@inches=\gator@tmp
+\divide \gator@inches by 65536
+\divide \gator@inches by 72
+\divide \gator@tmp by 47186     % hundreths
+\gator@hundredths=-\gator@inches
+\multiply\gator@hundredths 100
+\advance\gator@hundredths \gator@tmp
+\typeout{ ##1 = \the\gator@inches .\two@digits{\the\gator@hundredths}}
+}
+\gator@convert{textheight}
+\gator@convert{topmargin}
+\gator@convert{headheight}
+\gator@convert{headsep}
+\gator@convert{voffset}
+\gator@convert{footskip}
+\gator@convert{textwidth}
+\gator@convert{oddsidemargin}
+\gator@convert{evensidemargin}
+\gator@convert{hoffset}
+\gator@convert{marginparwidth}
+\gator@convert{marginparsep}
+}
+
+
+
+% Defaults
+
+
+\newcommand{\gator@draftnote}{}
+
+
+\def\thesistype#1{\gdef\gator@type{#1}}
+\gdef\gator@type{Senior Thesis}
+
+
+\def\thesisuniversity#1{\gdef\gator@university{#1}}
+\gdef\gator@university{Allegheny College}
+
+
+\def\thesisdegree#1{\gdef\gator@degree{#1}}
+\gdef\gator@degree{Bachelor of Science}
+
+
+\def\thesisdepartment#1{\gdef\gator@department{#1}}
+\gdef\gator@department{The Department of Computer Science}
+
+
+\def\thesislocation#1{\gdef\gator@location{#1}}
+\gdef\gator@location{Meadville}
+
+
+\def\thesisyear#1{\gdef\gator@year{#1}}
+\gdef\gator@year{\the\year}
+
+
+\def\thesistitle#1{\gdef\gator@title{#1}}
+\gdef\gator@title{Title}
+
+
+\def\thesisnumber#1{\gdef\gator@number{#1}}
+\gdef\gator@number{xxyy-nn}
+
+
+
+\def\thesisauthor#1{\gdef\gator@author{#1}\gdef\gator@AUTHOR{\uppercase{#1}}}
+\gdef\gator@author{Author}
+\gdef\gator@AUTHOR{AUTHOR}
+
+
+\def\thesisadvisortitle#1{\gdef\gator@advisortitle{#1}}
+\gdef\gator@advisortitle{Advisor}
+\def\thesisadvisor#1{\gdef\gator@advisora{#1}}
+\gdef\gator@advisora{Advisor}
+\def\thesisadvisora#1{\gdef\gator@advisora{#1}}
+\def\thesisadvisorb#1{\gdef\gator@advisorb{#1}}
+
+
+\def\thesisreadertitle#1{\gdef\gator@readertitle{#1}}
+\gdef\gator@readertitle{Reader}
+\def\thesisreadera#1{\gdef\gator@readera{#1}}
+\def\thesisreaderb#1{\gdef\gator@readerb{#1}}
+\def\thesisreaderc#1{\gdef\gator@readerc{#1}}
+\def\thesisreaderd#1{\gdef\gator@readerd{#1}}
+\def\thesisreadere#1{\gdef\gator@readere{#1}}
+\def\thesisreaderf#1{\gdef\gator@readerf{#1}}
+\def\thesisreaderg#1{\gdef\gator@readerg{#1}}
+
+
+\def\thesistitlefont#1{\gdef\gator@titlefont{#1}}
+\gdef\gator@titlefont{\Large\bfseries}
+\def\thesisauthorfont#1{\gdef\gator@authorfont{#1}}
+\gdef\gator@authorfont{\large\bfseries}
+
+
+% Macros
+
+
+\def\thesismaketitle{
+
+
+  \pagenumbering{roman}\setcounter{page}{1}\thispagestyle{empty}
+  \begin{spacing}{1}\reset@font
+    \begin{center}
+        \mbox{     }\\         
+        \vspace{2in} 
+        Technical Report \gator@number\\
+        \vspace{.2in}
+        \begin{minipage}{3in}
+        \begin{center}
+        \textbf{\gator@title}
+        \end{center}
+        \end{minipage}
+
+
+        \vspace{.25in}
+        \gator@author
+        \vspace{.5in}
+
+
+        Submitted to the Faculty of \\ \gator@department 
+        \vspace{.25in}
+
+
+        Project Director: \gator@advisora
+
+
+        Second Reader: \gator@readera
+
+
+        \vspace{.25in}
+        Allegheny College\\
+        \gator@year
+        \vspace{.6in}
+
+
+        \textit{I hereby recognize and pledge to fulfill my\\ responsibilities as defined in the Honor
+        Code, and\\ to maintain the integrity of both myself and the\\ college community as a whole.}
+        
+        \vspace{.25in}
+        \vrule width 3in height 0.4pt \\
+        \gator@author
+
+
+%      \begin{spacing}{2}
+%        {\gator@titlefont\gator@adjusttitlespacing\gator@title}
+%      \end{spacing}
+%      \vspace{0.4in}
+%      {\gator@authorfont by} \\
+%      \vspace{0.5in}
+%      {\gator@authorfont \gator@author}
+%    \end{center}
+%    \vfill
+%    A \gator@type{} submitted to the faculty of \gator@university{} in
+%    partial fulfillment of the requirements for the degree of
+%    \gator@degree{} in the \gator@department{}.
+%    \vspace{0.3in}
+%    \begin{center}
+%      \gator@location \\
+%      \vspace{0.4in}
+%      \gator@year \\
+%      \begin{center}\gator@draftnote\end{center}
+%      \vfill 
+%      \hfill\gator@signatures
+    \end{center}
+  \end{spacing}
+  \newpage
+  }
+
+
+\def\gator@signatureline#1#2{\vspace{0.5in}\hbox to 3in{\hfil\shortstack{\vrule
+      width 3in height 0.4pt\\#1, #2}}}
+  
+\def\gator@signatures{
+  \begin{minipage}{3in}
+    Approved by:
+    
+    \@ifundefined{gator@advisora}{}%
+       {\gator@signatureline{\gator@advisora}{\gator@advisortitle}}
+    \@ifundefined{gator@advisorb}{}%
+       {\gator@signatureline{\gator@advisorb}{\gator@advisortitle}}
+    \@ifundefined{gator@readera}{}%
+       {\gator@signatureline{\gator@readera}{\gator@readertitle}}
+    \@ifundefined{gator@readerb}{}%
+       {\gator@signatureline{\gator@readerb}{\gator@readertitle}}
+    \@ifundefined{gator@readerc}{}%
+       {\gator@signatureline{\gator@readerc}{\gator@readertitle}}
+    \@ifundefined{gator@readerd}{}%
+       {\gator@signatureline{\gator@readerd}{\gator@readertitle}}
+    \@ifundefined{gator@readere}{}%
+       {\gator@signatureline{\gator@readere}{\gator@readertitle}}
+    \@ifundefined{gator@readerf}{}%
+       {\gator@signatureline{\gator@readerf}{\gator@readertitle}}
+    \@ifundefined{gator@readerg}{}%
+       {\gator@signatureline{\gator@readerg}{\gator@readertitle}}
+  \end{minipage}
+  }
+
+
+\def\thesismakecopyright{
+  \thispagestyle{plain}
+  \mbox{}\vfill
+  \begin{spacing}{1.1}
+    \begin{center}
+      Copyright \copyright{} \gator@year \\
+      \gator@author \\
+      All rights reserved
+    \end{center}
+  \end{spacing}
+  \newpage
+  }
+
+
+\def\gator@nofront{
+  \def\thesismaketitle{
+    \pagenumbering{roman}\setcounter{page}{1}\thispagestyle{empty}
+    \begin{spacing}{1}\reset@font
+      \vspace*{1in}
+      \begin{center}
+        \begin{spacing}{2}
+          {\gator@titlefont\gator@adjusttitlespacing\gator@title}
+        \end{spacing}
+        \vspace{0.5in}
+        {\gator@authorfont by} \\
+        \vspace{0.5in}
+        {\gator@authorfont \gator@author}
+      \end{center}
+      \vspace{0.5in}
+      \begin{center}\gator@draftnote\end{center}
+    \end{spacing}
+    }
+  \def\thesismakecopyright{}%
+  \excludecomment{dedication}%
+  \excludecomment{acknowledgments}%
+  \renewenvironment{abstract}{%
+    \global\@topnum\z@
+    \@afterindentfalse
+    \begin{center}\bfseries
+      \vspace{0.5in} \abstractname
+    \end{center}%
+    \quotation}{\endquotation\newpage}%
+  }
+
+
+\def\gator@nolists{%
+  \renewcommand{\listofabbreviations}{}%
+  \renewcommand{\listoffigures}{}%
+  \renewcommand{\listoftables}{}%
+  }
+
+
+\def\gator@draft{%
+  \renewcommand{\ps@plain}{%
+    \renewcommand{\@oddhead}{\hfil\textrm{\thepage}}%
+    \renewcommand{\@evenhead}{\textrm{\thepage}\hfil}%
+    \renewcommand{\@oddfoot}{\hfil Draft of \gator@timestamp}%
+    \renewcommand{\@evenfoot}{Draft of \gator@timestamp\hfil}%
+    }%
+  \renewcommand{\gator@draftnote}{\emph{\bf (Draft of \gator@timestamp)}}
+  }
+
+
+\def\gator@nodraft{%
+  \renewcommand{\ps@plain}{%
+    \renewcommand{\@oddhead}{\hfil\textrm{\thepage}}%
+    \renewcommand{\@evenhead}{\textrm{\thepage}\hfil}%
+    \renewcommand{\@oddfoot}{}%
+    \renewcommand{\@evenfoot}{}%
+    \let\@mkboth\@gobbletwo%
+    }%
+  }
+
+
+\def\gator@bottom{%
+  \renewcommand{\ps@plain}{%
+    \renewcommand{\@oddhead}{}%
+    \renewcommand{\@evenhead}{}%
+    \renewcommand{\@oddfoot}{\hfil\textrm{\thepage}\hfil}%
+    \renewcommand{\@evenfoot}{\hfil\textrm{\thepage}\hfil}%
+    \let\@mkboth\@gobbletwo%
+    }%
+  }
+
+
+\newcount\gator@hour
+\newcount\gator@minute
+
+
+\gator@hour=\time
+\divide\gator@hour 60
+\gator@minute=-\gator@hour
+\multiply\gator@minute 60
+\advance\gator@minute \time
+
+
+\def\gator@timestamp{\today{} at
+  \two@digits{\the\gator@hour}:\two@digits{\the\gator@minute}}
+
+
+%% Redefine a bgatorh of stuff...
+
+
+\renewcommand{\abstractname}{ABSTRACT}
+
+
+\renewenvironment{abstract}{%
+  \clearpage\thispagestyle{plain}
+  \global\@topnum\z@
+  \@afterindentfalse\reset@font
+  \begin{spacing}{1}\vspace*{1in}\begin{center}\bfseries
+    \gator@adjustabstractspacing
+    \uppercase{\gator@AUTHOR}.
+    \gator@title. \\ (Under the direction of
+    \@ifundefined{gator@advisorb}%
+       {\gator@advisora}{\gator@advisora{} and \gator@advisorb}.) \\
+    \vspace{0.5in} \abstractname
+  \end{center}\end{spacing}%
+  }{\vfill\newpage}
+
+
+\newenvironment{dedication}%
+  {\cleardoublepage\thispagestyle{plain}\global\@topnum\z@\@afterindentfalse}%
+  {\newpage}
+
+
+\newcommand{\acknowledgmentsname}{Acknowledgments}
+\newenvironment{acknowledgments}{\chapter*{\acknowledgmentsname}}{}
+
+
+\newcommand{\colophonname}{Colophon}
+\newenvironment{colophon}{\chapter*{\colophonname}}{}
+
+
+\newcommand{\glossaryname}{Glossary}
+\renewenvironment{glossary}{\chapter*{\glossaryname}}{}
+
+
+\def\gator@first{0}
+\renewcommand{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi
+  \thispagestyle{plain}
+  \global\@topnum\z@
+  \@afterindentfalse
+  \secdef\@chapter\@schapter}
+
+
+% for \chapter
+\def\@makechapterhead#1{\cleardoublepage%
+  \ifnum\gator@first=0%
+     \def\gator@first{1}\pagenumbering{arabic}\setcounter{page}{1}\fi
+  \thispagestyle{empty}%
+  {\parindent \z@ \raggedright \reset@font
+    %\begin{center}
+      \begin{spacing}{1}\vspace*{1in}\end{spacing}
+      \huge\bfseries\gator@adjustchapterspacing
+      \ifnum \c@secnumdepth >\m@ne
+        \@chapapp{} \thechapter
+        \par\nobreak
+        \vskip 20\p@
+      \fi
+      \interlinepenalty\@M
+      #1\par\nobreak
+    %\end{center}
+    \vskip 40\p@}}
+
+
+% \chapter*
+\def\@makeschapterhead#1{\cleardoublepage%
+  \ifthenelse{\equal{#1}{\contentsname}\or\equal{#1}{\colophonname}}%
+    {\relax}
+    {\addcontentsline{toc}{chapter}{#1}} % [XIX. TABLE OF CONTENTS]
+  \ifthenelse{\equal{#1}{\bibname}}{\gator@adjustbibspacing}{\relax}%
+  {\parindent \z@ \raggedright
+    %\begin{center}
+      \begin{spacing}{1}\vspace*{1in}\end{spacing}
+      \reset@font
+      \interlinepenalty\@M
+      \huge\bfseries\gator@adjustchapterspacing #1\par\nobreak
+    %\end{center}
+    \vskip 40\p@
+    }}
+
+
+
+% START ABBREVIATION SUPPORT
+\def\xspace{\futurelet\next\@xspace}
+\def\@xspace{%
+  \ifx\next\bgroup\else
+  \ifx\next\egroup\else
+  \ifx\next\/\else
+  \ifx\next\ \else
+  \ifx\next~\else
+  \ifx\next.\else
+  \ifx\next,\else
+  \ifx\next:\else
+  \ifx\next;\else
+  \ifx\next?\else
+  \ifx\next'\else
+  \ifx\next)\else
+  \ifx\next-\else
+  \space
+  \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi%
+  }
+
+
+\def\abbreviation#1#2#3{%
+  \gator@addabbreviation{#2}{#3}
+  \def#1{\relax}%
+  \setbox0=\hbox{#3}%
+  \ifdim\wd0>0pt\gdef#1{\abbreviationfinal{#1}{#2}\empty%
+    #3 (#1)\xspace}
+  \else\gdef#1{#2\protect\xspace}%
+  \fi
+  }
+
+
+\def\abbreviationfinal#1#2#3{%
+  \def#1{\relax}%
+  \setbox0=\hbox{#3}%
+  \ifdim\wd0>0pt\gdef#1{\abbreviationfinal{#1}{#2}\empty%
+    #3 (#1)\xspace}
+  \else\gdef#1{#2\protect\xspace}%
+  \fi
+  }
+
+
+\def\abbreviationr#1#2#3{%
+  \gator@addabbreviation{#2}{#3}
+  \def#1{\relax}%
+  \setbox0=\hbox{#3}%
+  \ifdim\wd0>0pt\gdef#1{\abbreviationrfinal{#1}{#2}\empty%
+    #1 (#3)\xspace}
+  \else\gdef#1{#2\protect\xspace}%
+  \fi
+  }
+
+
+\def\abbreviationrfinal#1#2#3{%
+  \def#1{\relax}%
+  \setbox0=\hbox{#3}%
+  \ifdim\wd0>0pt\gdef#1{\abbreviationrfinal{#1}{#2}\empty%
+    #1 (#3)\xspace}
+  \else\gdef#1{#2\protect\xspace}%
+  \fi
+  }
+
+
+\def\gator@addabbreviation#1#2{%
+  \protected@write\@auxout
+  {\let\label\@gobble \let\index\@gobble \let\glossary\@gobble}%
+  {\string\@writefile{loa}{\protect\abbreviationline{#1}{#2}}}%
+  \typeout{\protect #1 #2}
+  }
+
+
+\def\abbreviationline#1#2{\makebox[1in][l]{\textbf{#1}} #2\newline}
+\def\listabbreviationname{List of Abbreviations}
+\newcommand{\listofabbreviations}{%
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \chapter*{\listabbreviationname
+      \@mkboth{\uppercase{\listabbreviationname}}%
+              {\uppercase{\listabbreviationname}}}%
+    \@starttoc{loa}%
+    \if@restonecol\twocolumn\fi
+    }
+
+
+\def\trademark#1#2#3{%
+  \def#1{\relax}%
+  \setbox0=\hbox{#3}%
+  \ifdim\wd0>0pt\gdef#1{\trademark{#1}{#2}\empty%
+    #1{}\footnote{\rm #2 is a trademark of #3.}\xspace}%
+  \else\gdef#1{#2\xspace}%
+  \fi
+  }
+
+
+\def\regtrademark#1#2#3{%
+  \def#1{\relax}%
+  \setbox0=\hbox{#3}%
+  \ifdim\wd0>0pt\gdef#1{\regtrademark{#1}{#2}\empty%
+    #1{}\footnote{#2 is a trademark of #3.}\xspace}%
+  \else\gdef#1{#2\xspace}%
+  \fi
+  }
+
+
+\def\regtrademarkfull#1#2#3{%
+  \def#1{\relax}%
+  \setbox0=\hbox{#3}%
+  \ifdim\wd0>0pt\gdef#1{\regtrademarkfull{#1}{#2}\empty%
+    #1{}\footnote{#3}\xspace}%
+  \else\gdef#1{#2\xspace}%
+  \fi
+  }
+% END ABBREVIATION SUPPORT
+
+
+\newlength{\@shortcaptionsize}
+% START OF SHORT CAPTION SUPPORT FOR SIDEWAYS FIGURES
+\def\shortcaption{\refstepcounter\@captype \@dblarg{\@shortcaption\@captype}}
+\long\def\@shortcaption#1[#2]#3{\par\addcontentsline{\csname
+  ext@#1\endcsname}{#1}{\protect\numberline{\csname
+  the#1\endcsname}{\ignorespaces #2}}\begingroup
+    \@parboxrestore
+    \normalsize
+    \@makeshortcaption{\csname fnum@#1\endcsname}{\ignorespaces #3}\par
+  \endgroup}
+\long\def\@makeshortcaption#1#2{%
+  \vskip\abovecaptionskip
+  \setlength{\@shortcaptionsize}{.75\hsize}%
+  \sbox\@tempboxa{#1: #2}%
+  \ifdim \wd\@tempboxa >\@shortcaptionsize
+    \hbox to\hsize{\hfil\parbox[t]{\@shortcaptionsize}{#1: #2}\hfil}
+  \else
+    \global \@minipagefalse
+    \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
+
+
+% END OF SHORT CAPTION SUPPORT FOR SIDEWAYS FIGURES
+
+
+\ExecuteOptions{nodraft}
+\gator@setmargins
+\ProcessOptions
+\AtBeginDocument{\pagestyle{plain}} 

@@ -1,0 +1,127 @@
+%
+% $Id: ch01_overview
+%
+%   *******************************************************************
+%   * SEE THE MAIN FILE "AllegThesis.tex" FOR MORE INFORMATION.       *
+%   *******************************************************************
+
+\chapter{Introduction}\label{ch:intro} % we can refer to chapter by the label
+
+The purpose of this sample thesis is to show various \LaTeX\ formatting
+commands. Information about content should be obtained through consultation
+with the thesis readers and examination of past senior theses.
+There are no fixed rules governing the number of chapters or their titles---old 
+senior theses and discussions with the thesis readers are the best resources
+for making such decisions.
+
+Usually, a chapter begins with a paragraph or two that serves as a
+sort of mini-introduction to the chapter. This is followed 
+by numbered sections created with ``\verb$\section{...}$'', 
+``\verb$\subsection{...}$'', etc.
+
+\section{Motivation} \label{sec:motivation}
+The first paragraph in each section is not indented---that is a standard style
+that is enforced by the \LaTeX\ program. It should never be necessary to
+insert commands to force paragraph indentation.
+
+The thesis should avoid the use of second-person pronouns such as ``you''
+and ``your,'' as well as the use of imperative statements (implied
+second-person) such as ``Look
+at \ldots'' or ``Consider the following example \ldots''. 
+First person (``I,'' ``my,'' etc.) is sometimes acceptable, 
+but should be used sparingly. (This is an appropriate topic 
+for discussion with the first reader of the project.) Contractions (``don't'',
+``can't'', etc.) are considered informal and should be avoided. Common
+abbreviations such as ``math'' for ``mathematics'' or ``comp'' for 
+``senior comprehensive project''  are also informal and not appropriate
+in the final thesis.
+
+Figures illustrating complex or hard-to-describe concepts are essential.
+All figures should be fully explained in the text. For example,
+Figure \ref{latexprocess} shows the first step in processing a senior thesis.
+The user files consist of the main file, {\tt AllegThesis.tex}, and zero or
+more additional files ({\tt ch01.tex}, {\tt ch02.tex} in the figure). Not shown
+in the figure are image files, the bibliography, and other included
+components (the ``\ldots etc.\ldots'' on the left side of the figure). 
+Typing the command {\tt pdflatex} with the main file name
+produces a number of additional files, including an {\tt .aux} file (with
+information such a label references and citations),
+a table of contents, or {\tt .toc}, file, a printable {\tt .pdf} file, and
+a number of others, depending on the document.
+
+%   *******************************************************************
+%   * FIGURES ARE PLACED ACCORDING TO A SET OF CONSTRAINTS THAT CAN   *
+%   * BE MANIPULATED TO SOME DEGREE.                                  *
+%   * A SEARCH FOR "controlling latex floats" TURNS UP A NUMBER OF    *
+%   * SITES THAT HAVE USEFUL INFORMATION, FOR EXAMPLE:                *
+%   *                                                                 *
+%   * http://mintaka.sdsu.edu/GF/bibliog/latex/floats.html            *
+%   * http://goo.gl/aC8E8Q                                            *
+%   * http://robjhyndman.com/hyndsight/latex-floats/                  *
+%   *******************************************************************
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=3.5in]{latexprocess.fig}
+\caption{The first step in creating a thesis document}
+\label{latexprocess}
+\end{figure}
+
+\section{Current State of the Art}\label{sec:stateofart}
+There are multiple
+ways to create {\it italicized}, {\bf bold-face}, {\tt fixed-width}, and
+{\sf sans-serif} fonts, as well as combinations, e.g., \textit{\textbf{
+bold italic}} or \textit{\textsf{italic sans-serif}}. The \LaTeX\ source
+file for this chapter shows some of the ways to achieve these effects.
+It is customary to use fixed-width font for program constructs, e.g.,
+``In the Java code accompanying the figure, {\tt n} stands for the 
+number of generations to be simulated by the {\tt evolvePopulation()} method.'' 
+Variables in mathematical equations are normally rendered in 
+italics, e.g., ``In the performance equation, {\it cpuTime} is 
+the average time over fifty runs of the program.''
+
+%It is the privilege of the thesis author (in consultation with the
+%project supervisor and other readers) to decide on the best way to 
+%organize the sections and chapters in the way that makes the most sense.
+%If the introduction begins with a motivating
+%anecdote, perhaps this is best followed by defining a few terms or mentioning
+%some major results that the reader should be aware of right from the 
+%beginning. But 
+It is important to get as quickly as possible to 
+a concise statement of the {\it thesis}---the main question 
+addressed by the project. This might merit a separate
+section of the chapter.
+
+\section{Goals of the Project}\label{sec:goals}
+This section could also be entitled ``Thesis'' or something similar. 
+
+A formal thesis statement should be a 
+%\emph{falsifiable} % COMMENT OUT THINGS THAT YOU MAY LATER WISH TO PUT BACK
+statement about 
+the goal achieved by the project.  For a purely scientific
+project, this is the hypothesis being tested; it should be a
+\emph{falsifiable} statement, i.e., one that can be disproven through
+an appropriate experiment.
+For an applied programming project, it is usually a statement about 
+the feasibility and correctness of the approach used and the advantages it 
+has over other approaches, using suitable metrics.  For a survey or study,
+it is usually a statement regarding the need 
+or usefulness of such a study, its intended audience, and so on.
+
+% COMMENTED OUT NEXT FEW LINES TO SAVE SPACE; MAY PUT THEM BACK LATER
+%Following the concise statement of the thesis, some of the details can be
+%expanded.  
+%It is appropriate to
+%refer to some of the results in the introduction (which may 
+%mean going back and adding them to the introduction once the
+%research is completed). 
+%A senior thesis, or any research paper, is not a mystery 
+%novel---there is no need to keep the reader in suspense about what
+%has been accomplished.
+
+\section{Thesis Outline}\label{sec:outline}
+The introductory chapter usually concludes with a ``road map'' of the upcoming
+chapters, e.g., ``Chapter \ref{ch:relatedwork} reviews a number of past approaches
+to the problem and summarizes their strengths and weaknesses. Chapter 
+\ref{ch:method} outlines the method of approach used to establish the
+results.''

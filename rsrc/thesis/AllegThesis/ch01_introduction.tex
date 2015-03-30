@@ -1,0 +1,98 @@
+%
+% $Id: ch01_overview
+%
+%   *******************************************************************
+%   * SEE THE MAIN FILE "AllegThesis.tex" FOR MORE INFORMATION.       *
+%   *******************************************************************
+
+\chapter{Introduction}\label{ch:intro} % we can refer to chapter by the label
+
+The process of debugging can be complex and difficult.  The first task
+associated with debugging is identifying the fault, and this step,
+\emph{fault localization}, is the most expensive in terms of time cost
+\cite{harrold}. In this chapter, we discuss current techniques for
+fault localization.  In addition, we highlight the major goals of this
+research project.
+
+\section{Current State of the Art}\label{sec:state}
+At present, the process of fault localization is mostly
+manual, though several techniques exist that attempt to automate the
+process.  A number of these techniques are described in detail below.
+Many of these automated fault localization techniques (AFLs) compare the
+flow of execution through a faulty program when executing passed and
+failed test cases.  This type of approach employs \emph{coverage
+monitoring}, the tracking of which statements are executed by test
+cases.  Any statement that is executed is said to be \emph{covered}.
+Tools such as Java Code Coverage (JaCoCo) \cite{jacoco} provide
+information regarding which statements are covered by a supplied test
+suite.  By analyzing code coverage for different test cases, these AFLs
+seek to determine which statements are most likely to contain the fault.
+
+Many Coverage tools exist, including those designed for integrated development
+environments such as Eclipse.  For example, JaCoCo provides interactive
+coverage monitoring within Eclipse.  However, JaCoCo only reports total
+coverage for a test suite; that is, the tool reports which statements
+were covered, partially covered, or not covered after execution of all
+of the test cases.  This system does not report on coverage of
+individual test cases.  Since \emph{per-test coverage} is vital to the
+application of several fault localization techniques, the lack of such
+information leads to increased difficulty in applying those techniques.
+
+As an alternative to the more popular JaCoCo, we will make use of a
+lesser known tool called CodeCover.  Though a number of interfaces are
+provided, including command-line and Apache Ant, we will focus on the
+Eclipse plugin for the purpose of this project.  Unlike JaCoCo,
+CodeCover is designed to produce coverage on a per-test basis.  The
+system includes support for breaking coverage information for a JUnit 
+test suite across test methods, automatically generating
+distinct coverage data for each test method.  This functionality
+makes CodeCover ideal to the goals of this project.
+
+\section{Goals of the Project}\label{sec:goals}
+There are two significant goals for this project.  The first is the
+empirical evaluation of existing risk evaluation functions to 
+determine the most effective on average.  This is a necessary step
+in the process toward completion of our second goal, because no
+study has made the specific comparison necessary.
+
+The second goal of this project is the development of an Eclipse plugin
+which displays the per-test coverage from a test suite and per-statement
+suspiciousness analysis, through an interactive system, as well as to
+demonstrate its effectiveness.  The plugin will allow a programmer to
+select individual or multiple test cases and view their coverage, or
+to select individual statements and view a list of covering test cases
+as well as suspiciousness rating and ranking. 
+
+We hypothesize that making per-test coverage (in addition to suspiciousness
+information), the basis for many fault
+localization techniques, readily available will allow programmers to
+more rapidly identify faults in programs.  This hypothesis will be
+investigated through human study, employing experienced programmers,
+specifically undergraduate students, to compare
+the benefits of per-test coverage when compared to full suite coverage.
+To generate test cases for evaluating our plugin, we will introduce
+faults into programs using the MAJOR mutation analysis system
+\cite{major}.
+
+\section{Thesis Outline}\label{sec:outline}
+This thesis consists or five chapters, which cover a wide variety of
+topics related to the project.  In Chapter 2, we discuss past approaches
+to problems in the area of fault localization.  In addition, we cover
+existing tools which we will incorporate into our final system or make
+use of to produce intermediate data.  Chapter 3 features a thorough
+discussion of the method of approach used to achieve the results.  Specifically,
+we relate the details of our test environment and setup for the empirical
+comparison of risk evaluation functions, including test programs, method of
+producing per-test coverage, and system for evaluating risk evaluation functions.
+In addition, Chapter 3 covers implementation details of the Eclipse plugin.
+
+Chapter 4 provides the empirical results of the risk evaluation function
+comparison study.  This includes various data visualization figures and
+a discussion of these data.  We also discuss our conclusions as a result
+of this study, as well as the impact these results have on our plugin 
+implementation.  Chapter 5 discusses the human study used to evaluate our
+plugin, beginning with the format and setup details and including the results
+of the study.  We also discuss our conclusions based on the results of the study.
+The final chapter reviews the project as whole, a annotates difficulties 
+encountered, reiterates conclusions drawn in the previous chapters, 
+and a discusses future work.

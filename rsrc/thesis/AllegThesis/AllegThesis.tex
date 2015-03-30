@@ -1,0 +1,272 @@
+%   *******************************************************************
+%   * THIS IS THE MAIN FILE--RUNNING LATEX ON "AllegThesis.tex" WILL  *
+%   * GENERATE THE ENTIRE THESIS (ASSUMING YOU HAVE NOT RENAMED IT).  *
+%   * IF YOU ARE USING BIBTEX, RUNNING BIBTEX ON "AllegThesis" SHOULD *
+%   * GENERATE YOUR BIBLIOGRAPHY. SPECIFIC DETAILS DEPEND ON WHAT     *
+%   * ENVIRONMENT AND TOOLS YOU ARE USING (E.G., TEXMAKER OR COMMAND  *
+%   * LINE TOOLS LIKE PDFLATEX OR ...).                               *
+%   *******************************************************************
+%
+% AllegThesis.tex
+% by A. Thall
+% 13 Feb 2003
+%
+% Revised by R. Roos
+% Nov 2013
+%
+% This document provides a sample Senior Thesis template for use
+% by students in Allegheny's CS and Applied Computing programs.
+%
+%   *******************************************************************
+%   * LOOK FOR BLOCK COMMENTS SUCH AS THIS ONE FOR AN EXPLANATION OF  *
+%   * THIS DOCUMENT AND HOW TO MODIFY IT FOR YOUR OWN THESIS!         *
+%   *                                                                 *
+%   * ANY LINE BEGINNING WITH A "%" IS A LATEX COMMENT AND IS IGNORED *
+%   * BY THE LATEX PROCESSOR. YOU ARE ENCOURAGED TO COMMENT YOUR OWN  *
+%   * LATEX CODE TO HELP YOU REMEMBER WHY YOU DID THINGS A CERTAIN WAY*
+%   *******************************************************************
+%
+
+%   ********************************************************************
+%   * THE FIRST SECTION OF THE MAIN LATEX FILE IS THE "PREAMBLE." IT   *
+%   * INSTRUCTS LATEX TO IMPORT SPECIAL PACKAGES FOR THINGS LIKE       *
+%   * INCLUDING FIGURES, DOUBLE-SPACING, COLORED TEXT, ETC.            *
+%   * DEPENDING ON YOUR NEEDS, YOU MAY FIND IT NECESSARY TO USE PACK-  *
+%   * AGES THAT ARE NOT INCLUDED IN THIS TEMPLATE. SIMPLY IMITATE THE  *
+%   * "\usepackage{...}" COMMANDS SHOWN BELOW.                         *
+%   ********************************************************************
+
+%   ********************************************************************
+%   * BEGINNING OF PREAMBLE:                                           *
+%   ********************************************************************
+
+\NeedsTeXFormat{LaTeX2e}
+\documentclass[12pt]{report}
+
+%   ********************************************************************
+%   * ALL BUT ONE OF THE FOLLOWING 5 LINES SHOULD BE COMMENTED OUT.    *
+%   * (NOT ALL OF THESE OPTIONS HAVE BEEN TESTED IN THIS REVISION!)    *
+%   ********************************************************************
+
+%\usepackage[debug,draft,double]{gatorthesis} % for student proof doublespace
+%\usepackage[bottom,double]{gatorthesis} % for final department copy
+\usepackage[debug,draft,single]{gatorthesis} % for student workcopy
+%\usepackage[single]{gatorthesis} % for student
+%\usepackage[debug,draft,nolists,nofront,single]{gatorthesis} % more options
+
+
+\usepackage{comment}     % provides a way to "comment out" sections in blocks
+\usepackage{doublespace} % final document should be double-spaced!
+\usepackage{amsmath}     % special symbols
+\usepackage{amssymb}     % more special symbols
+\usepackage{epsfig}      % needed for including figures
+% \usepackage{fancybox}  % --- DISABLED BY RSR, SEP 2013 ---
+\usepackage{url}
+\usepackage{listings}
+\usepackage[figure]{algorithm2e}
+\usepackage{graphicx}
+
+%   ********************************************************************
+%   * OPTIONAL: IF YOU WANT VERY FINE CONTROL OVER HOW LATEX HYPHENATES*
+%   * CERTAIN WORDS, YOU CAN PUT WORDS IN A "\hyphenation" COMMAND AS  *
+%   * SHOWN IN THE FOLLOWING EXAMPLE. OTHERWISE, YOU MAY JUST IGNORE   *
+%   * THE NEXT COMMAND.                                                *
+%   ********************************************************************
+
+% EXAMPLE: Don't hyphenate the words "itself" or "linear". Hyphenate 
+%          "representations" only at the places indicated by the "-":
+
+\hyphenation{itself repre-sen-tations linear}
+
+%   ********************************************************************
+%   * THE FOLLOWING COMMAND HAS BEEN DISABLED--IGNORE.                 *
+%   ********************************************************************
+% The following provides a box to surround the thesis statement
+%\newenvironment{Thesis}%
+%{\begin{Sbox}\begin{minipage}{.95\linewidth}}%
+%{\end{minipage}\end{Sbox}\begin{center}\fbox{\TheSbox}\end{center}}
+
+%   ********************************************************************
+%   ********************************************************************
+%   ***  END OF PREAMBLE.                                            ***
+%   ********************************************************************
+%   ********************************************************************
+
+
+
+%   ********************************************************************
+%   * DOCUMENT CONTENT STARTS AT THE "\begin{document}" COMMAND:       *
+%   ********************************************************************
+
+\begin{document}
+
+%   ********************************************************************
+%   * FILL IN THE "{...}" BELOW WITH YOUR INFORMATION.                 *
+%   ********************************************************************
+
+\thesistitle{An Eclipse-based Integrated and\\Automated Fault Localization System}
+
+\thesisauthor{Tristan Challener} \thesisadvisor{Dr. Gregory Kapfhammer}
+
+\thesisnumber{CS15-02} % SEE PAULINE LANZINE TO GET YOUR REPORT NUMBER!
+
+\thesisreadera{Dr. John Wenskovitch}
+
+
+%   ********************************************************************
+%   * IN RARE CASES YOU MAY HAVE MORE THAN TWO READERS, IN WHICH CASE  *
+%   * YOU SHOULD UN-COMMENT THE FOLLOWING AND ADD NAMES:               *
+%   ********************************************************************
+% \thesisreaderb{Dr. Your Thirdreader} 
+% \thesisreaderc{Dr. Your Fourthreader}
+% \thesisreaderd{Dr. Your Fifthreader}
+
+%   ********************************************************************
+%   * YOU MAY IGNORE THE FOLLOWING COMMAND:                            *
+%   ********************************************************************
+\date{\FileRevised \\ $\mbox{}$Revision: 1.8 $\mbox{}$}
+
+\thesismaketitle         % Creates the title page
+\thesismakecopyright     % Creates the copyright page
+
+%   ********************************************************************
+%   * YOU MAY SPLIT YOUR THESIS INTO SEVERAL FILES AND "\include" THEM *
+%   * AS SHOWN BELOW. FOR INSTANCE, FILE "abstract.tex" CONTAINS THE   *
+%   * ABSTRACT, FILE "ack.tex" CONTAINS THE ACKNOWLEDGMENTS, ETC. YOU  *
+%   * MAY, OF COURSE, PUT EVERYTHING INTO ONE HUGE FILE, BUT THERE ARE *
+%   * ADVANTAGES TO SPLITTING THINGS UP--FOR EXAMPLE, YOU CAN COMMENT  *
+%   * OUT "\include" LINES OF SOME PARTS IN ORDER TO PRINT DRAFTS      *
+%   * CONTAINING SELECTED SECTIONS OF YOUR THESIS, SAVING PAPER AND    *
+%   * PRINTING COSTS.                                                  *
+%   *                                                                  *
+%   * YOU ARE NOT REQUIRED TO HAVE A "dedication"--IF YOU DON'T, JUST  *
+%   * DELETE THAT LINE OR COMMENT IT OUT WITH A LEADING "%"            *
+%   ********************************************************************
+
+% \include{abstract}  % REQUIRED!
+
+% \include{dedication} % OPTIONAL
+
+% \include{ack}       % OPTIONAL, BUT ALMOST EVERYONE INCLUDES IT
+
+%   ********************************************************************
+%   * FRONT MATTER--TABLE OF CONTENTS, ETC. YOU PROBABLY DON'T NEED TO *
+%   * CHANGE ANY OF THIS UNLESS YOU HAVE NO TABLES OR FIGURES, OR YOU  *
+%   * WANT TO CHANGE NUMBERING DEPTH FOR SUBSECTIONS, OR ...           *
+%   ********************************************************************
+
+\setcounter{tocdepth}{2}    % # of section levels shown in table of contents
+\setcounter{secnumdepth}{3} % # of numbered subsection levels in the text
+
+\tableofcontents
+\listoftables       % OMIT THIS IF YOU DON'T HAVE ANY TABLES
+\listoffigures      % OMIT THIS IF YOU DON'T HAVE ANY FIGURES
+
+%   ********************************************************************
+%   * A GLOSSARY IS ALMOST NEVER NEEDED UNLESS YOU HAVE AN UNUSUALLY   *
+%   * LARGE NUMBER OF SPECIAL TERMS OR NOTATIONS AND IT WOULD DETRACT  *
+%   * TOO MUCH FROM THE FLOW OF THE PAPER TO DEFINE THEM IN-LINE.      *
+%   ********************************************************************
+%\include{glossary}  % OMIT THIS IF YOU DON'T HAVE A GLOSSARY (FEW PEOPLE DO)
+
+
+%   ********************************************************************
+%   * THE FOLLOWING "lstset" COMMAND IS ADAPTED FROM ONE FOUND AT:     *
+%   * http://tex.stackexchange.com/questions/115467/                   *
+%   * listings-highlight-java-annotations                              *
+%   *                                                                  *
+%   * SEE CHAPTER 3 AND APPENDIX A                                     *
+%   ********************************************************************
+
+\lstset{
+  basicstyle=\footnotesize\tt, % the size of the fonts that are used for the code
+  breakatwhitespace=false,     % automatic breaks only happen at whitespace?
+  breaklines=true,             % sets automatic line breaking
+  captionpos=b,                % sets the caption-position to bottom
+  frame=single,                % adds a frame around the code
+  language=Java,               % the language of the code
+  keywordstyle=\bf,
+  showspaces=false,
+  showstringspaces=false,      % underline spaces within strings only?
+  showtabs=false,
+  tabsize=2                    % sets default tabsize to 2 spaces
+}
+
+%   ********************************************************************
+%   * NOW INCLUDE THE CHAPTER FILES; COMMENT OUT ANY YOU DON'T WANT TO *
+%   * PROCESS IN A PARTICULAR LATEX RUN.                               *
+%   *                                                                  *
+%   * INCLUDED FILES ARE ASSUMED TO END IN ".tex", E.G.,               *
+%   * "ch01_overview.tex", "ch02_relatedwork.tex", ETC.                *
+%   ********************************************************************
+
+% ch:intro
+\include{ch01_introduction} % Introduction -- of course, you can name it anything!
+
+% ch:relatedwork
+\include{ch02_relatedworknew} % Background, literature survey, ...
+
+% ch:method
+\include{ch03_methodofapproach} % Chapter organization is topic-dependent
+
+%ch:implem
+% \include{ch04_implementation} % Chapter organization is topic-dependent
+
+% YOU MAY HAVE SEVERAL MORE CHAPTERS, DEPENDING ON TOPIC AND ORGANIZATION
+
+%ch:conclusion
+% \include{ch05_conclusion} % Conclusion/future work
+
+%   ********************************************************************
+%   * IF YOU HAVE ANY APPENDICES (FOR INSTANCE, CODE, DATA, GRAPHS,    *
+%   * OR ANYTHING ELSE THAT DOESN'T "FIT" AS REGULAR CHAPTER CONTENT), *
+%   * INCLUDE THE FOLLOWING LINE, WHICH INSTRUCTS LATEX TO CHANGE FROM *
+%   * NUMBERED "CHAPTER" HEADINGS TO LETTERED "APPENDIX" HEADINGS.     *
+%   *                                                                  *
+%   * APPENDICES HAVE THE SAME FORMATTING COMMANDS AS CHAPTERS (E.G.,  *
+%   * "\chapter{...}", "\section{...}", ETC.)                          *
+%   ********************************************************************
+
+\appendix
+
+% \include{appa}  % Appendices go here
+
+\include{appb}  % Addendum 
+
+%   ********************************************************************
+%   * THE FINAL COMMANDS DEAL WITH BIBLIOGRAPHY/REFERENCES. IF THERE   *
+%   * ARE ANY ITEMS IN YOUR BIBTEX FILE THAT YOU DID NOT REFERENCE IN  *
+%   * YOUR PAPER, BUT THAT YOU WISH TO INCLUDE IN THE BIBLIOGRAPHY,    *
+%   * YOU MAY SPECIFY "\nocite" COMMANDS TO FORCE THEM TO BE INCLUDED. *
+%   *                                                                  *
+%   * THE COMMAND "\nocite{*}" FORCES EVERY ITEM IN YOUR BIBTEX FILE.  *
+%   ********************************************************************
+
+%\nocite{ckm-acmap-99}   % EXAMPLES OF FORCING THINGS TO BE INCLUDED
+%\nocite{Dierckx93}      %   "   "   "
+%\nocite{obs-stcav-92}   %   "   "   "
+%\nocite{bb4471}         %   "   "   "
+
+\nocite{*} % OR DO THIS TO INCLUDE ALL BIBTEX REFERENCES IN THE BIBLIOGRAPHY
+
+\bibliographystyle{plain}
+
+%   ********************************************************************
+%   * IF YOU HAVE YOUR BIBLIOGRAPHY IN A SEPARATE ".bib" FILE, HERE IS *
+%   * WHERE YOU MUST SPECIFY IT. IN THIS EXAMPLE, THE BIBLIOGRAPHY     *
+%   * ENTRIES ARE STORED IN A SUBDIRECTORY NAMED "Bibdir" IN A FILE    *
+%   * NAMED "myBibtexDB.bib".                                          *
+%   ********************************************************************
+
+\begin{spacing}{1}
+\bibliography{Bibdir/senior_thesis_proposal}    % File type ".bib" is assumed
+\end{spacing}
+
+%   ********************************************************************
+%   * THIS FEATURE HAS BEEN DISABLED:                                  *
+%   ********************************************************************
+% \include{colophon}
+
+\typeout{THEPAGE \thepage}
+
+\end{document}

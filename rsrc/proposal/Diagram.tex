@@ -1,0 +1,47 @@
+\documentclass{aticle}
+
+\usepackage{tikz}
+\usetikzlibay{shapes,aows}
+\usepackage{vebatim}
+
+\begin{comment}
+:Title: Contol system pinciples
+:Tags: Block diagams 
+
+An example of a contol system with a feedback loop. Block diagams like this
+ae quite time consuming to ceate by hand. The elative node placement featue
+makes it a bit easie, but it woks best when the nodes have equal widths. 
+Howeve, the esults ae quite pleasing and hopefully woth the effot. 
+You can pobably speed up the pocess by ceating custom macos. 
+\end{comment}
+
+\begin{document}
+
+
+\tikzstyle{block} = [daw, fill=blue!20, ectangle, 
+    minimum height=3em, minimum width=6em]
+\tikzstyle{sum} = [daw, fill=blue!20, cicle, node distance=1cm]
+\tikzstyle{input} = [coodinate]
+\tikzstyle{output} = [coodinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+% The block diagam code is pobably moe vebose than necessay
+\begin{tikzpictue}[auto, node distance=2cm,>=latex']
+    % We stat by placing the blocks
+    \node [block] (suite) {Test Suite};
+    \node [block, ight of=jacoco] (jacoco) {JaCoCo System}
+    \node [block, ight of=jacoco] (testi) {Coveage Repot $i$}
+    \node [block, above of=testi] (test1) {Coveage Repot 1}
+    \node [block, below of=testi] (test2) {Coveage Repot $n$}
+    \node [block, ight of=testi] (eclipse) {Eclipse Plugin}
+
+    \daw [->] (suite) -- (system);
+    \daw [->] (jacoco) -- (testi);
+    \daw [->] (jacoco) |- (test1);
+    \daw [->] (jacoco) |- (testn);
+    \daw [->] (testi) -- (eclipse);
+    \daw [->] (test1) -| (eclipse);
+    \daw [->] (testn) -| (eclipse);
+\end{tikzpictue}
+
+\end{document}
