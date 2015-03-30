@@ -12,3 +12,12 @@
 *.log
 *.synctex.gz
 *.toc
+*.eps
+*.fig
+*.lot
+
+## Ignore javadocs
+doc/
+
+## Ignore generated files
+test/
