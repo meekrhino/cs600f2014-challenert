@@ -230,12 +230,14 @@ public class CoverageReport {
 			}
 			CSVWriter writer = new CSVWriter( new FileWriter( "results/" + filename ) );
 			ArrayList< TestStatement > spL;
-			String[] row = new String[ 5 ];
-			row[ 0 ] = "RE Function";
-			row[ 1 ] = "Statement ID";
+			String[] row = new String[ 7 ];
+			row[ 0 ] = "Function";
+			row[ 1 ] = "StatementID";
 			row[ 2 ] = "Filename";
 			row[ 3 ] = "Suspiciousness";
 			row[ 4 ] = "Rank";
+			row[ 5 ] = "StatementCount";
+			row[ 6 ] = "CaseApplication";
 			writer.writeNext( row );
 			for( REFunction re : REFUNCTIONS ) {
 				spL = this.analyze( re, true ).sort().list();
@@ -246,6 +248,8 @@ public class CoverageReport {
 					row[ 2 ] = ts.getFile().getFilename();
 					row[ 3 ] = "" + ts.getSusp();
 					row[ 4 ] = "" + ( i + 1 );
+					row[ 5 ] = "" + spL.size();
+					row[ 6 ] = filename;
 					writer.writeNext( row );
 				}
 			}

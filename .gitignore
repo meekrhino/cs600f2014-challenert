@@ -21,3 +21,4 @@ doc/
 
 ## Ignore generated files
 test/
+/swapped_lists_row0.csv
