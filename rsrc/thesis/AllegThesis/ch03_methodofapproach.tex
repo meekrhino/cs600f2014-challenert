@@ -40,13 +40,14 @@ After DOM parsing is complete, provided no errors occurred, the document tree ro
 passed into the intermediate representation constructor.  The IR (intermediate representation)
 for the container is designed to be simple to build while traversing a DOM of a CodeCover
 container.  The \texttt{ContainerIR} object contains a list of \texttt{TestFile}s, as well
-as a list of \texttt{String} names of test cases.  A visualization of the container IR, as
-well as its internal data structures, can be found in Figures \ref{fig:ir} and \ref{fig:ir2}
-respectively.  
+as a list of \texttt{String} names of test cases.  The object also includes a boolean values,
+in which the $i^{th}$ element indicates the pass/fail status of the $i^{th}$ test case.  A 
+visualization of the container IR, as well as its internal data structures, can be found in 
+Figures \ref{fig:ir} and \ref{fig:ir2} respectively.  
 
 \begin{figure}[tb]
 \centering
-\includegraphics[width=0.6\linewidth]{img/ContainerIR.pdf}
+\includegraphics[width=0.8\linewidth]{img/ContainerIR.pdf}
 \caption{Diagram of data structure for IR.}
 \label{fig:ir}
 \end{figure}
@@ -119,11 +120,15 @@ Finally, we iterate through all \texttt{Cov} children of the \texttt{CovPrefix} 
 basic statements covered by a given test case within a given file.  For each statement identified,
 we mark the corresponding \texttt{TestStatement} as covered.
 
-After we have completed this process, the \texttt{ContainerIR} will contain nearly all information 
-necessary for risk evaluation.  Specifically, that includes a list of files, the statements within
-those files, a list of test cases, and a list of test cases executing each statement.  Unfortunately,
-the CodeCover container does not include pass/fail information test cases.  This issue is addressed
-in the next section.
+In addition to coverage data, a \texttt{TestCase} node also contains a \texttt{Comment} attribute.
+This content of this attribute is comprised of the entire text output produced when the test case
+was executed.  When the test case passes, this attribute is empty; however, when a failure occurs,
+the description of the failure is stored in this node.  As a result, we can observe this attribute
+to determine the pass/fail status of a given test.  We ascertain this data by checking the
+\texttt{Comment} attribute for the starting string \texttt{"Failure"}.  Since this word always
+heads the description of a failure, the \texttt{Comment} of a failed test will always begin with
+the same text.  This pass/fail value is recorded in the boolean list stored in the 
+\texttt{ContainerIR}, where true indicates a passed test and false indicates a failed one.  
 
 \section{Simplified Representation} \label{sec:sir}
 
