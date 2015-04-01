@@ -17,6 +17,7 @@ import org.w3c.dom.Node;
 public class ContainerIR {
     private ArrayList< TestFile > files;
     private ArrayList< String > testCases;
+    private ArrayList< Boolean > passFail;
 
     /**
      * Process DOM provided to locate all source file, basic statement,
@@ -27,7 +28,8 @@ public class ContainerIR {
     public ContainerIR( Document doc ) {
         files = new ArrayList< TestFile >();
         testCases = new ArrayList< String >();
-
+        passFail = new ArrayList< Boolean >();
+        
         // Build IR from DOM
         Node cont = doc.getFirstChild();  // This should be "TestSessionContainer" node
 
@@ -140,6 +142,12 @@ public class ContainerIR {
             if( testCase.getNodeName() == "TestCase" ) {
                 NamedNodeMap attributes = testCase.getAttributes();
                 testCases.add( attributes.getNamedItem( "Name" ).getNodeValue() );
+                if( attributes.getNamedItem( "Comment" ).getNodeValue().startsWith("Failure") ) {
+                	passFail.add( false );
+                }
+                else {
+                	passFail.add( true );
+                }
                 for( Node covList = testCase.getFirstChild(); covList != null; covList = covList.getNextSibling() ) {
                     if( covList.getNodeName() == "CovList" ) {
                         for( Node covPre = covList.getFirstChild(); covPre != null; covPre = covPre.getNextSibling() ) {
@@ -243,6 +251,15 @@ public class ContainerIR {
      */
     public ArrayList< String > getTestCases() {
         return testCases;
+    }
+    
+    /**
+     * Return pass fail list.
+     * 
+     * @return List of pass/fail statuses for test cases
+     */
+    public ArrayList< Boolean > getPassFail() {
+    	return passFail;
     }
 }
 

@@ -17,18 +17,18 @@ public class Test {
 	 */
 	public static void main( String[] args ) {
         ContainerIR ir = null;
-        if( args.length < 3 ) {
-            System.out.println( "Please specify test class, CodeCover container, and output file." );
+        if( args.length < 2 ) {
+            System.out.println( "Please CodeCover container and case application name." );
             System.exit( 0 );
         }
         try {
-            ir = ParseContainer.parse( args[ 1 ] );
+            ir = ParseContainer.parse( args[ 0 ] );
         }
         catch( Exception e ) {
             e.printStackTrace();
         }
 
-        CoverageReport cov = new CoverageReport( ir, args[ 0 ] );
-        cov.printAnalysis( args[ 2 ] );
+        CoverageReport cov = new CoverageReport( ir );
+        cov.printAnalysis( args[ 1 ] );
 	}
 }

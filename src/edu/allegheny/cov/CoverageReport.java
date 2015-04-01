@@ -4,9 +4,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-import org.junit.runner.JUnitCore;
-import org.junit.runner.Result;
 import org.junit.runner.notification.RunListener;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.Description;
@@ -33,26 +30,13 @@ public class CoverageReport {
 	
 	/** 
 	 * Construct a new CoverageReport from the provided intermediate
-	 * container representation, executing the provided test class
-	 * to determine which tests failed.
+	 * container representation.
 	 * 
-	 * @param con
-	 * @param classname
+	 * @param con Container IR object.
 	 */
-    public CoverageReport( ContainerIR con, String classname ) {
-        Result result = null;
-        try {
-            Class<?> testSuiteClass = Class.forName( classname );
-            JUnitCore junit = new JUnitCore();
-            //junit.addListener( new TestListener() );
-            result = junit.run( testSuiteClass );
-        }
-        catch( Exception e ) {
-            e.printStackTrace();
-        }
-        
-        List< Failure > failures = result.getFailures();
+    public CoverageReport( ContainerIR con ) {
         ArrayList< String > testCaseList = con.getTestCases();
+        ArrayList< Boolean > passFailList = con.getPassFail();
 
         stmts = new ArrayList< TestStatement >();
         for( TestFile file : con.files() ) {
@@ -65,21 +49,12 @@ public class CoverageReport {
         // Iterate through test cases and check coverage information
         ArrayList< TestInfo > l = new ArrayList< TestInfo >( testCaseList.size() );
         for( int i = 0; i < testCaseList.size(); i++ ) {
-        	String testCaseFullName = testCaseList.get( i );
-        	String testCaseMethod = testCaseFullName.substring( testCaseFullName.indexOf( ':' ) + 1 );
             ArrayList< Boolean > exec = new ArrayList< Boolean >();
             for( TestStatement stmt : stmts ) {
                 exec.add( stmt.getCoverage().get( i ) );
             }
 
-            // Determine whether this test case passed
-            boolean pass = true;
-            for( Failure failure : failures ) {
-                String desc = failure.getDescription().toString();
-                if( desc.startsWith( testCaseMethod ) ) {
-                    pass = false;
-                }
-            }
+            boolean pass = passFailList.get( i );
             l.add( new TestInfo( pass, exec ) );
         }
 
@@ -218,17 +193,17 @@ public class CoverageReport {
 	 * Perform analysis on the coverage report using each risk evaluation function,
 	 * then write the results with the provided filename in CSV format.
 	 * 
-	 * @param filename Name of the file to be written.  File will be written in
-	 * the results directory.
+	 * @param caseApp Name of the file to be written.  File will be written in
+	 * the results directory.  Also forms the CaseApplication attribute.
 	 */
-	public void printAnalysis( String filename ) {
+	public void printAnalysis( String caseApp ) {
 		try {
 			File file = new File("results");
 			if (!file.exists()) {
 				if (file.mkdir()) {
 				}
 			}
-			CSVWriter writer = new CSVWriter( new FileWriter( "results/" + filename ) );
+			CSVWriter writer = new CSVWriter( new FileWriter( "results/" + caseApp + ".csv" ) );
 			ArrayList< TestStatement > spL;
 			String[] row = new String[ 7 ];
 			row[ 0 ] = "Function";
@@ -249,7 +224,7 @@ public class CoverageReport {
 					row[ 3 ] = "" + ts.getSusp();
 					row[ 4 ] = "" + ( i + 1 );
 					row[ 5 ] = "" + spL.size();
-					row[ 6 ] = filename;
+					row[ 6 ] = caseApp;
 					writer.writeNext( row );
 				}
 			}
