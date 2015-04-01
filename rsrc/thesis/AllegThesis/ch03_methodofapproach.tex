@@ -40,17 +40,33 @@ After DOM parsing is complete, provided no errors occurred, the document tree ro
 passed into the intermediate representation constructor.  The IR (intermediate representation)
 for the container is designed to be simple to build while traversing a DOM of a CodeCover
 container.  The \texttt{ContainerIR} object contains a list of \texttt{TestFile}s, as well
-as a list of \texttt{String} names of test cases.  Each \texttt{TestFile} object contains the
-name and source code of the file as a \texttt{String}, the internal identification number
-for the file as an \texttt{int}, and a list of \texttt{TestStatement}s.  
+as a list of \texttt{String} names of test cases.  A visualization of the container IR, as
+well as its internal data structures, can be found in Figures \ref{fig:ir} and \ref{fig:ir2}
+respectively.  
 
-A \texttt{TestStatement} includes 
-an ID and source code for the statement, each stored as \texttt{String}s.  In addition, the 
-\texttt{TestStatement} object stores a \texttt{TestFile} parent object and the suspiciousness
-value associated with the statement.  Finally, the statement includes a \texttt{boolean}
-list, where each element corresponds to a test case.  These boolean values indicate whether
-the respective test case executed this statment.  A \texttt{TestStatement} can be uniquely
-identified by the combination of its source file and ID.
+\begin{figure}[tb]
+\centering
+\includegraphics[width=0.6\linewidth]{img/ContainerIR.pdf}
+\caption{Diagram of data structure for IR.}
+\label{fig:ir}
+\end{figure}
+
+\begin{figure}[tb]
+\centering
+\includegraphics[height=30mm]{img/TestFile.pdf}
+\hspace{0.1\linewidth}
+\includegraphics[height=30mm]{img/TestStatement.pdf}
+\caption{Diagram of data structures used within the IR to store files (left) and 
+statements (right)}
+\label{fig:ir2}
+\end{figure}
+
+Each \texttt{TestFile} object contains the name and source code of the file as a \texttt{String}, the internal identification numberfor the file as an \texttt{int}, and a list of \texttt{TestStatement}s.  
+A \texttt{TestStatement} includes an ID and source code for the statement, each stored as \texttt{String}s.  In addition, the \texttt{TestStatement} object stores a \texttt{TestFile} 
+parent object and the suspiciousness value associated with the statement.  Finally, the statement 
+includes a \texttt{boolean} list, where each element corresponds to a test case.  These boolean 
+values indicate whether the respective test case executed this statment.  A \texttt{TestStatement} 
+can be uniquely identified by the combination of its source file and ID.
 
 CodeCover coverage containers include all required
 information, divided into three sections.  First, the container lists all source
@@ -170,7 +186,6 @@ When performing risk evaluation, we iterate through the specified functions.  Fo
 functions, we store the results of analysis in a \texttt{ResultsList} data structure.  This
 structure allows for ease of sorting analyzed statements by suspiciousness rating.  In addition, the
 suspiciousness values of the \texttt{ResultsList} are normalized to a zero-to-one scale according to
-the following formula:
 
 \[ L_i = \frac{ L_i - L_{min} }{ L_{max} - L_{min} }. \]
 
@@ -196,12 +211,14 @@ test class is executed and coverage information is collated into the simple repr
 Suspiciousness evaluation is then completed using all risk evaluation functions specified.
 
 After performing suspiciousness evaluation, the results are written to an output file in CSV (comma
-separated value) format.  The attributes \textit{Function Name, Statement ID, Filename, Suspiciousness,}
-and \textit{Rank} serve to uniquely identify a statement while providing information on risk evaluation.  
+separated value) format.  The attributes \textit{Function, Statement ID, Filename, Suspiciousness, Rank,
+Statement Count,}
+and \textit{Case Application} serve to uniquely identify a statement while providing information on risk evaluation.  
 This format conforms to \textit{tidy data}  \cite{tidy}, a ``standard way of mapping the meaning of a 
 dataset to its structure'', in that each variable forms a column and each observation forms a row.  
 This organizational structure allows for reliably simple evaluation of data using statistical 
-analysis tools.
+analysis tools.  Though tidy data contains extensive redundancy, that redundancy simplifies
+the data analysis and visualization process.
 
 %\section{Test Environment}
 %Algorithm \ref{widgmin} (from \cite{Fiori:2013}) shows a high-level description of an
