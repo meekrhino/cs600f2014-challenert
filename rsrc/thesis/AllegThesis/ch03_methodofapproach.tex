@@ -178,9 +178,17 @@ with all of the information necessary for risk evaluation.
 There are many different risk evaluation functions, but they are structurally similar.  We internally
 represent risk evaluation functions using our \texttt{REFunction} interface.  This interface provides
 abstract methods for returning the name of the function and for evaluating the function on provided
-$ae_f, ae_p, an_f, \text{ and } an_p$.  For each function included, we create an implementation of
+$ae_f, ae_p, an_f, \text{ and } an_p$.  Figure \ref{fig:re} provides an example implementation of
+the REFunction interface.  For each function included, we create an implementation of
 \texttt{REFunction}.  A complete list of \texttt{REFunctions} is stored in a static array of the
 same name in \texttt{CoverageReport} for ease of iteratively performing all evaluation functions.  
+
+\begin{figure}[tb]
+\centering
+\input{content/jaccard}
+\caption{Implementation of REFunction interface for Jaccard function.}
+\label{fig:re}
+\end{figure}
 
 When performing risk evaluation, we iterate through the specified functions.  For each of these
 functions, we store the results of analysis in a \texttt{ResultsList} data structure.  This
