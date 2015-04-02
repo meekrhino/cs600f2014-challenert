@@ -99,7 +99,8 @@ file list.
 
 Once we have located the source files, we must next identify the statements.  To do so, we first
 locate the hierarchical statement definition root.  Beginning with that root node, we recursively
-traverse the entire sub-tree.  For each \texttt{BasicStmnt} node, we add a new statement to the 
+traverse the entire sub-tree.  Within a the hierarchical component of a CodeCover container, there
+exists a \texttt{BasicStmnt} node, demonstrated by the excerpt shown in Figure \ref{fig:xml-basic}, for every basic statment in the source code.  For each \texttt{BasicStmnt} node, we add a new statement to the 
 correct \texttt{TestFile}.  In order to do so, we must first identify the \texttt{LocList} child
 node, followed by its \texttt{Loc} child node.  The attributes of the \texttt{Loc} node include
 the source code character offset for the basic statement in question.  Between the attributes of
@@ -107,6 +108,16 @@ the \texttt{BasicStmnt} node and those of the \texttt{Loc} node, we extract the 
 necessary to create a new \texttt{TestStatement} object.  Once this recursive traversal of the
 statement hierarchy is complete, the \texttt{TestFile}s in the \texttt{ContainerIR} will contain
 all basic statements.
+
+\begin{figure}[tb]
+\centering
+\input{content/xml-basic}
+\caption{Excerpt of a container showing a single \texttt{BasicStmnt} element.  This excerpt is taken
+from the CodeCover container produced from the JniInchi case application.  The statement defined here
+has the ID \texttt{S19}, and consists of the source code from character position \texttt{3672} to 
+\texttt{3716} within the file with name \texttt{net.sf.jniinchi.JniInchiStructure.java}.}
+\label{fig:xml-basic}
+\end{figure}
 
 Since we now have a complete list of basic statements, we can process the coverage data section
 of the container to identify test cases and their coverage.  To begin, we first iteratively 
@@ -141,13 +152,24 @@ of test cases that meet certain requirements for a given statement.  Variables $
 denote the number of test cases that executed the given statement and failed or passed
 respectively. Similarly, $an_f$ and $an_p$ refer to the number of test cases that did not execute
 the statement and passed or failed, respectively.  These four values become the input to each of
-the suspiciousness functions.  Therefore, the simplified representation that best suits our needs
+the suspiciousness functions.  Therefore, the simplified representation (SR) that best suits our needs
 is one that stores these values for each statement, with no extraneous information.
 
-In order to convert the IR to the described simple representation, the first step is build
+\begin{figure}[tb]
+\centering
+\includegraphics[height=28mm]{img/CoverageReport.pdf}
+\hspace{0.1\linewidth}
+\includegraphics[height=28mm]{img/TestInfo.pdf}
+\caption{Diagram of data structures for simplified representation (left) and  storing information
+about a single test case within the SR (right).}
+\label{fig:sr}
+\end{figure}
+
+In order to convert the IR to the described simple representation, the first step is to build
 a list of \texttt{TestInfo} objects, which represent individual test cases.  Each \texttt{TestInfo}
 object includes a pass/fail boolean value, as well as a boolean list that describes, for each
-statement under test, whether that statement was executed by this test.  We extract this information 
+statement under test, whether that statement was executed by this test.  A visualization of this
+data structure can be found in Figure \ref{fig:sr}. We extract this information 
 from the IR by iterating through the list of test case names.  For each test case, we check the
 execution status of that test case for each statement, storing this information in a list (where
 each element corresponds to a single statement, and true indicates the statement was executed by this
@@ -155,13 +177,15 @@ test).  Next, we cross check that test case index with the corresponding element
 boolean list in the IR and set the pass/fail status of the new \texttt{TestInfo} object to reflect
 that value.
 
+
 Iterating through the \texttt{TestInfo} list, we can determine the $ae_f, ae_p, an_f, \text{ and } an_p$
 of each statement.  For each test case, we check whether the test passed then determine which statements
 it executed by iterating through the boolean list stored in the \texttt{TestInfo} object.  For each
 statement, we increment the appropriate variable depending on its pass/fail and execution status.  The
 result is a list, for each of the four variables, in which each element corresponds to its value for
 the corresponding statement.  After completing this process, we have a \texttt{CoverageReport} object
-with all of the information necessary for risk evaluation.
+with all of the information necessary for risk evaluation.  This data structure is demonstrated by the 
+diagram in Figure \ref{fig:sr}.
 
 \section{Risk Evaluation} \label{sec:re}
 
