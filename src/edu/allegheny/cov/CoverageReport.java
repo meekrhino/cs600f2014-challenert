@@ -3,6 +3,7 @@ package edu.allegheny.cov;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import au.com.bytecode.opencsv.CSVWriter;
@@ -21,6 +22,7 @@ public class CoverageReport {
 	private ArrayList< Integer > anf;
 	private ArrayList< Integer > anp;
     private ArrayList< TestStatement > stmts;
+    private String fault;
 	public static final REFunction[] REFUNCTIONS =
 		{ new Jaccard(), new Tarantula(), new Kulczynski2(),
 		  new Ample(), new Ochiai() };
@@ -31,10 +33,12 @@ public class CoverageReport {
 	 * 
 	 * @param con Container IR object.
 	 */
-    public CoverageReport( ContainerIR con ) {
+    public CoverageReport( ContainerIR con, String fault ) {
         ArrayList< String > testCaseList = con.getTestCases();
         ArrayList< Boolean > passFailList = con.getPassFail();
 
+        this.fault = fault;
+        
         stmts = new ArrayList< TestStatement >();
         for( TestFile file : con.files() ) {
             for( TestStatement stat : file.stmts() ) {
@@ -176,7 +180,8 @@ public class CoverageReport {
 		ResultsList ret = new ResultsList( aef.size(), re );
 		for( int i = 0; i < aef.size(); i++ ) {
             TestStatement ts = stmts.get( i );
-            ts.setSusp( re.analyze( aef.get( i ), aep.get( i ), anf.get( i ), anp.get( i ) ) );
+            double analysis = re.analyze( aef.get( i ), aep.get( i ), anf.get( i ), anp.get( i ) );
+            ts.setSusp( analysis );
 			ret.add( ts );
 		}
 		if( norm )
@@ -202,7 +207,7 @@ public class CoverageReport {
 			}
 			CSVWriter writer = new CSVWriter( new FileWriter( "results/" + caseApp + ".csv" ) );
 			ArrayList< TestStatement > spL;
-			String[] row = new String[ 7 ];
+			String[] row = new String[ 8 ];
 			row[ 0 ] = "Function";
 			row[ 1 ] = "StatementID";
 			row[ 2 ] = "Filename";
@@ -210,7 +215,9 @@ public class CoverageReport {
 			row[ 4 ] = "Rank";
 			row[ 5 ] = "StatementCount";
 			row[ 6 ] = "CaseApplication";
+			row[ 7 ] = "IsFault";
 			writer.writeNext( row );
+			DecimalFormat fmt = new DecimalFormat( "0.####" );
 			for( REFunction re : REFUNCTIONS ) {
 				spL = this.analyze( re, true ).sort().list();
 				for( int i = 0; i < spL.size(); i++ ) {
@@ -218,10 +225,11 @@ public class CoverageReport {
 					row[ 0 ] = re.toString();
 					row[ 1 ] = ts.getId();
 					row[ 2 ] = ts.getFile().getFilename();
-					row[ 3 ] = "" + ts.getSusp();
+					row[ 3 ] = fmt.format( ts.getSusp() );
 					row[ 4 ] = "" + ( i + 1 );
 					row[ 5 ] = "" + spL.size();
 					row[ 6 ] = caseApp;
+					row[ 7 ] = ts.getSource().contains( fault )? "true" : "false";
 					writer.writeNext( row );
 				}
 			}

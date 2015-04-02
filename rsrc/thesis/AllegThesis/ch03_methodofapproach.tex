@@ -211,11 +211,14 @@ suspiciousness values of the \texttt{ResultsList} are normalized to a zero-to-on
 
 \[ L_i = \frac{ L_i - L_{min} }{ L_{max} - L_{min} }. \]
 
-In this equation, $L_i$ refers to the $i^{th}$ element of the \texttt{ResultsList}, and $L_{max}, L_{min}$ refer to the maximum and minimum values in the list, respectively.  Though normalizing the results does
+In this equation, $L_i$ refers to the $i^{th}$ element of the \texttt{ResultsList}, and $L_{max}, L_{min}$
+refer to the maximum and minimum values in the list, respectively.  Though normalizing the results does
 not change the ordering of the statements, it does make the actual suspiciousness values easier to compare
 across multiple different functions.  The final result of analysis is a list of statements, ordered from
 most suspicious to least suspicious, with values ranging from zero (not suspicious) to one (very 
-suspicious).
+suspicious).  In the case of undefined results to risk evaluation functions (specifically, any time a
+risk evaluation function returns \texttt{NaN}), we treat the value as zero.  This avoids problems such as
+completely uncovered statements always appearing as the most suspicious value.
 
 \section{Overview} \label{sec:over}
 

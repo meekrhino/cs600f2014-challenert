@@ -142,7 +142,8 @@ public class ContainerIR {
             if( testCase.getNodeName() == "TestCase" ) {
                 NamedNodeMap attributes = testCase.getAttributes();
                 testCases.add( attributes.getNamedItem( "Name" ).getNodeValue() );
-                if( attributes.getNamedItem( "Comment" ).getNodeValue().startsWith("Failure") ) {
+                if( attributes.getNamedItem( "Comment" ).getNodeValue().startsWith( "Failure" )
+                 || attributes.getNamedItem( "Comment" ).getNodeValue().startsWith( "Error" ) ) {
                 	passFail.add( false );
                 }
                 else {

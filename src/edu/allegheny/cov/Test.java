@@ -18,7 +18,7 @@ public class Test {
 	public static void main( String[] args ) {
         ContainerIR ir = null;
         if( args.length < 2 ) {
-            System.out.println( "Please provide CodeCover container and case application name." );
+            System.out.println( "Please provide CodeCover container, case application name, and faulty statement." );
             System.exit( 0 );
         }
         try {
@@ -28,7 +28,7 @@ public class Test {
             e.printStackTrace();
         }
 
-        CoverageReport cov = new CoverageReport( ir );
+        CoverageReport cov = new CoverageReport( ir, args[ 2 ] );
         cov.printAnalysis( args[ 1 ] );
 	}
 }

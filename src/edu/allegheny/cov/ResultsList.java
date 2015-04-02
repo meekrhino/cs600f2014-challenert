@@ -72,6 +72,12 @@ public class ResultsList {
 		for( int i = 0; i < list.size(); i++ ) {
 			list.get( i ).setSusp( ( list.get( i ).getSusp() - min ) / ( max - min ) );
 		}
+		
+		// Remove NaNs and replace with zero
+		for( int i = 0; i < list.size(); i++ ) {
+			double susp = list.get( i ).getSusp();
+			list.get( i ).setSusp( Double.isNaN( susp )? 0.0 : susp );
+		}
 	}
 
 	/**

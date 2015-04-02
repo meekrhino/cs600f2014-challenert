@@ -1,0 +1,5 @@
+119:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiAtom@<init>:117:el == null |==> false
+137:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiStructure@addBond:99:bondList.add(bond) |==> <NO-OP>
+149:LVR:POS:NEG:net.sf.jniinchi.JniInchiStereo0D@<init>:79:3 |==> -3
+194:COR:||(boolean,boolean):LHS(boolean,boolean):net.sf.jniinchi.JniInchiWrapper@checkOptions:183:op.startsWith("-") || op.startsWith("/") |==> op.startsWith("-")
+197:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@checkOptions:189:sbOptions.append(flagChar + option.name()) |==> <NO-OP>

@@ -28,6 +28,7 @@ test/
 
 ## Allow specific log files
 !mutants.log
+!mutants-used.log
 
 ## Allow cov.test files
 !test/*.java
