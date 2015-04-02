@@ -128,7 +128,8 @@ to determine the pass/fail status of a given test.  We ascertain this data by ch
 \texttt{Comment} attribute for the starting string \texttt{"Failure"}.  Since this word always
 heads the description of a failure, the \texttt{Comment} of a failed test will always begin with
 the same text.  This pass/fail value is recorded in the boolean list stored in the 
-\texttt{ContainerIR}, where true indicates a passed test and false indicates a failed one.  
+\texttt{ContainerIR}, where true indicates a passed test and false indicates a one in which a failure
+occurred.
 
 \section{Simplified Representation} \label{sec:sir}
 
@@ -143,22 +144,6 @@ the statement and passed or failed, respectively.  These four values become the 
 the suspiciousness functions.  Therefore, the simplified representation that best suits our needs
 is one that stores these values for each statement, with no extraneous information.
 
-Before converting the intermediate representation to the simplified form described above, we must
-first address the issue of pass/fail status for test cases.  We resolve this problem by 
-programmatically executing the JUnit test suite, with its class name provided at run time, that 
-tests the system evaluated by CodeCover.  We achieve this by first using Java Reflection to 
-acquire the \texttt{Class} object associated with the class name provided.  This \texttt{Class} then
-becomes the input to \texttt{JUnitCore.run()}.  The \texttt{JUnitCore} class executes the
-specified \texttt{Class} object, parsing the suite to locate all tests.  The \texttt{run()} 
-method executes the test class, returning a \texttt{Result} object.
-
-A \texttt{Result} object provides a list of \texttt{Failure} objects, which each includes the
-fully qualified name of the test case that generated the error.  By extracting only the method
-name portion of this full name, we can identify which test methods resulted in failures.  Since
-CodeCover also by default uses test method names to label test cases, we can compare these values
-directly to determine which of the test cases in the IR failed.  This provides the final necessary 
-component for suspiciousness analysis.
-
 In order to convert the IR to the described simple representation, the first step is build
 a list of \texttt{TestInfo} objects, which represent individual test cases.  Each \texttt{TestInfo}
 object includes a pass/fail boolean value, as well as a boolean list that describes, for each
@@ -166,9 +151,9 @@ statement under test, whether that statement was executed by this test.  We extr
 from the IR by iterating through the list of test case names.  For each test case, we check the
 execution status of that test case for each statement, storing this information in a list (where
 each element corresponds to a single statement, and true indicates the statement was executed by this
-test).  Next, we compare the name of the test case in question to the list of failures provided
-by the \texttt{Result} object discussed previously.  If the test case appears in the list of failures,
-we mark the test as failing.
+test).  Next, we cross check that test case index with the corresponding element in the pass/fail
+boolean list in the IR and set the pass/fail status of the new \texttt{TestInfo} object to reflect
+that value.
 
 Iterating through the \texttt{TestInfo} list, we can determine the $ae_f, ae_p, an_f, \text{ and } an_p$
 of each statement.  For each test case, we check whether the test passed then determine which statements
