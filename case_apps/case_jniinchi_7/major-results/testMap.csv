@@ -1,0 +1,10 @@
+TestNo,TestName
+1,net.sf.jniinchi.TestExamples
+2,net.sf.jniinchi.TestJniInchiAtom
+3,net.sf.jniinchi.TestJniInchiBond
+4,net.sf.jniinchi.TestJniInchiInput
+5,net.sf.jniinchi.TestJniInchiInputInchi
+6,net.sf.jniinchi.TestJniInchiOutput
+7,net.sf.jniinchi.TestJniInchiOutputStructure
+8,net.sf.jniinchi.TestJniInchiStereo0D
+9,net.sf.jniinchi.TestJniInchiStructure
