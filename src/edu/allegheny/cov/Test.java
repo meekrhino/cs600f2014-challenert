@@ -18,11 +18,11 @@ public class Test {
 	public static void main( String[] args ) {
         ContainerIR ir = null;
         if( args.length < 2 ) {
-            System.out.println( "Please CodeCover container and case application name." );
+            System.out.println( "Please provide CodeCover container and case application name." );
             System.exit( 0 );
         }
         try {
-            ir = ParseContainer.parse( args[ 0 ] );
+            ir = ParseContainer.parse( "containers/" + args[ 0 ] );
         }
         catch( Exception e ) {
             e.printStackTrace();

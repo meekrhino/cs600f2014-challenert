@@ -4,9 +4,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import org.junit.runner.notification.RunListener;
-import org.junit.runner.notification.Failure;
-import org.junit.runner.Description;
 
 import au.com.bytecode.opencsv.CSVWriter;
 
@@ -233,25 +230,4 @@ public class CoverageReport {
 			e.printStackTrace();
 		}
 	}
-}
-
-/**
- * Listener for testing JUnitCore programmatic executino
- * of JUnit tests.
- * 
- * @author Tristan Challener
- *
- */
-class TestListener extends RunListener {
-    public void testStarted( Description description) {
-        // Do nothing
-    }
-
-    public void testFailure( Failure failure ) {
-        System.out.println( "Test Failed: " + failure.getDescription().getDisplayName() );
-    }
-    
-    public void testFinished( Description description ) {
-    	// Do nothing
-    }
 }

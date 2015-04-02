@@ -1,0 +1,6 @@
+  1    2   1    1 net.sf.jniinchi.JniInchiInput.JniInchiInput()
+  2    2   2    1 net.sf.jniinchi.JniInchiInput.JniInchiInput(String)
+  3    2   1    1 net.sf.jniinchi.JniInchiInput.JniInchiInput(List)
+  4    3   1    1 net.sf.jniinchi.JniInchiInput.JniInchiInput(JniInchiStructure)
+  5    3   1    1 net.sf.jniinchi.JniInchiInput.JniInchiInput(JniInchiStructure,String)
+  6    2   1    1 net.sf.jniinchi.JniInchiInput.getOptions()
