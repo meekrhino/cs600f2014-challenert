@@ -19,6 +19,9 @@
 ## Ignore javadocs
 doc/
 
+## Ingore binaries
+bin/
+
 ## Ignore generated files
 test/
 /swapped_lists_row0.csv
