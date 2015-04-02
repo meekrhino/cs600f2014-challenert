@@ -1,0 +1,344 @@
+1:LVR:0:POS:net.sf.jniinchi.INCHI_BOND_STEREO:32:0 |==> 1
+2:LVR:0:NEG:net.sf.jniinchi.INCHI_BOND_STEREO:32:0 |==> -1
+3:LVR:POS:0:net.sf.jniinchi.INCHI_BOND_STEREO:37:1 |==> 0
+4:LVR:POS:NEG:net.sf.jniinchi.INCHI_BOND_STEREO:37:1 |==> -1
+5:LVR:POS:0:net.sf.jniinchi.INCHI_BOND_STEREO:42:4 |==> 0
+6:LVR:POS:NEG:net.sf.jniinchi.INCHI_BOND_STEREO:42:4 |==> -4
+7:LVR:POS:0:net.sf.jniinchi.INCHI_BOND_STEREO:47:6 |==> 0
+8:LVR:POS:NEG:net.sf.jniinchi.INCHI_BOND_STEREO:47:6 |==> -6
+9:LVR:NEG:0:net.sf.jniinchi.INCHI_BOND_STEREO:52:-1 |==> 0
+10:LVR:NEG:POS:net.sf.jniinchi.INCHI_BOND_STEREO:52:-1 |==> 1
+11:LVR:NEG:0:net.sf.jniinchi.INCHI_BOND_STEREO:57:-4 |==> 0
+12:LVR:NEG:POS:net.sf.jniinchi.INCHI_BOND_STEREO:57:-4 |==> 4
+13:LVR:NEG:0:net.sf.jniinchi.INCHI_BOND_STEREO:62:-6 |==> 0
+14:LVR:NEG:POS:net.sf.jniinchi.INCHI_BOND_STEREO:62:-6 |==> 6
+15:LVR:POS:0:net.sf.jniinchi.INCHI_BOND_STEREO:67:3 |==> 0
+16:LVR:POS:NEG:net.sf.jniinchi.INCHI_BOND_STEREO:67:3 |==> -3
+17:LVR:0:POS:net.sf.jniinchi.INCHI_BOND_TYPE:29:0 |==> 1
+18:LVR:0:NEG:net.sf.jniinchi.INCHI_BOND_TYPE:29:0 |==> -1
+19:LVR:POS:0:net.sf.jniinchi.INCHI_BOND_TYPE:34:1 |==> 0
+20:LVR:POS:NEG:net.sf.jniinchi.INCHI_BOND_TYPE:34:1 |==> -1
+21:LVR:POS:0:net.sf.jniinchi.INCHI_BOND_TYPE:39:2 |==> 0
+22:LVR:POS:NEG:net.sf.jniinchi.INCHI_BOND_TYPE:39:2 |==> -2
+23:LVR:POS:0:net.sf.jniinchi.INCHI_BOND_TYPE:44:3 |==> 0
+24:LVR:POS:NEG:net.sf.jniinchi.INCHI_BOND_TYPE:44:3 |==> -3
+25:LVR:POS:0:net.sf.jniinchi.INCHI_BOND_TYPE:49:4 |==> 0
+26:LVR:POS:NEG:net.sf.jniinchi.INCHI_BOND_TYPE:49:4 |==> -4
+27:LVR:0:POS:net.sf.jniinchi.INCHI_KEY:39:0 |==> 1
+28:LVR:0:NEG:net.sf.jniinchi.INCHI_KEY:39:0 |==> -1
+29:LVR:POS:0:net.sf.jniinchi.INCHI_KEY:41:1 |==> 0
+30:LVR:POS:NEG:net.sf.jniinchi.INCHI_KEY:41:1 |==> -1
+31:LVR:POS:0:net.sf.jniinchi.INCHI_KEY:43:2 |==> 0
+32:LVR:POS:NEG:net.sf.jniinchi.INCHI_KEY:43:2 |==> -2
+33:LVR:POS:0:net.sf.jniinchi.INCHI_KEY:45:3 |==> 0
+34:LVR:POS:NEG:net.sf.jniinchi.INCHI_KEY:45:3 |==> -3
+35:LVR:POS:0:net.sf.jniinchi.INCHI_KEY:47:4 |==> 0
+36:LVR:POS:NEG:net.sf.jniinchi.INCHI_KEY:47:4 |==> -4
+37:LVR:POS:0:net.sf.jniinchi.INCHI_KEY:49:20 |==> 0
+38:LVR:POS:NEG:net.sf.jniinchi.INCHI_KEY:49:20 |==> -20
+39:LVR:POS:0:net.sf.jniinchi.INCHI_KEY:51:21 |==> 0
+40:LVR:POS:NEG:net.sf.jniinchi.INCHI_KEY:51:21 |==> -21
+41:LVR:0:POS:net.sf.jniinchi.INCHI_KEY_STATUS:37:0 |==> 1
+42:LVR:0:NEG:net.sf.jniinchi.INCHI_KEY_STATUS:37:0 |==> -1
+43:LVR:NEG:0:net.sf.jniinchi.INCHI_KEY_STATUS:39:-1 |==> 0
+44:LVR:NEG:POS:net.sf.jniinchi.INCHI_KEY_STATUS:39:-1 |==> 1
+45:LVR:POS:0:net.sf.jniinchi.INCHI_KEY_STATUS:41:1 |==> 0
+46:LVR:POS:NEG:net.sf.jniinchi.INCHI_KEY_STATUS:41:1 |==> -1
+47:LVR:POS:0:net.sf.jniinchi.INCHI_KEY_STATUS:43:2 |==> 0
+48:LVR:POS:NEG:net.sf.jniinchi.INCHI_KEY_STATUS:43:2 |==> -2
+49:LVR:POS:0:net.sf.jniinchi.INCHI_KEY_STATUS:45:3 |==> 0
+50:LVR:POS:NEG:net.sf.jniinchi.INCHI_KEY_STATUS:45:3 |==> -3
+51:COR:option.name().equalsIgnoreCase(string):TRUE:net.sf.jniinchi.INCHI_OPTION@valueOfIgnoreCase:147:option.name().equalsIgnoreCase(string) |==> false
+52:COR:option.name().equalsIgnoreCase(string):FALSE:net.sf.jniinchi.INCHI_OPTION@valueOfIgnoreCase:147:option.name().equalsIgnoreCase(string) |==> true
+53:LVR:0:POS:net.sf.jniinchi.INCHI_PARITY:31:0 |==> 1
+54:LVR:0:NEG:net.sf.jniinchi.INCHI_PARITY:31:0 |==> -1
+55:LVR:POS:0:net.sf.jniinchi.INCHI_PARITY:36:1 |==> 0
+56:LVR:POS:NEG:net.sf.jniinchi.INCHI_PARITY:36:1 |==> -1
+57:LVR:POS:0:net.sf.jniinchi.INCHI_PARITY:41:2 |==> 0
+58:LVR:POS:NEG:net.sf.jniinchi.INCHI_PARITY:41:2 |==> -2
+59:LVR:POS:0:net.sf.jniinchi.INCHI_PARITY:46:3 |==> 0
+60:LVR:POS:NEG:net.sf.jniinchi.INCHI_PARITY:46:3 |==> -3
+61:LVR:POS:0:net.sf.jniinchi.INCHI_PARITY:51:4 |==> 0
+62:LVR:POS:NEG:net.sf.jniinchi.INCHI_PARITY:51:4 |==> -4
+63:LVR:0:POS:net.sf.jniinchi.INCHI_RADICAL:31:0 |==> 1
+64:LVR:0:NEG:net.sf.jniinchi.INCHI_RADICAL:31:0 |==> -1
+65:LVR:POS:0:net.sf.jniinchi.INCHI_RADICAL:36:1 |==> 0
+66:LVR:POS:NEG:net.sf.jniinchi.INCHI_RADICAL:36:1 |==> -1
+67:LVR:POS:0:net.sf.jniinchi.INCHI_RADICAL:41:2 |==> 0
+68:LVR:POS:NEG:net.sf.jniinchi.INCHI_RADICAL:41:2 |==> -2
+69:LVR:POS:0:net.sf.jniinchi.INCHI_RADICAL:46:3 |==> 0
+70:LVR:POS:NEG:net.sf.jniinchi.INCHI_RADICAL:46:3 |==> -3
+71:LVR:NEG:0:net.sf.jniinchi.INCHI_RET:45:-2 |==> 0
+72:LVR:NEG:POS:net.sf.jniinchi.INCHI_RET:45:-2 |==> 2
+73:LVR:NEG:0:net.sf.jniinchi.INCHI_RET:50:-1 |==> 0
+74:LVR:NEG:POS:net.sf.jniinchi.INCHI_RET:50:-1 |==> 1
+75:LVR:0:POS:net.sf.jniinchi.INCHI_RET:55:0 |==> 1
+76:LVR:0:NEG:net.sf.jniinchi.INCHI_RET:55:0 |==> -1
+77:LVR:POS:0:net.sf.jniinchi.INCHI_RET:60:1 |==> 0
+78:LVR:POS:NEG:net.sf.jniinchi.INCHI_RET:60:1 |==> -1
+79:LVR:POS:0:net.sf.jniinchi.INCHI_RET:65:2 |==> 0
+80:LVR:POS:NEG:net.sf.jniinchi.INCHI_RET:65:2 |==> -2
+81:LVR:POS:0:net.sf.jniinchi.INCHI_RET:70:3 |==> 0
+82:LVR:POS:NEG:net.sf.jniinchi.INCHI_RET:70:3 |==> -3
+83:LVR:POS:0:net.sf.jniinchi.INCHI_RET:75:4 |==> 0
+84:LVR:POS:NEG:net.sf.jniinchi.INCHI_RET:75:4 |==> -4
+85:LVR:POS:0:net.sf.jniinchi.INCHI_RET:80:5 |==> 0
+86:LVR:POS:NEG:net.sf.jniinchi.INCHI_RET:80:5 |==> -5
+87:LVR:0:POS:net.sf.jniinchi.INCHI_STATUS:27:0 |==> 1
+88:LVR:0:NEG:net.sf.jniinchi.INCHI_STATUS:27:0 |==> -1
+89:LVR:NEG:0:net.sf.jniinchi.INCHI_STATUS:28:-1 |==> 0
+90:LVR:NEG:POS:net.sf.jniinchi.INCHI_STATUS:28:-1 |==> 1
+91:LVR:POS:0:net.sf.jniinchi.INCHI_STATUS:29:1 |==> 0
+92:LVR:POS:NEG:net.sf.jniinchi.INCHI_STATUS:29:1 |==> -1
+93:LVR:POS:0:net.sf.jniinchi.INCHI_STATUS:30:2 |==> 0
+94:LVR:POS:NEG:net.sf.jniinchi.INCHI_STATUS:30:2 |==> -2
+95:LVR:POS:0:net.sf.jniinchi.INCHI_STATUS:31:3 |==> 0
+96:LVR:POS:NEG:net.sf.jniinchi.INCHI_STATUS:31:3 |==> -3
+97:LVR:POS:0:net.sf.jniinchi.INCHI_STATUS:32:4 |==> 0
+98:LVR:POS:NEG:net.sf.jniinchi.INCHI_STATUS:32:4 |==> -4
+99:LVR:0:POS:net.sf.jniinchi.INCHI_STEREOTYPE:32:0 |==> 1
+100:LVR:0:NEG:net.sf.jniinchi.INCHI_STEREOTYPE:32:0 |==> -1
+101:LVR:POS:0:net.sf.jniinchi.INCHI_STEREOTYPE:37:1 |==> 0
+102:LVR:POS:NEG:net.sf.jniinchi.INCHI_STEREOTYPE:37:1 |==> -1
+103:LVR:POS:0:net.sf.jniinchi.INCHI_STEREOTYPE:42:2 |==> 0
+104:LVR:POS:NEG:net.sf.jniinchi.INCHI_STEREOTYPE:42:2 |==> -2
+105:LVR:POS:0:net.sf.jniinchi.INCHI_STEREOTYPE:47:3 |==> 0
+106:LVR:POS:NEG:net.sf.jniinchi.INCHI_STEREOTYPE:47:3 |==> -3
+107:LVR:NEG:0:net.sf.jniinchi.JniInchiAtom:57:-1 |==> 0
+108:LVR:NEG:POS:net.sf.jniinchi.JniInchiAtom:57:-1 |==> 1
+109:LVR:0:POS:net.sf.jniinchi.JniInchiAtom:62:0 |==> 1
+110:LVR:0:NEG:net.sf.jniinchi.JniInchiAtom:62:0 |==> -1
+111:LVR:0:POS:net.sf.jniinchi.JniInchiAtom:67:0 |==> 1
+112:LVR:0:NEG:net.sf.jniinchi.JniInchiAtom:67:0 |==> -1
+113:LVR:0:POS:net.sf.jniinchi.JniInchiAtom:72:0 |==> 1
+114:LVR:0:NEG:net.sf.jniinchi.JniInchiAtom:72:0 |==> -1
+115:LVR:0:POS:net.sf.jniinchi.JniInchiAtom:78:0 |==> 1
+116:LVR:0:NEG:net.sf.jniinchi.JniInchiAtom:78:0 |==> -1
+117:LVR:0:POS:net.sf.jniinchi.JniInchiAtom:88:0 |==> 1
+118:LVR:0:NEG:net.sf.jniinchi.JniInchiAtom:88:0 |==> -1
+119:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiAtom@<init>:117:el == null |==> false
+120:LVR:0:POS:net.sf.jniinchi.JniInchiAtom@<init>:129:0.0 |==> 1.0
+121:LVR:0:NEG:net.sf.jniinchi.JniInchiAtom@<init>:129:0.0 |==> -1.0
+122:LVR:0:POS:net.sf.jniinchi.JniInchiAtom@<init>:129:0.0 |==> 1.0
+123:LVR:0:NEG:net.sf.jniinchi.JniInchiAtom@<init>:129:0.0 |==> -1.0
+124:LVR:0:POS:net.sf.jniinchi.JniInchiAtom@<init>:129:0.0 |==> 1.0
+125:LVR:0:NEG:net.sf.jniinchi.JniInchiAtom@<init>:129:0.0 |==> -1.0
+126:AOR:+(int,int):%(int,int):net.sf.jniinchi.JniInchiAtom@setIsotopicMassShift:166:ISOTOPIC_SHIFT_FLAG + shift |==> ISOTOPIC_SHIFT_FLAG % shift
+127:AOR:+(int,int):*(int,int):net.sf.jniinchi.JniInchiAtom@setIsotopicMassShift:166:ISOTOPIC_SHIFT_FLAG + shift |==> ISOTOPIC_SHIFT_FLAG * shift
+128:AOR:+(int,int):-(int,int):net.sf.jniinchi.JniInchiAtom@setIsotopicMassShift:166:ISOTOPIC_SHIFT_FLAG + shift |==> ISOTOPIC_SHIFT_FLAG - shift
+129:AOR:+(int,int):/(int,int):net.sf.jniinchi.JniInchiAtom@setIsotopicMassShift:166:ISOTOPIC_SHIFT_FLAG + shift |==> ISOTOPIC_SHIFT_FLAG / shift
+130:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiAtom@debug:323:System.out.println(getDebugString()) |==> <NO-OP>
+131:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiBond@debug:142:System.out.println(getDebugString()) |==> <NO-OP>
+132:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiInput@<init>:48:opts == null |==> false
+133:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiInput@<init>:66:setStructure(struct) |==> <NO-OP>
+134:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiInput@<init>:75:setStructure(struct) |==> <NO-OP>
+135:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiStructure@addAtom:76:atomList.add(atom) |==> <NO-OP>
+136:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiStructure@addAtoms:87:addAtom(atom) |==> <NO-OP>
+137:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiStructure@addBond:99:bondList.add(bond) |==> <NO-OP>
+138:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiStructure@addBonds:109:addBond(bond) |==> <NO-OP>
+139:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiStructure@addStereo0D:121:stereoList.add(parity) |==> <NO-OP>
+140:LVR:POS:0:net.sf.jniinchi.JniInchiStereo0D:35:4 |==> 0
+141:LVR:POS:NEG:net.sf.jniinchi.JniInchiStereo0D:35:4 |==> -4
+142:LVR:0:POS:net.sf.jniinchi.JniInchiStereo0D@<init>:76:0 |==> 1
+143:LVR:0:NEG:net.sf.jniinchi.JniInchiStereo0D@<init>:76:0 |==> -1
+144:LVR:POS:0:net.sf.jniinchi.JniInchiStereo0D@<init>:77:1 |==> 0
+145:LVR:POS:NEG:net.sf.jniinchi.JniInchiStereo0D@<init>:77:1 |==> -1
+146:LVR:POS:0:net.sf.jniinchi.JniInchiStereo0D@<init>:78:2 |==> 0
+147:LVR:POS:NEG:net.sf.jniinchi.JniInchiStereo0D@<init>:78:2 |==> -2
+148:LVR:POS:0:net.sf.jniinchi.JniInchiStereo0D@<init>:79:3 |==> 0
+149:LVR:POS:NEG:net.sf.jniinchi.JniInchiStereo0D@<init>:79:3 |==> -3
+150:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiStereo0D@getDebugString:151:centralAtom == null |==> false
+151:LVR:0:POS:net.sf.jniinchi.JniInchiStereo0D@getDebugString:152:0 |==> 1
+152:LVR:0:NEG:net.sf.jniinchi.JniInchiStereo0D@getDebugString:152:0 |==> -1
+153:LVR:POS:0:net.sf.jniinchi.JniInchiStereo0D@getDebugString:152:1 |==> 0
+154:LVR:POS:NEG:net.sf.jniinchi.JniInchiStereo0D@getDebugString:152:1 |==> -1
+155:LVR:POS:0:net.sf.jniinchi.JniInchiStereo0D@getDebugString:153:2 |==> 0
+156:LVR:POS:NEG:net.sf.jniinchi.JniInchiStereo0D@getDebugString:153:2 |==> -2
+157:LVR:POS:0:net.sf.jniinchi.JniInchiStereo0D@getDebugString:153:3 |==> 0
+158:LVR:POS:NEG:net.sf.jniinchi.JniInchiStereo0D@getDebugString:153:3 |==> -3
+159:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiStereo0D@debug:163:System.out.println(getDebugString()) |==> <NO-OP>
+160:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiOutputKey@<init>:32:retStatus == null |==> false
+161:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiOutputKey@<init>:37:key == null |==> false
+162:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiOutputKey@<init>:36:retStatus == INCHI_KEY.OK |==> false
+163:LVR:POS:0:net.sf.jniinchi.JniInchiOutputStructure:51:2 |==> 0
+164:LVR:POS:NEG:net.sf.jniinchi.JniInchiOutputStructure:51:2 |==> -2
+165:LVR:POS:0:net.sf.jniinchi.JniInchiOutputStructure:51:2 |==> 0
+166:LVR:POS:NEG:net.sf.jniinchi.JniInchiOutputStructure:51:2 |==> -2
+167:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiOutputStructure@<init>:56:setMessage(message) |==> <NO-OP>
+168:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiOutputStructure@<init>:57:setLog(log) |==> <NO-OP>
+169:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiOutputStructure@<init>:58:setWarningFlags(w00, w01, w10, w11) |==> <NO-OP>
+170:LVR:FALSE:TRUE:net.sf.jniinchi.JniInchiWrapper:71:false |==> true
+171:LVR:TRUE:FALSE:net.sf.jniinchi.JniInchiWrapper:75:true |==> false
+172:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@loadLibrary:84:NativeLibraryLoader.loadLibrary(ID, VERSION) |==> <NO-OP>
+173:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@loadLibrary:88:checkNativeCodeVersion() |==> <NO-OP>
+174:LVR:TRUE:FALSE:net.sf.jniinchi.JniInchiWrapper@loadLibrary:91:true |==> false
+175:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@loadLibrary:93:System.err.println() |==> <NO-OP>
+176:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@loadLibrary:94:System.err.println("Error loading JNI InChI native code.") |==> <NO-OP>
+177:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@loadLibrary:95:System.err.println("You may need to compile the native code for your platform.") |==> <NO-OP>
+178:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@loadLibrary:96:System.err.println("See http://jni-inchi.sourceforge.net for instructions.") |==> <NO-OP>
+179:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@loadLibrary:97:System.err.println() |==> <NO-OP>
+180:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getWrapper:128:loadLibrary() |==> <NO-OP>
+181:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getWrapper:129:init() |==> <NO-OP>
+182:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@getWrapper:127:inchiWrapper == null |==> false
+183:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@checkOptions:149:ops == null |==> false
+184:LVR:0:POS:net.sf.jniinchi.JniInchiWrapper@checkOptions:154:0 |==> 1
+185:LVR:0:NEG:net.sf.jniinchi.JniInchiWrapper@checkOptions:154:0 |==> -1
+186:ROR:<(int,int):!=(int,int):net.sf.jniinchi.JniInchiWrapper@checkOptions:154:i < ops.size() |==> i != ops.size()
+187:ROR:<(int,int):<=(int,int):net.sf.jniinchi.JniInchiWrapper@checkOptions:154:i < ops.size() |==> i <= ops.size()
+188:ROR:<(int,int):FALSE(int,int):net.sf.jniinchi.JniInchiWrapper@checkOptions:154:i < ops.size() |==> false
+189:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@checkOptions:157:sbOptions.append(flagChar + ((INCHI_OPTION)op).name() + " ") |==> <NO-OP>
+190:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@checkOptions:174:ops == null |==> false
+191:LVR:POS:0:net.sf.jniinchi.JniInchiWrapper@checkOptions:184:1 |==> 0
+192:LVR:POS:NEG:net.sf.jniinchi.JniInchiWrapper@checkOptions:184:1 |==> -1
+193:COR:||(boolean,boolean):!=(boolean,boolean):net.sf.jniinchi.JniInchiWrapper@checkOptions:183:op.startsWith("-") || op.startsWith("/") |==> op.startsWith("-") != op.startsWith("/")
+194:COR:||(boolean,boolean):LHS(boolean,boolean):net.sf.jniinchi.JniInchiWrapper@checkOptions:183:op.startsWith("-") || op.startsWith("/") |==> op.startsWith("-")
+195:COR:||(boolean,boolean):RHS(boolean,boolean):net.sf.jniinchi.JniInchiWrapper@checkOptions:183:op.startsWith("-") || op.startsWith("/") |==> op.startsWith("/")
+196:COR:||(boolean,boolean):TRUE(boolean,boolean):net.sf.jniinchi.JniInchiWrapper@checkOptions:183:op.startsWith("-") || op.startsWith("/") |==> true
+197:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@checkOptions:189:sbOptions.append(flagChar + option.name()) |==> <NO-OP>
+198:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@checkOptions:191:sbOptions.append(" ") |==> <NO-OP>
+199:COR:tok.hasMoreTokens():TRUE:net.sf.jniinchi.JniInchiWrapper@checkOptions:190:tok.hasMoreTokens() |==> false
+200:COR:tok.hasMoreTokens():FALSE:net.sf.jniinchi.JniInchiWrapper@checkOptions:190:tok.hasMoreTokens() |==> true
+201:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@checkOptions:188:option != null |==> true
+202:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@getInchi:235:input == null |==> false
+203:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getInchi:239:wrapper.getLock() |==> <NO-OP>
+204:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getInchi:243:lock.unlock() |==> <NO-OP>
+205:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@getStdInchi:258:input == null |==> false
+206:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getStdInchi:262:wrapper.getLock() |==> <NO-OP>
+207:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getStdInchi:266:lock.unlock() |==> <NO-OP>
+208:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@getInchiFromInchi:281:input == null |==> false
+209:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getInchiFromInchi:285:wrapper.getLock() |==> <NO-OP>
+210:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getInchiFromInchi:289:lock.unlock() |==> <NO-OP>
+211:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@getStructureFromInchi:300:input == null |==> false
+212:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getStructureFromInchi:304:wrapper.getLock() |==> <NO-OP>
+213:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getStructureFromInchi:308:lock.unlock() |==> <NO-OP>
+214:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@getInchiKey:320:inchi == null |==> false
+215:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getInchiKey:324:wrapper.getLock() |==> <NO-OP>
+216:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getInchiKey:328:lock.unlock() |==> <NO-OP>
+217:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@checkInchiKey:340:key == null |==> false
+218:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@checkInchiKey:344:wrapper.getLock() |==> <NO-OP>
+219:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@checkInchiKey:348:retStatus == null |==> false
+220:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@checkInchiKey:353:lock.unlock() |==> <NO-OP>
+221:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@checkInchi:368:inchi == null |==> false
+222:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@checkInchi:372:wrapper.getLock() |==> <NO-OP>
+223:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@checkInchi:376:retStatus == null |==> false
+224:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@checkInchi:381:lock.unlock() |==> <NO-OP>
+225:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):net.sf.jniinchi.JniInchiWrapper@getInputFromAuxInfo:386:auxInfo == null |==> false
+226:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getInputFromAuxInfo:390:wrapper.getLock() |==> <NO-OP>
+227:LVR:FALSE:TRUE:net.sf.jniinchi.JniInchiWrapper@getInputFromAuxInfo:392:false |==> true
+228:LVR:FALSE:TRUE:net.sf.jniinchi.JniInchiWrapper@getInputFromAuxInfo:392:false |==> true
+229:STD:<CALL>:<NO-OP>:net.sf.jniinchi.JniInchiWrapper@getInputFromAuxInfo:394:lock.unlock() |==> <NO-OP>
+230:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:39:264.0 |==> 0.0
+231:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:39:264.0 |==> -264.0
+232:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:39:968.0 |==> 0.0
+233:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:39:968.0 |==> -968.0
+234:LVR:0:POS:net.sf.jniinchi.Main@getTestMolecule:39:0.0 |==> 1.0
+235:LVR:0:NEG:net.sf.jniinchi.Main@getTestMolecule:39:0.0 |==> -1.0
+236:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:40:295.0 |==> 0.0
+237:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:40:295.0 |==> -295.0
+238:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:40:985.0 |==> 0.0
+239:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:40:985.0 |==> -985.0
+240:LVR:0:POS:net.sf.jniinchi.Main@getTestMolecule:40:0.0 |==> 1.0
+241:LVR:0:NEG:net.sf.jniinchi.Main@getTestMolecule:40:0.0 |==> -1.0
+242:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:41:233.0 |==> 0.0
+243:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:41:233.0 |==> -233.0
+244:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:41:986.0 |==> 0.0
+245:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:41:986.0 |==> -986.0
+246:LVR:0:POS:net.sf.jniinchi.Main@getTestMolecule:41:0.0 |==> 1.0
+247:LVR:0:NEG:net.sf.jniinchi.Main@getTestMolecule:41:0.0 |==> -1.0
+248:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:42:264.0 |==> 0.0
+249:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:42:264.0 |==> -264.0
+250:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:42:932.0 |==> 0.0
+251:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:42:932.0 |==> -932.0
+252:LVR:0:POS:net.sf.jniinchi.Main@getTestMolecule:42:0.0 |==> 1.0
+253:LVR:0:NEG:net.sf.jniinchi.Main@getTestMolecule:42:0.0 |==> -1.0
+254:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:43:326.0 |==> 0.0
+255:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:43:326.0 |==> -326.0
+256:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:43:967.0 |==> 0.0
+257:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:43:967.0 |==> -967.0
+258:LVR:0:POS:net.sf.jniinchi.Main@getTestMolecule:43:0.0 |==> 1.0
+259:LVR:0:NEG:net.sf.jniinchi.Main@getTestMolecule:43:0.0 |==> -1.0
+260:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:44:295.0 |==> 0.0
+261:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:44:295.0 |==> -295.0
+262:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:44:1021.0 |==> 0.0
+263:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:44:1021.0 |==> -1021.0
+264:LVR:0:POS:net.sf.jniinchi.Main@getTestMolecule:44:0.0 |==> 1.0
+265:LVR:0:NEG:net.sf.jniinchi.Main@getTestMolecule:44:0.0 |==> -1.0
+266:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:45:1 |==> 0
+267:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:45:1 |==> -1
+268:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@getTestMolecule:45:a1.setImplicitH(1) |==> <NO-OP>
+269:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:46:2 |==> 0
+270:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:46:2 |==> -2
+271:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@getTestMolecule:46:a3.setImplicitH(2) |==> <NO-OP>
+272:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:47:3 |==> 0
+273:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:47:3 |==> -3
+274:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@getTestMolecule:47:a4.setImplicitH(3) |==> <NO-OP>
+275:LVR:POS:0:net.sf.jniinchi.Main@getTestMolecule:48:1 |==> 0
+276:LVR:POS:NEG:net.sf.jniinchi.Main@getTestMolecule:48:1 |==> -1
+277:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@getTestMolecule:48:a5.setImplicitH(1) |==> <NO-OP>
+278:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@getTestMolecule:49:struct.addBond(new JniInchiBond(a1, a2, INCHI_BOND_TYPE.SINGLE)) |==> <NO-OP>
+279:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@getTestMolecule:50:struct.addBond(new JniInchiBond(a1, a3, INCHI_BOND_TYPE.SINGLE)).setStereoDefinition(INCHI_BOND_STEREO.SINGLE_1DOWN) |==> <NO-OP>
+280:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@getTestMolecule:51:struct.addBond(new JniInchiBond(a1, a4, INCHI_BOND_TYPE.SINGLE)) |==> <NO-OP>
+281:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@getTestMolecule:52:struct.addBond(new JniInchiBond(a2, a5, INCHI_BOND_TYPE.SINGLE)) |==> <NO-OP>
+282:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@getTestMolecule:53:struct.addBond(new JniInchiBond(a2, a6, INCHI_BOND_TYPE.DOUBLE)) |==> <NO-OP>
+283:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:59:System.err.println("Loading native code") |==> <NO-OP>
+284:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:60:System.err.println() |==> <NO-OP>
+285:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:63:JniInchiWrapper.loadLibrary() |==> <NO-OP>
+286:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:65:System.err.println() |==> <NO-OP>
+287:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:66:System.err.println("Native code version: " + JniInchiWrapper.LibInchiGetVersion()) |==> <NO-OP>
+288:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:67:System.err.println() |==> <NO-OP>
+289:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:69:System.err.println("Running checks") |==> <NO-OP>
+290:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:70:System.err.println() |==> <NO-OP>
+291:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:72:System.err.println("Generating InChI from structure") |==> <NO-OP>
+292:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:77:System.err.println(" - OKAY") |==> <NO-OP>
+293:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:79:System.err.println(" - ERROR") |==> <NO-OP>
+294:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:80:System.err.println(out1.getInchi()) |==> <NO-OP>
+295:COR:"InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)/t2-/m0/s1".equals(out1.getInchi()):TRUE:net.sf.jniinchi.Main@runChecks:76:"InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)/t2-/m0/s1".equals(out1.getInchi()) |==> false
+296:COR:"InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)/t2-/m0/s1".equals(out1.getInchi()):FALSE:net.sf.jniinchi.Main@runChecks:76:"InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)/t2-/m0/s1".equals(out1.getInchi()) |==> true
+297:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:83:System.err.println("Generating structure from InChI") |==> <NO-OP>
+298:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:86:System.err.println(" - OKAY") |==> <NO-OP>
+299:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:88:System.err.println(" - ERROR") |==> <NO-OP>
+300:LVR:POS:0:net.sf.jniinchi.Main@runChecks:85:6 |==> 0
+301:LVR:POS:NEG:net.sf.jniinchi.Main@runChecks:85:6 |==> -6
+302:ROR:==(int,int):<=(int,int):net.sf.jniinchi.Main@runChecks:85:out2.getNumAtoms() == 6 |==> out2.getNumAtoms() <= 6
+303:ROR:==(int,int):>=(int,int):net.sf.jniinchi.Main@runChecks:85:out2.getNumAtoms() == 6 |==> out2.getNumAtoms() >= 6
+304:ROR:==(int,int):FALSE(int,int):net.sf.jniinchi.Main@runChecks:85:out2.getNumAtoms() == 6 |==> false
+305:LVR:POS:0:net.sf.jniinchi.Main@runChecks:85:5 |==> 0
+306:LVR:POS:NEG:net.sf.jniinchi.Main@runChecks:85:5 |==> -5
+307:ROR:==(int,int):<=(int,int):net.sf.jniinchi.Main@runChecks:85:out2.getNumBonds() == 5 |==> out2.getNumBonds() <= 5
+308:ROR:==(int,int):>=(int,int):net.sf.jniinchi.Main@runChecks:85:out2.getNumBonds() == 5 |==> out2.getNumBonds() >= 5
+309:ROR:==(int,int):FALSE(int,int):net.sf.jniinchi.Main@runChecks:85:out2.getNumBonds() == 5 |==> false
+310:COR:&&(boolean,boolean):==(boolean,boolean):net.sf.jniinchi.Main@runChecks:85:out2.getNumAtoms() == 6 && out2.getNumBonds() == 5 |==> out2.getNumAtoms() == 6 == (out2.getNumBonds() == 5)
+311:COR:&&(boolean,boolean):FALSE(boolean,boolean):net.sf.jniinchi.Main@runChecks:85:out2.getNumAtoms() == 6 && out2.getNumBonds() == 5 |==> false
+312:COR:&&(boolean,boolean):LHS(boolean,boolean):net.sf.jniinchi.Main@runChecks:85:out2.getNumAtoms() == 6 && out2.getNumBonds() == 5 |==> out2.getNumAtoms() == 6
+313:COR:&&(boolean,boolean):RHS(boolean,boolean):net.sf.jniinchi.Main@runChecks:85:out2.getNumAtoms() == 6 && out2.getNumBonds() == 5 |==> out2.getNumBonds() == 5
+314:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:91:System.err.println("Converting structure back to InChI") |==> <NO-OP>
+315:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:94:System.err.println(" - OKAY") |==> <NO-OP>
+316:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:96:System.err.println(" - ERROR") |==> <NO-OP>
+317:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:97:System.err.println(out3.getInchi()) |==> <NO-OP>
+318:COR:"InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)".equals(out3.getInchi()):TRUE:net.sf.jniinchi.Main@runChecks:93:"InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)".equals(out3.getInchi()) |==> false
+319:COR:"InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)".equals(out3.getInchi()):FALSE:net.sf.jniinchi.Main@runChecks:93:"InChI=1S/C3H7NO2/c1-2(4)3(5)6/h2H,4H2,1H3,(H,5,6)".equals(out3.getInchi()) |==> true
+320:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:100:System.err.println(" - ERROR") |==> <NO-OP>
+321:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:101:e.printStackTrace() |==> <NO-OP>
+322:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:113:System.err.println() |==> <NO-OP>
+323:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:114:System.err.println("Checks done.") |==> <NO-OP>
+324:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@runChecks:115:System.err.println() |==> <NO-OP>
+325:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@main:121:System.err.println() |==> <NO-OP>
+326:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@main:122:System.err.println("** JniInchi debugger **") |==> <NO-OP>
+327:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@main:123:System.err.println() |==> <NO-OP>
+328:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@main:128:root.setLevel(Level.ALL) |==> <NO-OP>
+329:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@main:130:root.setLevel(Level.INFO) |==> <NO-OP>
+330:LVR:POS:0:net.sf.jniinchi.Main@main:127:1 |==> 0
+331:LVR:POS:NEG:net.sf.jniinchi.Main@main:127:1 |==> -1
+332:ROR:==(int,int):<=(int,int):net.sf.jniinchi.Main@main:127:args.length == 1 |==> args.length <= 1
+333:ROR:==(int,int):>=(int,int):net.sf.jniinchi.Main@main:127:args.length == 1 |==> args.length >= 1
+334:ROR:==(int,int):FALSE(int,int):net.sf.jniinchi.Main@main:127:args.length == 1 |==> false
+335:LVR:0:POS:net.sf.jniinchi.Main@main:127:0 |==> 1
+336:LVR:0:NEG:net.sf.jniinchi.Main@main:127:0 |==> -1
+337:COR:&&(boolean,boolean):==(boolean,boolean):net.sf.jniinchi.Main@main:127:args.length == 1 && "-debug".equals(args[0]) |==> args.length == 1 == "-debug".equals(args[0])
+338:COR:&&(boolean,boolean):FALSE(boolean,boolean):net.sf.jniinchi.Main@main:127:args.length == 1 && "-debug".equals(args[0]) |==> false
+339:COR:&&(boolean,boolean):LHS(boolean,boolean):net.sf.jniinchi.Main@main:127:args.length == 1 && "-debug".equals(args[0]) |==> args.length == 1
+340:COR:&&(boolean,boolean):RHS(boolean,boolean):net.sf.jniinchi.Main@main:127:args.length == 1 && "-debug".equals(args[0]) |==> "-debug".equals(args[0])
+341:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@main:132:root.removeAllAppenders() |==> <NO-OP>
+342:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@main:138:aconn.setThreshold(Level.ALL) |==> <NO-OP>
+343:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@main:139:root.addAppender(aconn) |==> <NO-OP>
+344:STD:<CALL>:<NO-OP>:net.sf.jniinchi.Main@main:141:runChecks() |==> <NO-OP>
