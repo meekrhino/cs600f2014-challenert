@@ -1,8 +1,14 @@
 package edu.allegheny.cov;
 
 public class Jaccard implements REFunction {
-	public double analyze( int aef, int aep, int anf, int anp ) {
-		return ( (double) aef / (aef + anf + aep ) );
+	public double analyze( int Iaef, int Iaep, int Ianf, int Ianp ) {
+		double aef, aep, anf;
+		
+		aef = (double) Iaef;
+		aep = (double) Iaep;
+		anf = (double) Ianf;
+		
+		return ( aef / (aef + anf + aep ) );
 	}
 
 	public String toString() {

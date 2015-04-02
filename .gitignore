@@ -28,3 +28,6 @@ test/
 
 ## Allow specific log files
 !mutants.log
+
+## Allow cov.test files
+!test/*.java

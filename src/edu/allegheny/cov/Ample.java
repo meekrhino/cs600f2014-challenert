@@ -1,9 +1,15 @@
 package edu.allegheny.cov;
 
 public class Ample implements REFunction {
-	public double analyze( int aef, int aep, int anf, int anp ) {
-		return ( (double) aef / ( aef + anf ) )
-			 - ( (double) aep / ( aep + anp ) );
+	public double analyze( int Iaef, int Iaep, int Ianf, int Ianp ) {
+		double aef, aep, anf, anp;
+		
+		aef = (double) Iaef;
+		aep = (double) Iaep;
+		anf = (double) Ianf;
+		anp = (double) Ianp;
+		
+		return (  aef / ( aef + anf ) ) - (  aep / ( aep + anp ) );
 	}
 
 	public String toString() {
