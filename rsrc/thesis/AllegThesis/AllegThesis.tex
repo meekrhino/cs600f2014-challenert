@@ -76,7 +76,7 @@
 % EXAMPLE: Don't hyphenate the words "itself" or "linear". Hyphenate 
 %          "representations" only at the places indicated by the "-":
 
-\hyphenation{itself repre-sen-tations linear state-ments}
+\hyphenation{itself repre-sen-tations linear state-ments career}
 
 %   ********************************************************************
 %   * THE FOLLOWING COMMAND HAS BEEN DISABLED--IGNORE.                 *
@@ -108,7 +108,7 @@
 
 \thesisauthor{Tristan Challener} \thesisadvisor{Dr. Gregory Kapfhammer}
 
-\thesisnumber{CS15-02} % SEE PAULINE LANZINE TO GET YOUR REPORT NUMBER!
+\thesisnumber{CS15-02} 
 
 \thesisreadera{Dr. John Wenskovitch}
 
@@ -143,11 +143,11 @@
 %   * DELETE THAT LINE OR COMMENT IT OUT WITH A LEADING "%"            *
 %   ********************************************************************
 
-% \include{abstract}  % REQUIRED!
+\include{abstract}  % REQUIRED!
 
 % \include{dedication} % OPTIONAL
 
-% \include{ack}       % OPTIONAL, BUT ALMOST EVERYONE INCLUDES IT
+\include{ack}       % OPTIONAL, BUT ALMOST EVERYONE INCLUDES IT
 
 %   ********************************************************************
 %   * FRONT MATTER--TABLE OF CONTENTS, ETC. YOU PROBABLY DON'T NEED TO *
@@ -212,8 +212,6 @@
 %ch:implem
 \include{ch04_results} % Chapter organization is topic-dependent
 
-% YOU MAY HAVE SEVERAL MORE CHAPTERS, DEPENDING ON TOPIC AND ORGANIZATION
-
 %ch:conclusion
 \include{ch05_conclusion} % Conclusion/future work
 
@@ -232,6 +230,8 @@
 \include{appa}  % Source code
 
 \include{appb}  % Addendum 
+
+\include{appc}  % Sample input/output
 
 %   ********************************************************************
 %   * THE FINAL COMMANDS DEAL WITH BIBLIOGRAPHY/REFERENCES. IF THERE   *

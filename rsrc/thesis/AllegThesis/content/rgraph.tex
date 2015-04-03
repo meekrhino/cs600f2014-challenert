@@ -1,0 +1,11 @@
+\begin{lstlisting}
+library( ggplot2 )
+attach( jniinchi_119_fault )
+graph_119 <- qplot( Function, Exam, data=jniinchi_119_fault, geom="bar", 
+			  	ylab="EXAM Score (%)", xlab="Risk Evaulation Function", 
+				stat="identity", ylim=c( 0,5 ),
+				main="EXAM Score Per Risk Evaluation Function (JniInChi Mutant 119)",
+				sub="JniInChi Mutant 119" )
+graph_119 <- graph_119 + theme( axis.title=element_text( face="bold.italic" ) )
+detach( jniinchi_119_fault )
+\end{lstlisting}

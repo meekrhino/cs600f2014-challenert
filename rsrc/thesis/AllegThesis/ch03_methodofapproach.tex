@@ -20,7 +20,7 @@ implementation can be broken into four distinct sections:
 
 When CodeCover produces per-test coverage information, it stores the results in
 a container.  Though CodeCover features several coverage report export types, 
-including hierarchical HTML, these reports do not include all information
+including hierarchical HTML, these reports do not include all of the information
 necessary for this project.  Specifically, these export formals only include
 general per-test coverage information, displaying percent coverage for each test.
 They do not include information related to precisely which tests executed each 
@@ -40,10 +40,10 @@ After DOM parsing is complete, provided no errors occurred, the document tree ro
 passed into the intermediate representation constructor.  The IR (intermediate representation)
 for the container is designed to be simple to build while traversing a DOM of a CodeCover
 container.  The \texttt{ContainerIR} object contains a list of \texttt{TestFile}s, as well
-as a list of \texttt{String} names of test cases.  The object also includes a boolean values,
+as a list of \texttt{String} names of test cases.  The object also includes boolean values,
 in which the $i^{th}$ element indicates the pass/fail status of the $i^{th}$ test case.  A 
 visualization of the container IR, as well as its internal data structures, can be found in 
-Figures \ref{fig:ir} and \ref{fig:ir2} respectively.  
+Figures \ref{fig:ir} and \ref{fig:ir2}, respectively.  
 
 \begin{figure}[tb]
 \centering
@@ -58,11 +58,11 @@ Figures \ref{fig:ir} and \ref{fig:ir2} respectively.
 \hspace{0.1\linewidth}
 \includegraphics[height=30mm]{img/TestStatement.pdf}
 \caption{Diagram of data structures used within the IR to store files (left) and 
-statements (right)}
+statements (right).}
 \label{fig:ir2}
 \end{figure}
 
-Each \texttt{TestFile} object contains the name and source code of the file as a \texttt{String}, the internal identification numberfor the file as an \texttt{int}, and a list of \texttt{TestStatement}s.  
+Each \texttt{TestFile} object contains the name and source code of the file as \texttt{String}s, the internal identification number for the file as an \texttt{int}, and a list of \texttt{TestStatement}s.  
 A \texttt{TestStatement} includes an ID and source code for the statement, each stored as \texttt{String}s.  In addition, the \texttt{TestStatement} object stores a \texttt{TestFile} 
 parent object and the suspiciousness value associated with the statement.  Finally, the statement 
 includes a \texttt{boolean} list, where each element corresponds to a test case.  These boolean 
@@ -74,9 +74,9 @@ information, divided into three sections.  First, the container lists all source
 files included in coverage analysis, including the entirety of their source code,
 the name of the file, and a unique internal identification value.  Following the source files
 is a hierarchical list of all statements within those files.  These statements are defined by 
-by their category, source file, and character offset within the source file.  For this
-project, we only consider basic statements (in Java, this essentially refers to executable
-statements terminated with semicolons).  
+their category, source file, and character offset within the source file.  For this
+project, we only consider basic statements---in Java, this essentially refers to executable
+statements terminated with semicolons.  
 
 The final section of a CodeCover container is the per-test coverage data itself.  This is
 represented by a series of test cases, each of which contains a child for every file
@@ -85,9 +85,9 @@ test inside that file.  These statements are identified by their alphanumeric id
 
 Our system processes these sections in the order they appear above.  Using the DOM produced
 from parsing, we can easily traverse the relevant segments of the container.  Traversal of
-the DOM tree consists of repeated iterations of sub-levels of the XML hierarchy, in order
+the DOM tree consists of repeated iterations of sub-levels of the XML hierarchy in order
 to locate a node with a specific name.  Throughout this process, we make no assumptions about
-the sequence in which nodes appear.  Rather than assume that, for example, a given node is
+the sequence in which nodes appear.  For example, rather than assuming a given node is
 always the first child, we always use a loop structure to make certain we identify the correct
 node.
 
@@ -97,7 +97,7 @@ children to locate all \texttt{SrcFile} nodes.  For each \texttt{SrcFile} node f
 extract the attributes of that node and add a \texttt{TestFile} to the \texttt{ContainerIR}
 file list.  
 
-Once we have located the source files, we must next identify the statements.  To do so, we first
+Once we have located the source files, we must identify the statements.  To do so, we first
 locate the hierarchical statement definition root.  Beginning with that root node, we recursively
 traverse the entire sub-tree.  Within a the hierarchical component of a CodeCover container, there
 exists a \texttt{BasicStmnt} node, demonstrated by the excerpt shown in Figure \ref{fig:xml-basic}, for every basic statment in the source code.  For each \texttt{BasicStmnt} node, we add a new statement to the 
@@ -114,7 +114,7 @@ all basic statements.
 \input{content/xml-basic}
 \caption{Excerpt of a container showing a single \texttt{BasicStmnt} element.  This excerpt is taken
 from the CodeCover container produced from the JniInchi case application.  The statement defined here
-has the ID \texttt{S19}, and consists of the source code from character position \texttt{3672} to 
+has the ID \texttt{S19} and consists of the source code from character position \texttt{3672} to 
 \texttt{3716} within the file with name \texttt{net.sf.jniinchi.JniInchiStructure.java}.}
 \label{fig:xml-basic}
 \end{figure}
@@ -132,7 +132,7 @@ basic statements covered by a given test case within a given file.  For each sta
 we mark the corresponding \texttt{TestStatement} as covered.
 
 In addition to coverage data, a \texttt{TestCase} node also contains a \texttt{Comment} attribute.
-This content of this attribute is comprised of the entire text output produced when the test case
+The content of this attribute is comprised of the entire text output produced when the test case
 was executed.  When the test case passes, this attribute is empty; however, when a failure occurs,
 the description of the failure is stored in this node.  As a result, we can observe this attribute
 to determine the pass/fail status of a given test.  We ascertain this data by checking the
@@ -149,10 +149,16 @@ The intermediate representation discussed in section \ref{sec:ir} is appropriate
 data structure.  However, it is not conducive to suspiciousness analysis.  All of the risk evaluation
 functions considered in this project require four pieces of information for each statement that
 must be evaluated: $ae_f, ae_p, an_f, \text{ and } an_p$ \cite{theory}.  These variables represent the number
-of test cases that meet certain requirements for a given statement.  Variables $ae_f$ and $ae_p$
-denote the number of test cases that executed the given statement and failed or passed
-respectively. Similarly, $an_f$ and $an_p$ refer to the number of test cases that did not execute
-the statement and passed or failed, respectively.  These four values become the input to each of
+of test cases that meet certain requirements for a given statement, defined below:
+
+\begin{itemize}
+\item $ae_f$:  Number of test cases that execute the statement and fail.
+\item $ae_p$:  Number of test cases that execute the statement and pass.
+\item $an_f$:  Number of test cases that do NOT execute the statement and fail.
+\item $an_p$:  Number of test cases that do NOT execute the statement and pass.
+\end{itemize}
+
+These four values become the input to each of
 the suspiciousness functions.  Therefore, the simplified representation (SR) that best suits our needs
 is one that stores these values for each statement, with no extraneous information.
 
@@ -173,7 +179,7 @@ statement under test, whether that statement was executed by this test.  A visua
 data structure can be found in Figure \ref{fig:sr}. We extract this information 
 from the IR by iterating through the list of test case names.  For each test case, we check the
 execution status of that test case for each statement, storing this information in a list (where
-each element corresponds to a single statement, and true indicates the statement was executed by this
+each element corresponds to a single statement and true indicates the statement was executed by this
 test).  Next, we cross check that test case index with the corresponding element in the pass/fail
 boolean list in the IR and set the pass/fail status of the new \texttt{TestInfo} object to reflect
 that value.
@@ -183,14 +189,14 @@ Iterating through the \texttt{TestInfo} list, we can determine the $ae_f, ae_p, 
 of each statement.  For each test case, we check whether the test passed then determine which statements
 it executed by iterating through the boolean list stored in the \texttt{TestInfo} object.  For each
 statement, we increment the appropriate variable depending on its pass/fail and execution status.  The
-result is a list, for each of the four variables, in which each element corresponds to its value for
+result is a list---for each of the four variables---in which each element corresponds to its value for
 the corresponding statement.  After completing this process, we have a \texttt{CoverageReport} object
 with all of the information necessary for risk evaluation.  This data structure is demonstrated by the 
 diagram in Figure \ref{fig:sr}.
 
 \section{Risk Evaluation} \label{sec:re}
 
-There are many different risk evaluation functions, but they are structurally similar.  We internally
+There are many different risk evaluation functions, but all of those studied here are structurally similar.  We internally
 represent risk evaluation functions using our \texttt{REFunction} interface.  This interface provides
 abstract methods for returning the name of the function and for evaluating the function on provided
 $ae_f, ae_p, an_f, \text{ and } an_p$.  Figure \ref{fig:re} provides an example implementation of
@@ -224,26 +230,27 @@ completely uncovered statements always appearing as the most suspicious value.
 \section{Overview} \label{sec:over}
 
 When executing the system, the main class, \texttt{Test.java}, must be invoked with three additional
-parameters.  The first parameter is the name of the CodeCover container to be analyzed.  This 
-parameter must be \emph{only} the filename, and the file must be placed in the \texttt{containers}
-directory.  The second parameter is the name for the output file---the 
-output path is fixed to the (to be created) results directory within the present working directory.
-The final parameter is the source code for the inserted fault in the system represented by the
-supplied CodeCover container.
+parameters:
+
+\begin{enumerate}
+\item Name of the CodeCover container to be analyzed.  Only the filename, not the path, should be included.  The file must be placed in the \texttt{containers/} directory.
+\item Output file name.  This should be the name of the case application being studied.  The file will be placed in the (to be created) \texttt{results/} directory.
+\item Source code of faulty statement inserted into the case application.
+\end{enumerate}
 
 Execution begins with parsing the XML container.  When the document has been stored as a DOM, it is
 passed forward to the \texttt{ContainerIR} constructor, which processes the document into an IR as
 described previously.  The IR is then passed to the \texttt{CoverageReport} class, where the 
 test class is executed and coverage information is collated into the simple representation.
-Suspiciousness evaluation is then completed using all risk evaluation functions specified.
+Suspiciousness evaluation is then completed using all of the risk evaluation functions specified.
 
-After performing suspiciousness evaluation, the results are written to an output file in CSV (comma
-separated value) format.  The attributes \textit{Function, Statement ID, Filename, Suspiciousness, Rank,
+After performing suspiciousness evaluation, the results are written to CSV (comma
+separated value) format output file.  The attributes \textit{Function, Statement ID, Filename, Suspiciousness, Rank,
 Statement Count, Case Application,} and \textit{IsFault} serve to uniquely identify a statement 
 while providing information on risk evaluation.  The \textit{IsFault} field is always either true or 
-false, and is produced by comparing the source of each statement to the provided faulty statement. 
-Only when these statements match will true be written; otherwise, false is written.
-This format conforms to \textit{tidy data}  \cite{tidy}, a ``standard way of mapping the meaning of a 
+false and is produced by comparing the source of each statement to the provided faulty statement. 
+If these statements match, true will be written; otherwise, false is written.
+This format conforms to the \textit{tidy data} \cite{tidy} standard, a ``standard way of mapping the meaning of a 
 dataset to its structure'', in that each variable forms a column and each observation forms a row.  
 This organizational structure allows for reliably simple evaluation of data using statistical 
 analysis tools.  Though tidy data contains extensive redundancy, that redundancy simplifies

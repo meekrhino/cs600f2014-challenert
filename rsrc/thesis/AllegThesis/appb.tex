@@ -5,154 +5,42 @@
 %   * SEE THE MAIN FILE "AllegThesis.tex" FOR MORE INFORMATION.       *
 %   *******************************************************************
 
-\chapter{Addendum}\label{appb:add}
+\chapter{Source Code}\label{appb:code}
 
 %   *******************************************************************
 %   * SEE THE MAIN FILE "AllegThesis.tex" FOR THE "\lstset" COMMAND   *
 %   * THAT DEFINES HOW PROGRAM LISTINGS WILL LOOK.                    *
 %   *******************************************************************
 
-In this addendum we discuss in further detail the human study, including
-details regarding number of participation, pre-evaluation of participants,
-and study setup.  In addition, we discuss our contingency plan if we
-encounter unexpected difficulty.  The purpose of this addendum is to address
-concerns related to feasibility of the project and lack of exact details for
-the evaluation strategy.
+This appendix contains all source code for our system.  Source code is
+included in alphabetic order by class name.
 
-\section{Human Study}\label{sec:addhs}
+\section{System Code}\label{sec:cov}
 
-The evaluation strategy for the Eclipse plugin that will be the final product
-of this project will be evaluated using a human study.  This human study will
-involve twenty undergraduate student participants. with varying experience in
-the areas of coverage analysis, automated testing, and development with Eclipse
-(or similar integrated development environment).  The participants will be drawn 
-from the Allegheny computer science department majors and minors, and will not
-accept those students who have not completed or are in the process of completing
-at least two computer science courses.
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/Ample.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/ContainerIR.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/CoverageReport.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/Jaccard.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/Kulczynski2.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/Ochiai.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/ParseContainer.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/REFunction.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/ResultsList.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/Tarantula.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/Test.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/TestFile.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/TestInfo.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/TestList.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/TestStatement.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/cov/test/TestREFunctions.java}
 
-Since undergraduate students will have widely varying experience in
-the areas of coverage analysis, automated testing, and development with Eclipse
-(or similar integrated development environment), we will ask participants
-to self-evaluate these attributes of their computer science experience in order
-to allow us to better balance the groups in the study.  This evaluation will
-take the form of simple scale values; each question will ask to the participant
-to rate his experience in that area on a scale from one to ten, with one representing
-complete unfamiliarity and ten representing high confidence.  We will then divide
-the twenty participants into two groups with roughly even levels of experience.  
-When evaluating overall level of experience, we will consider.  In addition,
-we will ask students to list courses completed and to specify their industry
-experience (including jobs or internships) so that we may incorporate that information
-into our final results.  This questionnaire will be provided to students well in advance
-of the actual study, so that we can make decisions on grouping before the start of
-the study.
+\section{Test System (ListSwap)}\label{sec:listswap}
 
-Once students have been divided into groups, each group will be assigned two faulty
-programs to debug (the students will work independently).  For each of the two tasks, 
-students will be allotted no more than 30
-minutes to complete the debugging process.  The purpose of this limitation is to avoid
-pushing the participants to exhaustion and thus affecting the results.  Prior to beginning
-the tasks, we will instruct the students on the use of our plugin.  We will allow 30 
-minutes for this instruction period, to ensure that participants are at least conversant
-in the use of the tool.  This will eliminate the possibility that the tool was not helpful
-only because the students were not familiar with its functions.  
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/listswap/Bear.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/listswap/CSVListIO.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/listswap/Fish.java}
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/src/edu/allegheny/listswap/ListSwapGenerator.java}
 
-We will use the same two
-programs, with the same fault, for each group of students.  However, the first group of
-students will use our plugin to debug the first program, while they will use
-traditional debugging techniques to repair the fault in the second program.  In contrast,
-the second group of participants will use our plugin for the second program and 
-traditional debugging for the first program.  This organization of tasks allows us to 
-compare average completion times for each task when using or not using our plugin.
-Notice that this experiment setup is derived from that used by Parnin and Orso for their
-research paper in a similar area \cite{parnin}.  That study included 24 graduate students,
-two programs, and a similar division of students into groups; that is, where each group 
-used or did not use the fault localization tool for opposite tasks, just as we have described.
+\section{R Script}\label{sec:r}
 
-After completion of the two tasks, or after each time limit has expired, we will ask students
-to complete a survey related to their experience when using the tool.  Questions asked will
-include the following:
-
-\begin{itemize}
-\item In what ways did you find the plugin to be helpful for locating the fault?
-\item In what ways do you feel the plugin could be improved?
-\item Please briefly describe your debugging process when using the tool and when not using the tool.
-\item Did you find the tool to cause an overall benefit or detriment to your debugging process?
-\item In what situations would you consider using this tool again?
-\item In what situations would you prefer to use traditional debugging techniques?
-\end{itemize}
-
-Participants' answers to subjective question such as these will allow us to better
-gauge the strengths and weaknesses of the plugin, as well as evaluate the effectiveness
-of the tool from the perspective of the users.  These answers will be particularly helpful
-if we find that the plugin does not result in a statistically significant increase in 
-debugging performance, because it will allow us to determine in what ways the plugin 
-could be improved.  By considering these answers, we can further evaluate the
-reason for negative results.  We can identify whether automatic fault localization is
-actually unhelpful, or if improvements to the plugin could give more positive results.
-The questions will also be helpful in the event of positive results, because we can
-identify which features of the tool are most effective: per-test coverage, suspiciousness
-ranking, or absolute suspiciousness value.
-
-\section{Contingency Plan}\label{sec:addcont}
-
-Because this project is highly ambitious, especially considering the time constraints, 
-any unforeseen difficulties could result in our inability to complete all of our goals.
-We will establish a contingency plan in the event that we discover at some point
-in the project that we will not be able to meet the deadline.
-
-The first portion of the project deals with parsing CodeCover per-test coverage data
-from XML into a simplified intermediate representation, so that we may perform risk
-evaluation.  This component will be very complex, and is in itself an ambitious project.
-It involves first designing a system to parse the highly complex XML test session
-containers produced by CodeCover, which will have to be tested for correctness.  Then 
-we must select a large number of test programs, which must have existing JUnit test
-suites for per-test coverage analysis.  We will then need to import these programs into
-Eclipse, perform initial CodeCover setup, and execute the coverage monitoring tool on 
-the existing test cases.  We will then have to use or parsing system to extract the 
-relevant data for every program tested and perform risk evaluation for every function
-we decide to study.  Finally, we must correlate all of the resulting data inside R
-to produce effective visualizations, as well as analyze and discuss these results in
-writing.  
-
-\begin{table}[b]
-\centering
-\begin{tabular}{|c||c|c|}
-\hline
-\bf Task & \bf Completion Deadline\\\hline\hline
-Chapters 1 and 2 & December 15\\\hline
-Simplified Representation& February 3\\\hline
-Empirical Study & February 28\\\hline
-R Data Analysis & March 10\\\hline
-Chapter 4 & March 24\\\hline
-Chapter 5 & April 3\\\hline
-Oral Defense & April 6 - 24\\\hline
-Final Thesis & May 1\\\hline
-\end{tabular}
-\caption{Proposed work schedule for contingency plan}
-\label{tab:research}
-\end{table}
-
-Since any portion of this component of the project may prove to be too
-complex for the given time constraints, our contingency plan will involve completion
-of only this part of the project.  We will leave development and evaluation of the
-Eclipse plugin as future work, and will discuss the difficulties that led to our use
-of this contingency.  Since we will not have completed the Eclipse plugin, the
-implementation details will not be included in Chapter 3.  In addition, we will
-omit Chapter 5 entirely, since its only purpose is discussion of the method and
-results of the human study.  The revised thesis outline and project deadlines will
-be as follows:
-
-\begin{enumerate}
-\item Introduction
-\item Related Work
-\item Method of Approach
-\item Empirical Results
-\item Conclusion
-\end{enumerate}
-
-Note that we will only follow this new schedule and outline if we determine that
-it will not be possible to achieve the original deadlines.  The current plan is
-still to pursue the original schedule as defined in our project proposal.  This
-is only a contingency plan, and we will not utilize it unless necessary.  Regardless
-of difficulties, however, we will at least complete the first goal of the project:
-empirical comparison of risk evaluation functions (as described in Section \ref{sec:goals}).
+\lstinputlisting{C:/Users/Tristan/workspace/Comp/r-scripts/results-parse.R}

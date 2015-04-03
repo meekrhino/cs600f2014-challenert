@@ -16,7 +16,7 @@ and a listing of possible threats to the validity of our results.
 Throughout the development process, we used several mechanisms to verify the accuracy
 of our system.  Prior to starting implementation, we selected a very simple sample
 program to ensure that we could use CodeCover to produce per-test coverage data.  The
-program we selected was a small system developed by Tristan Challener, Nathaniel Blake,
+program we selected was a small system developed by Nathaniel Blake, Tristan Challener, 
 and Eric Weyant as a course project at Allegheny College.  The system consists of four
 source files and eleven JUnit test cases, and has functionality related to file input,
 list manipulation, and CSV output.  We selected this application primarily for its
@@ -30,7 +30,7 @@ correctly on a Windows operating system.
 After importing our selected application into Eclipse, we installed the most recent version
 of the CodeCover Eclipse plugin.  By following directions provided in the CodeCover documentation,
 we were able to execute the application through CodeCover and produce per-test coverage data.
-Because CodeCover containers are internal mechanisms for storing coverage data, and are not
+Because CodeCover containers are internal mechanisms for storing coverage data and are not
 meant to be viewed directly, there is very little documentation available.  As such, we were 
 forced to examine the container output to determine its structure before developing parsing
 tools.  See Section \ref{sec:ir} for additional details about the content of CodeCover
@@ -38,8 +38,8 @@ container files.
 
 As we proceeded with the implementation described in Chapter \ref{ch:method}, we cross-checked
 the data produced from our parse tool with that available through interacting with the CodeCover
-Eclipse plugin.  For example, we were able to verify that our parsed coverage data was consistent
-with the data shown in Eclipse.  Verifiable data included as statement source code, execution 
+Eclipse plugin.  We were able to verify that our parsed coverage data was consistent
+with the data shown in Eclipse.  Verifiable data included statement source code, execution 
 counts for each statement, and test case pass/fail status.  In addition, we verified the values
 generated for $ae_p, ae_f, an_p,$ and $an_f$ through manually totaling the number of appearances 
 of each statement in the container coverage segment to the values of each of the aforementioned
@@ -51,41 +51,42 @@ due to the complex nature of the container being parsed, since any testing would
 repeating the parsing process---thereby negating the benefits of the test.  Automated testing
 was used, however, to verify the accuracy of the risk evaluation function implementations
 used in the system.  We designed table-driven JUnit tests with multiple test inputs to 
-ensure that all functions were correctly implemented, within a reasonable degree of confidence.
+ensure that all functions were correctly implemented within a reasonable degree of confidence.
 
 \section{Case Study}\label{sec:case}
 
-In order to provide further evidence for the accuracy of our system, and to produce preliminary 
+In order to provide further evidence for the accuracy of our system and to produce preliminary 
 comparison data for our tested risk evaluation functions, we performed a case study with another
 selected application. Due to the simplicity of the test application described in \ref{sec:test}, 
 we chose a different case application for our study.  The program we selected is Jni-InChi
 \cite{jniinchi}, which ``enables Java software to generate IUPAC's International Chemical Identifiers 
 (InChIs) by making Java Native Interface (JNI) calls to the InChI C library developed by IUPAC''.
 
-This application, along with several others, were prepared and executed through MAJOR by Sarojini
-Balasubramanian.  The mutation data were provided as well.  We selected this application from the
-several other applications available due to limitations of CodeCover that were not clear until we
+This application, along with several others, was prepared and executed through MAJOR by Sarojini
+Balasubramanian.  The mutation data were provided as well.  We selected this application, from the
+several other applications available, due to limitations of CodeCover that were not clear until we
 began testing various applications.  Many tested applications had passing JUnit test suites after
-being important to Eclipse, but still produced the following (or similar) error when we attempted
+being imported to Eclipse, but still produced the following (or similar) error when we attempted
 to run them through CodeCover:
 
 \vspace{5mm}
 \texttt{[FATAL] An error occured when trying to compile the instrumented sources.}
 \vspace{2mm}
 
-According a discussion post at the CodeCover \texttt{sourceforge}
+According to a discussion post at the CodeCover \texttt{sourceforge}
 page, made by CodeCover developer Tilmann Scheller \cite{discpost}, there is not currently any 
 means of producing more verbose output (including details on compiler errors) through Eclipse.  
-Additional discussion at the same source indicated that CodeCover is able to ``instrument
-a single source directory only.''  Since the majority of projects provided and executed with MAJOR
+Additional discussion indicated that CodeCover is able to ``instrument
+a single source directory only.''  Since the majority of the projects provided and executed with MAJOR
 feature several source directories, we were severely limited in choice of case study application.  
-Fortunately, the Jni-InChi system incorporates only a single source directory, and we were able
+Fortunately, the Jni-InChi project includes only a single source directory and we were able
 to generate CodeCover output for this system.
 
-In order to produce meaningful results, the CodeCover execution of JUnit must complete and must
-feature at least one failure---otherwise, coverage data is not written to the container or no
+In order to produce meaningful results, the CodeCover execution of JUnit must complete or no coverage
+data is written the container.  Additionally, the JUnit test must
+feature at least one failure---otherwise no
 suspiciousness information can be generated, respectively.  To achieve this, we repeatedly selected
-arbitrary \textit{killed} mutants generated by MAJOR (their killed status guarantees at least failing
+arbitrary \textit{killed} mutants generated by MAJOR (their killed status guarantees at least one failed
 test case).  
 
 \begin{figure}[tb]
@@ -96,10 +97,10 @@ test case).
 
 There were various complications that forced us to reject mutants.  First, any mutant that
 causes the Eclipse JUnit \texttt{TestRunner} to crash prematurely and not complete the entire test 
-suite cannot be used.  This is due to meaningless or incomplete coverage data, which is not useful
+suite could not be used.  This is due to meaningless or incomplete coverage data, which is not useful
 for generating suspiciousness data.  In many cases, if the \texttt{TestRunner} crashed prematurely,
 CodeCover would not write \emph{any} coverage data to the test session container.  Thus, we skipped
-and mutants with this property. We also passed over any mutants that modify non-executed code; for instance, static variable declarations, which, though statements, cannot be executed by test cases.  
+any mutants with this property. We also passed over any mutants that modify non-executed code; for instance, static variable declarations, which, though statements, cannot be executed by test cases.  
 This makes mutants of this type invalid for the purpose of suspiciousness analysis.  Any remaining
 mutants were considered valid.  From those not disqualified, we chose five arbitrary mutants to 
 form the basis for this case study.   These mutants can be seen in Figure \ref{fig:mutants}.
@@ -119,7 +120,7 @@ it directly alters a basic statement.
 
 When CodeCover processes source code and builds a test session container, it copies the entire source
 code into the container, but removes all comments from the content.  As such, line numbers and character
-offsets within CodeCover are not comparable to those within the original source code.  Therefore, in
+offsets within CodeCover are not comparable to those within the original source code.  In
 order to locate the inserted fault within the container, we require the source code for the faulty
 statement to be included as an input to our system, as described in \ref{sec:over}.
 

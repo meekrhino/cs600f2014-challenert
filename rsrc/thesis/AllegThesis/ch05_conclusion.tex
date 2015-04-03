@@ -11,11 +11,97 @@
 In this chapter we discuss the significance of our results and review
 important underlying assumptions that may affect the relevance of results.
 In addition, we discuss future work that may follow directly from the 
-results and conclusion to this project.  Finally, we summarize the
-important points presented throughout this thesis.
+results and conclusion to this project.  Finally, we give our brief
+concluding remarks.
 
-\section{Summary of Results}
+\section{Summary of Results}\label{sec:summ}
 
-\section{Future Work}
+For this project, there are several underlying assumptions that may affect
+the relevance of the results.  Firstly, and most importantly, we require
+input in the form of a CodeCover test session container.  Due to the many
+limitations of the CodeCover system, especially its unreliability, this 
+could dramatically decrease the usefulness of our system.  Unfortunately,
+there are very few available systems for producing per-test coverage in
+Java.  CodeCover is the most reliable option we had available to us.  Our
+evidence and experience do suggest that, provided the CodeCover container
+is produced, our system will behave correctly in every case.
 
-\section{Conclusion}
+Additionally, we made the decision very early on to only include basic
+statements in suspiciousness analysis.  Through some manipulation of the
+source (with no affects to actual execution), we were able to work around
+this limitation for the purpose of this study.  As a result, the quality
+of the data produced by this study is not affected by this issue.  However,
+the versatility of our system is adversely affected in terms of real-world
+fault localization, since it is quite possible for faults to occur in
+locations other than basic statements.  
+
+Figure \ref{fig:results} shows a visual summary of the data produced by our
+system for a single case application.  Though we used several faulty
+versions of the case application, with a variety of types of faults, the
+significance of our results is diminished by the lack of additional case
+studies.  Additionally, there was relatively little variation in the performance
+of the risk evaluation functions studied.  We did find that Tarantula in
+particular tended to perform slightly worse than the other functions.  However,
+even at its worst Tarantula never ranked faulty statement worse than $14^{th}$ of
+nearly 400 statements.  This lends evidence to the conclusions drawn by \cite{genprog},
+as the risk evaluations considered in this study were drawn primarily from those
+that performed well in the GenProg study.
+
+It is also important to note that, in many cases, the faulty statement was ranked near 
+the top, but not quite rank one, although it shared the same suspiciousness score as
+the most suspicious statement.  In this study, we did not attempt to break ties; we simply
+ranked equal suspiciousness scores as they were processed.  The result is that there could
+be some slight variation in the EXAM scores of functions if ties were decided in another way.
+
+\section{Future Work}\label{sec:future}
+
+Though this project provides a solid foundation, there are many ways that future work
+could follow from it.  First, an extended case study process could produce more statistically
+relevant data.  If the limitations of CodeCover can be overcome, or case applications which
+conform to its many requirements can be identified, the existing system could be used to
+produce additional data.  The framework laid in the R script could also be easily adapted to
+process additional results.  
+
+In the future, the system produced by this project could be modified to take advantage of the
+other types of coverage provided by CodeCover, including branch and loop coverage.  This would
+allow the system to detect many more faults, and make the mutant-seeding process more
+straightforward.  This process is hindered by a lack of full documentation of the CodeCover 
+container format.  If that difficultly could be overcome, such an extension to this project
+would be valuable.
+
+An expansion of this project could also include increasing the number of risk evaluation
+functions studied.  Extending the project to include additional functions is a fairly simple
+process, due to the design of the system.  A developer need only add additional implementations
+of the \texttt{REFunction} interface, then add those functions the \texttt{CoverageReport.REFunctions}
+static list, in order to extend the project in this way.  Such an extension would allow for 
+a wider range of data.  In combination with a larger number of case applications, this
+extension would allow for a much more detailed comparison of existing risk evaluation functions.
+
+In our original project proposal, we proposed the development of an Eclipse plugin to provide
+suspiciousness analysis data to user inside an integrated development environment.  Due to
+various complications, we were forced to focus only on our other goals.  The system we have
+produced, however, was always designed with that end goal in mind.  As a result, much of the
+information needed to complete the Eclipse plugin is generated by our tool.  With some 
+modifications to the output format, and extensive Eclipse integration changes, this project
+could be re-purposed to create the Eclipse plugin originally envisioned at the start of this
+project.  
+
+The modification to this project that would most increase its relevance would be the introduction
+of a more reliable, easier to use coverage tool for Java that produces per-test coverage data.
+Limitations of CodeCover, and the complexity of its container format, were the primary cause
+for the reduction in the scale of this project.  Although substantial refactoring would be
+necessary, adapting this project to use a new coverage tool could potentially make it vastly 
+more versatile.  This would also make development of an Eclipse plugin using this tool much
+more effective, since it would be provide suspiciousness analysis for a wider domain of systems.
+
+\section{Conclusion}\label{sec:end}
+
+The final result of this project is a system to process per-test coverage data and generate
+suspiciousness evaluation data.  In addition, we provide preliminary case study data which
+acts as evidence of the correctness of the system.  This is only one step towards 
+addressing the complexity and cost of manual debugging.  It builds upon many existing tools
+and ideas that came before, including coverage analysis, risk evaluation, and mutation testing.
+Each of these tools works toward the goal of improving the testing and debugging process.
+Though this is only one step of many, each step is important---and we have outlined a number
+of possible next steps.  Debugging is not a problem that is ever 
+likely to be solved completely, but with each step we get a little closer.  
