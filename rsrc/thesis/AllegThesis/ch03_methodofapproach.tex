@@ -138,9 +138,10 @@ the description of the failure is stored in this node.  As a result, we can obse
 to determine the pass/fail status of a given test.  We ascertain this data by checking the
 \texttt{Comment} attribute for the starting string \texttt{"Failure"}.  Since this word always
 heads the description of a failure, the \texttt{Comment} of a failed test will always begin with
-the same text.  This pass/fail value is recorded in the boolean list stored in the 
-\texttt{ContainerIR}, where true indicates a passed test and false indicates a one in which a failure
-occurred.
+the same text.  We also allow the text \texttt{"Error"} to indicate a failing test, since an unhandled
+error in a test case indicates that the test did not complete successfully.  This pass/fail value is
+recorded in the boolean list stored in the \texttt{ContainerIR}, where true indicates a passed test and
+false indicates a one in which a failure occurred.
 
 \section{Simplified Representation} \label{sec:sir}
 
@@ -223,11 +224,12 @@ completely uncovered statements always appearing as the most suspicious value.
 \section{Overview} \label{sec:over}
 
 When executing the system, the main class, \texttt{Test.java}, must be invoked with three additional
-parameters.  The first of these is the fully qualified name of the JUnit test class (e.g. \texttt{edu.allegheny.listswap.ListSwapGeneratorTest}), which will be programmatically executed to
-obtain pass/fail information.  This test class \emph{must} be in the classpath, or the system will
-not be able to execute the tests.  The second parameter is the fully qualified file name for the 
-CodeCover container to be analyzed.  The final parameter is the name for the output file---the 
+parameters.  The first parameter is the name of the CodeCover container to be analyzed.  This 
+parameter must be \emph{only} the filename, and the file must be placed in the \texttt{containers}
+directory.  The second parameter is the name for the output file---the 
 output path is fixed to the (to be created) results directory within the present working directory.
+The final parameter is the source code for the inserted fault in the system represented by the
+supplied CodeCover container.
 
 Execution begins with parsing the XML container.  When the document has been stored as a DOM, it is
 passed forward to the \texttt{ContainerIR} constructor, which processes the document into an IR as
@@ -237,8 +239,10 @@ Suspiciousness evaluation is then completed using all risk evaluation functions 
 
 After performing suspiciousness evaluation, the results are written to an output file in CSV (comma
 separated value) format.  The attributes \textit{Function, Statement ID, Filename, Suspiciousness, Rank,
-Statement Count,}
-and \textit{Case Application} serve to uniquely identify a statement while providing information on risk evaluation.  
+Statement Count, Case Application,} and \textit{IsFault} serve to uniquely identify a statement 
+while providing information on risk evaluation.  The \textit{IsFault} field is always either true or 
+false, and is produced by comparing the source of each statement to the provided faulty statement. 
+Only when these statements match will true be written; otherwise, false is written.
 This format conforms to \textit{tidy data}  \cite{tidy}, a ``standard way of mapping the meaning of a 
 dataset to its structure'', in that each variable forms a column and each observation forms a row.  
 This organizational structure allows for reliably simple evaluation of data using statistical 

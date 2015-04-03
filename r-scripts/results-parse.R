@@ -48,7 +48,7 @@ jniinchi_avg_fault = data.frame( Function=c( "Jaccard", "Ample", "Kulczynski 2",
 library( ggplot2 )
 attach( jniinchi_119_fault )
 graph_119 <- qplot( Function, Exam, data=jniinchi_119_fault, geom="bar", 
-			  	ylab="EXAM Score", xlab="Risk Evaulation Function", 
+			  	ylab="EXAM Score (%)", xlab="Risk Evaulation Function", 
 				stat="identity", ylim=c( 0,5 ),
 				main="EXAM Score Per Risk Evaluation Function (JniInChi Mutant 119)",
 				sub="JniInChi Mutant 119" )
@@ -57,7 +57,7 @@ detach( jniinchi_119_fault )
 
 attach( jniinchi_137_fault )
 graph_137 <- qplot( Function, Exam, data=jniinchi_137_fault, geom="bar", 
-			  	ylab="EXAM Score", xlab="Risk Evaulation Function", 
+			  	ylab="EXAM Score (%)", xlab="Risk Evaulation Function", 
 				stat="identity", ylim=c( 0,5 ),
 				main="EXAM Score Per Risk Evaluation Function (JniInChi Mutant 137)",
 				sub="JniInChi Mutant 137" )
@@ -66,7 +66,7 @@ detach( jniinchi_137_fault )
 
 attach( jniinchi_149_fault )
 graph_149 <- qplot( Function, Exam, data=jniinchi_149_fault, geom="bar", 
-			  	ylab="EXAM Score", xlab="Risk Evaulation Function", 
+			  	ylab="EXAM Score (%)", xlab="Risk Evaulation Function", 
 				stat="identity", ylim=c( 0,5 ),
 				main="EXAM Score Per Risk Evaluation Function (JniInChi Mutant 149)",
 				sub="JniInChi Mutant 149" )
@@ -75,7 +75,7 @@ detach( jniinchi_149_fault )
 
 attach( jniinchi_194_fault )
 graph_194 <- qplot( Function, Exam, data=jniinchi_194_fault, geom="bar", 
-			  	ylab="EXAM Score", xlab="Risk Evaulation Function", 
+			  	ylab="EXAM Score (%)", xlab="Risk Evaulation Function", 
 				stat="identity", ylim=c( 0,5 ),
 				main="EXAM Score by Risk Evaluation Function (JniInChi Mutant 194)",
 				sub="JniInChi Mutant 194" )
@@ -84,7 +84,7 @@ detach( jniinchi_194_fault )
 
 attach( jniinchi_197_fault )
 graph_197 <- qplot( Function, Exam, data=jniinchi_197_fault, geom="bar", 
-			  	ylab="EXAM Score", xlab="Risk Evaulation Function", 
+			  	ylab="EXAM Score (%)", xlab="Risk Evaulation Function", 
 				stat="identity", ylim=c( 0,5 ),
 				main="EXAM Score by Risk Evaluation Function (JniInChi Mutant 197)",
 				sub="JniInChi Mutant 197" )
@@ -93,7 +93,7 @@ detach( jniinchi_197_fault )
 
 attach( jniinchi_avg_fault )
 graph_avg  <- qplot( Function, Exam, data=jniinchi_avg_fault, geom="bar", 
-			  	ylab="EXAM Score", xlab="Risk Evaulation Function", 
+			  	ylab="EXAM Score (%)", xlab="Risk Evaulation Function", 
 				stat="identity", ylim=c( 0,5 ),
 				main="EXAM Score by Risk Evaluation Function (JniInChi Mutant Average)",
 				sub="JniInChi Mutant Average" )
