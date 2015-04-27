@@ -15,6 +15,9 @@
 *.eps
 *.fig
 *.lot
+*.snm
+*.out
+*.nav
 
 ## Ignore javadocs
 doc/
