@@ -6525,8 +6525,8 @@
 </HierarchyLvl>
 </HierarchyLvl>
 </MASTRoot>
-<TestSession Comment="" Date="1430150234202" Name="Apr 27, 2015 11:57:14 AM">
-<TestCase Comment="" Date="1430150233532" Name="net.sf.jniinchi.TestExamples:testExampleStructure2InchiDiChloroethene">
+<TestSession Comment="" Date="1430167337714" Name="Apr 27, 2015 4:42:17 PM">
+<TestCase Comment="" Date="1430167337060" Name="net.sf.jniinchi.TestExamples:testExampleStructure2InchiDiChloroethene">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S1" Value="8"/>
@@ -6648,7 +6648,102 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233607" Name="net.sf.jniinchi.TestExamples:testInchi2Structure">
+<TestCase Comment="" Date="1430167337131" Name="net.sf.jniinchi.TestExamples:testInchi2InchiHydrogen">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RET.java">
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInputInchi.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
+<Cov CovItemId="S117" Value="1"/>
+<Cov CovItemId="S118" Value="1"/>
+<Cov CovItemId="S24" Value="1"/>
+<Cov CovItemId="S28" Value="1"/>
+<Cov CovItemId="S67" Value="1"/>
+<Cov CovItemId="S69" Value="1"/>
+<Cov CovItemId="S70" Value="1"/>
+<Cov CovItemId="S71" Value="1"/>
+<Cov CovItemId="S72" Value="1"/>
+<Cov CovItemId="S73" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337133" Name="net.sf.jniinchi.TestExamples:testInchi2InchiCompress">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_OPTION.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="14"/>
+<Cov CovItemId="S3" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RET.java">
+<Cov CovItemId="S3" Value="2"/>
+<Cov CovItemId="S6" Value="2"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInputInchi.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S7" Value="2"/>
+<Cov CovItemId="S8" Value="2"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
+<Cov CovItemId="S1" Value="2"/>
+<Cov CovItemId="S2" Value="2"/>
+<Cov CovItemId="S3" Value="2"/>
+<Cov CovItemId="S4" Value="2"/>
+<Cov CovItemId="S5" Value="2"/>
+<Cov CovItemId="S6" Value="2"/>
+<Cov CovItemId="S8" Value="2"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
+<Cov CovItemId="S117" Value="2"/>
+<Cov CovItemId="S118" Value="2"/>
+<Cov CovItemId="S24" Value="2"/>
+<Cov CovItemId="S28" Value="2"/>
+<Cov CovItemId="S38" Value="1"/>
+<Cov CovItemId="S40" Value="1"/>
+<Cov CovItemId="S41" Value="1"/>
+<Cov CovItemId="S42" Value="1"/>
+<Cov CovItemId="S43" Value="1"/>
+<Cov CovItemId="S44" Value="1"/>
+<Cov CovItemId="S45" Value="1"/>
+<Cov CovItemId="S46" Value="1"/>
+<Cov CovItemId="S47" Value="1"/>
+<Cov CovItemId="S48" Value="1"/>
+<Cov CovItemId="S49" Value="1"/>
+<Cov CovItemId="S52" Value="1"/>
+<Cov CovItemId="S67" Value="2"/>
+<Cov CovItemId="S69" Value="2"/>
+<Cov CovItemId="S70" Value="2"/>
+<Cov CovItemId="S71" Value="2"/>
+<Cov CovItemId="S72" Value="2"/>
+<Cov CovItemId="S73" Value="2"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337135" Name="net.sf.jniinchi.TestExamples:testInchi2Structure">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -6744,7 +6839,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233609" Name="net.sf.jniinchi.TestExamples:testInchi2InchiKey">
+<TestCase Comment="" Date="1430167337136" Name="net.sf.jniinchi.TestExamples:testInchi2InchiKey">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY.java">
 <Cov CovItemId="S1" Value="7"/>
@@ -6777,7 +6872,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233611" Name="net.sf.jniinchi.TestExamples:testCheckInchi">
+<TestCase Comment="" Date="1430167337138" Name="net.sf.jniinchi.TestExamples:testCheckInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_STATUS.java">
 <Cov CovItemId="S1" Value="6"/>
@@ -6804,7 +6899,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233613" Name="net.sf.jniinchi.TestExamples:testCheckInchiKey">
+<TestCase Comment="" Date="1430167337139" Name="net.sf.jniinchi.TestExamples:testCheckInchiKey">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY_STATUS.java">
 <Cov CovItemId="S1" Value="5"/>
@@ -6831,7 +6926,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233615" Name="net.sf.jniinchi.TestExamples:testAuxinfo2Input">
+<TestCase Comment="" Date="1430167337141" Name="net.sf.jniinchi.TestExamples:testAuxinfo2Input">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S11" Value="1"/>
@@ -6918,102 +7013,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233616" Name="net.sf.jniinchi.TestExamples:testInchi2InchiHydrogen">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RET.java">
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInputInchi.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
-<Cov CovItemId="S117" Value="1"/>
-<Cov CovItemId="S118" Value="1"/>
-<Cov CovItemId="S24" Value="1"/>
-<Cov CovItemId="S28" Value="1"/>
-<Cov CovItemId="S67" Value="1"/>
-<Cov CovItemId="S69" Value="1"/>
-<Cov CovItemId="S70" Value="1"/>
-<Cov CovItemId="S71" Value="1"/>
-<Cov CovItemId="S72" Value="1"/>
-<Cov CovItemId="S73" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233616" Name="net.sf.jniinchi.TestExamples:testInchi2InchiCompress">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_OPTION.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="14"/>
-<Cov CovItemId="S3" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RET.java">
-<Cov CovItemId="S3" Value="2"/>
-<Cov CovItemId="S6" Value="2"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInputInchi.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S7" Value="2"/>
-<Cov CovItemId="S8" Value="2"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
-<Cov CovItemId="S1" Value="2"/>
-<Cov CovItemId="S2" Value="2"/>
-<Cov CovItemId="S3" Value="2"/>
-<Cov CovItemId="S4" Value="2"/>
-<Cov CovItemId="S5" Value="2"/>
-<Cov CovItemId="S6" Value="2"/>
-<Cov CovItemId="S8" Value="2"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
-<Cov CovItemId="S117" Value="2"/>
-<Cov CovItemId="S118" Value="2"/>
-<Cov CovItemId="S24" Value="2"/>
-<Cov CovItemId="S28" Value="2"/>
-<Cov CovItemId="S38" Value="1"/>
-<Cov CovItemId="S40" Value="1"/>
-<Cov CovItemId="S41" Value="1"/>
-<Cov CovItemId="S42" Value="1"/>
-<Cov CovItemId="S43" Value="1"/>
-<Cov CovItemId="S44" Value="1"/>
-<Cov CovItemId="S45" Value="1"/>
-<Cov CovItemId="S46" Value="1"/>
-<Cov CovItemId="S47" Value="1"/>
-<Cov CovItemId="S48" Value="1"/>
-<Cov CovItemId="S49" Value="1"/>
-<Cov CovItemId="S52" Value="1"/>
-<Cov CovItemId="S67" Value="2"/>
-<Cov CovItemId="S69" Value="2"/>
-<Cov CovItemId="S70" Value="2"/>
-<Cov CovItemId="S71" Value="2"/>
-<Cov CovItemId="S72" Value="2"/>
-<Cov CovItemId="S73" Value="2"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233618" Name="net.sf.jniinchi.TestExamples:testExampleStructure2InchiAlanine">
+<TestCase Comment="" Date="1430167337141" Name="net.sf.jniinchi.TestExamples:testExampleStructure2InchiAlanine">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="6"/>
@@ -7139,19 +7139,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233621" Name="net.sf.jniinchi.TestJniInchiInputInchi:testGetOptions">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInputInchi.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233621" Name="net.sf.jniinchi.TestJniInchiInputInchi:testGetInchi">
+<TestCase Comment="" Date="1430167337144" Name="net.sf.jniinchi.TestJniInchiInputInchi:testGetInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInputInchi.java">
 <Cov CovItemId="S1" Value="1"/>
@@ -7163,60 +7151,19 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233622" Name="net.sf.jniinchi.TestJniInchiOutputStructure:testGetReturnStatus">
+<TestCase Comment="" Date="1430167337144" Name="net.sf.jniinchi.TestJniInchiInputInchi:testGetOptions">
 <CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutputStructure.java">
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInputInchi.java">
 <Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
 <Cov CovItemId="S7" Value="1"/>
 </CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-</CovPrefix>
 </CovList>
 <AssgnmntList/>
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233622" Name="net.sf.jniinchi.TestJniInchiOutputStructure:testGetMessage">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutputStructure.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233622" Name="net.sf.jniinchi.TestJniInchiOutputStructure:testGetWarningFlags">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutputStructure.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233624" Name="net.sf.jniinchi.TestJniInchiOutputStructure:testGetLog">
+<TestCase Comment="" Date="1430167337145" Name="net.sf.jniinchi.TestJniInchiOutputStructure:testGetLog">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutputStructure.java">
 <Cov CovItemId="S1" Value="1"/>
@@ -7234,7 +7181,137 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233624" Name="net.sf.jniinchi.TestJniInchiStructure:testGetNumAtoms">
+<TestCase Comment="" Date="1430167337145" Name="net.sf.jniinchi.TestJniInchiOutputStructure:testGetReturnStatus">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutputStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337146" Name="net.sf.jniinchi.TestJniInchiOutputStructure:testGetMessage">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutputStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337146" Name="net.sf.jniinchi.TestJniInchiOutputStructure:testGetWarningFlags">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutputStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337147" Name="net.sf.jniinchi.TestJniInchiStructure:testGetBond">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S18" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337148" Name="net.sf.jniinchi.TestJniInchiStructure:testGetAtom">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S17" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337148" Name="net.sf.jniinchi.TestJniInchiStructure:testAddBond">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S5" Value="2"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337149" Name="net.sf.jniinchi.TestJniInchiStructure:testAddAtom">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7263,7 +7340,36 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233625" Name="net.sf.jniinchi.TestJniInchiStructure:testGetNumBonds">
+<TestCase Comment="" Date="1430167337149" Name="net.sf.jniinchi.TestJniInchiStructure:testGetNumAtoms">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="2"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337149" Name="net.sf.jniinchi.TestJniInchiStructure:testGetNumBonds">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
 <Cov CovItemId="S1" Value="1"/>
@@ -7287,7 +7393,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233625" Name="net.sf.jniinchi.TestJniInchiStructure:testGetNumStereo0D">
+<TestCase Comment="" Date="1430167337150" Name="net.sf.jniinchi.TestJniInchiStructure:testGetNumStereo0D">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="5"/>
@@ -7327,7 +7433,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233626" Name="net.sf.jniinchi.TestJniInchiStructure:testAddStereo0D">
+<TestCase Comment="" Date="1430167337150" Name="net.sf.jniinchi.TestJniInchiStructure:testAddStereo0D">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7353,7 +7459,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233626" Name="net.sf.jniinchi.TestJniInchiStructure:testGetStereo0D">
+<TestCase Comment="" Date="1430167337150" Name="net.sf.jniinchi.TestJniInchiStructure:testGetStereo0D">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7379,113 +7485,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233626" Name="net.sf.jniinchi.TestJniInchiStructure:testGetBond">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S18" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233627" Name="net.sf.jniinchi.TestJniInchiStructure:testGetAtom">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S17" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233627" Name="net.sf.jniinchi.TestJniInchiStructure:testAddBond">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S5" Value="2"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233627" Name="net.sf.jniinchi.TestJniInchiStructure:testAddAtom">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="2"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233628" Name="net.sf.jniinchi.TestJniInchiAtom:testSetImplictProtium">
+<TestCase Comment="" Date="1430167337151" Name="net.sf.jniinchi.TestJniInchiAtom:testSetImplictProtium">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7508,223 +7508,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233628" Name="net.sf.jniinchi.TestJniInchiAtom:testSetRadical">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S17" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S26" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233629" Name="net.sf.jniinchi.TestJniInchiAtom:testSetIsotopicMass">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S18" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S34" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233629" Name="net.sf.jniinchi.TestJniInchiAtom:testSetImplictH">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S20" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S30" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233630" Name="net.sf.jniinchi.TestJniInchiAtom:testJniInchiAtomConstructor">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S24" Value="1"/>
-<Cov CovItemId="S25" Value="1"/>
-<Cov CovItemId="S26" Value="1"/>
-<Cov CovItemId="S27" Value="1"/>
-<Cov CovItemId="S28" Value="1"/>
-<Cov CovItemId="S29" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S30" Value="1"/>
-<Cov CovItemId="S31" Value="1"/>
-<Cov CovItemId="S32" Value="1"/>
-<Cov CovItemId="S33" Value="1"/>
-<Cov CovItemId="S34" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233630" Name="net.sf.jniinchi.TestJniInchiAtom:testSetIsotopicMassShift">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S19" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S34" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233631" Name="net.sf.jniinchi.TestJniInchiAtom:testSetImplictDeuterium">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S22" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S32" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233631" Name="net.sf.jniinchi.TestJniInchiAtom:testGetImplicitProtium">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S21" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S31" Value="2"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233631" Name="net.sf.jniinchi.TestJniInchiAtom:testGetImplicitDeuterium">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S22" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S32" Value="2"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233632" Name="net.sf.jniinchi.TestJniInchiAtom:testGetImplicitTritium">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S11" Value="1"/>
-<Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S23" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S33" Value="2"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233632" Name="net.sf.jniinchi.TestJniInchiAtom:testSetCharge">
+<TestCase Comment="" Date="1430167337151" Name="net.sf.jniinchi.TestJniInchiAtom:testSetCharge">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7747,7 +7531,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233632" Name="net.sf.jniinchi.TestJniInchiAtom:testGetCharge">
+<TestCase Comment="" Date="1430167337151" Name="net.sf.jniinchi.TestJniInchiAtom:testGetCharge">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7770,7 +7554,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233632" Name="net.sf.jniinchi.TestJniInchiAtom:testGetX">
+<TestCase Comment="" Date="1430167337152" Name="net.sf.jniinchi.TestJniInchiAtom:testGetX">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7792,7 +7576,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233633" Name="net.sf.jniinchi.TestJniInchiAtom:testGetY">
+<TestCase Comment="" Date="1430167337152" Name="net.sf.jniinchi.TestJniInchiAtom:testGetY">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7814,7 +7598,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233633" Name="net.sf.jniinchi.TestJniInchiAtom:testGetZ">
+<TestCase Comment="" Date="1430167337152" Name="net.sf.jniinchi.TestJniInchiAtom:testGetZ">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7836,7 +7620,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233636" Name="net.sf.jniinchi.TestJniInchiAtom:testSetImplictTritium">
+<TestCase Comment="" Date="1430167337153" Name="net.sf.jniinchi.TestJniInchiAtom:testSetImplictTritium">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7859,7 +7643,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233637" Name="net.sf.jniinchi.TestJniInchiAtom:testGetElementType">
+<TestCase Comment="" Date="1430167337153" Name="net.sf.jniinchi.TestJniInchiAtom:testGetElementType">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7881,7 +7665,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233637" Name="net.sf.jniinchi.TestJniInchiAtom:testGetRadical">
+<TestCase Comment="" Date="1430167337153" Name="net.sf.jniinchi.TestJniInchiAtom:testGetRadical">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7904,7 +7688,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233637" Name="net.sf.jniinchi.TestJniInchiAtom:testGetImplicitH">
+<TestCase Comment="" Date="1430167337153" Name="net.sf.jniinchi.TestJniInchiAtom:testGetImplicitH">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7927,7 +7711,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233638" Name="net.sf.jniinchi.TestJniInchiAtom:testNullElementSymbol">
+<TestCase Comment="" Date="1430167337154" Name="net.sf.jniinchi.TestJniInchiAtom:testNullElementSymbol">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -7948,35 +7732,30 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233639" Name="net.sf.jniinchi.TestJniInchiBond:testJniInchiBondJniInchiAtomJniInchiAtomINCHI_BOND_TYPEINCHI_BOND_STEREO">
+<TestCase Comment="" Date="1430167337154" Name="net.sf.jniinchi.TestJniInchiAtom:testJniInchiAtomConstructor">
 <CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
-<Cov CovItemId="S1" Value="1"/>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
 <Cov CovItemId="S11" Value="1"/>
 <Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S13" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
 <Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S24" Value="1"/>
+<Cov CovItemId="S25" Value="1"/>
+<Cov CovItemId="S26" Value="1"/>
+<Cov CovItemId="S27" Value="1"/>
+<Cov CovItemId="S28" Value="1"/>
+<Cov CovItemId="S29" Value="1"/>
 <Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S30" Value="1"/>
+<Cov CovItemId="S31" Value="1"/>
+<Cov CovItemId="S32" Value="1"/>
+<Cov CovItemId="S33" Value="1"/>
+<Cov CovItemId="S34" Value="1"/>
 <Cov CovItemId="S4" Value="1"/>
 <Cov CovItemId="S5" Value="1"/>
 <Cov CovItemId="S6" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233639" Name="net.sf.jniinchi.TestJniInchiBond:testSetStereoDefinition">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S13" Value="2"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
 <Cov CovItemId="S8" Value="1"/>
 <Cov CovItemId="S9" Value="1"/>
 </CovPrefix>
@@ -7985,27 +7764,191 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233640" Name="net.sf.jniinchi.TestJniInchiBond:testJniInchiBondJniInchiAtomJniInchiAtomINCHI_BOND_TYPE">
+<TestCase Comment="" Date="1430167337154" Name="net.sf.jniinchi.TestJniInchiAtom:testSetIsotopicMassShift">
 <CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
-<Cov CovItemId="S1" Value="1"/>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="1"/>
 <Cov CovItemId="S11" Value="1"/>
 <Cov CovItemId="S12" Value="1"/>
-<Cov CovItemId="S13" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S19" Value="1"/>
 <Cov CovItemId="S2" Value="1"/>
 <Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S34" Value="1"/>
 <Cov CovItemId="S4" Value="1"/>
 <Cov CovItemId="S5" Value="1"/>
 <Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
 <Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
 </CovPrefix>
 </CovList>
 <AssgnmntList/>
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233640" Name="net.sf.jniinchi.TestJniInchiBond:testGetOriginAtom">
+<TestCase Comment="" Date="1430167337155" Name="net.sf.jniinchi.TestJniInchiAtom:testSetImplictDeuterium">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S22" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S32" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337155" Name="net.sf.jniinchi.TestJniInchiAtom:testGetImplicitProtium">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S21" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S31" Value="2"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337158" Name="net.sf.jniinchi.TestJniInchiAtom:testGetImplicitDeuterium">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S22" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S32" Value="2"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337158" Name="net.sf.jniinchi.TestJniInchiAtom:testGetImplicitTritium">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S23" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S33" Value="2"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337159" Name="net.sf.jniinchi.TestJniInchiAtom:testSetRadical">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S17" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S26" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337159" Name="net.sf.jniinchi.TestJniInchiAtom:testSetIsotopicMass">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S18" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S34" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337159" Name="net.sf.jniinchi.TestJniInchiAtom:testSetImplictH">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S20" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S30" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337161" Name="net.sf.jniinchi.TestJniInchiBond:testGetOriginAtom">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
 <Cov CovItemId="S1" Value="2"/>
@@ -8022,7 +7965,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233640" Name="net.sf.jniinchi.TestJniInchiBond:testGetTargetAtom">
+<TestCase Comment="" Date="1430167337161" Name="net.sf.jniinchi.TestJniInchiBond:testGetTargetAtom">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
 <Cov CovItemId="S1" Value="2"/>
@@ -8039,7 +7982,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233641" Name="net.sf.jniinchi.TestJniInchiBond:testGetBondType">
+<TestCase Comment="" Date="1430167337162" Name="net.sf.jniinchi.TestJniInchiBond:testGetBondType">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
 <Cov CovItemId="S1" Value="2"/>
@@ -8056,7 +7999,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233641" Name="net.sf.jniinchi.TestJniInchiBond:testGetBondStereo">
+<TestCase Comment="" Date="1430167337162" Name="net.sf.jniinchi.TestJniInchiBond:testGetBondStereo">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
 <Cov CovItemId="S1" Value="2"/>
@@ -8072,40 +8015,14 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233641" Name="net.sf.jniinchi.TestJniInchiOutput:testGetReturnStatus">
+<TestCase Comment="" Date="1430167337162" Name="net.sf.jniinchi.TestJniInchiBond:testJniInchiBondJniInchiAtomJniInchiAtomINCHI_BOND_TYPEINCHI_BOND_STEREO">
 <CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233642" Name="net.sf.jniinchi.TestJniInchiOutput:testGetMessage">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
+<Cov CovItemId="S1" Value="1"/>
 <Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233642" Name="net.sf.jniinchi.TestJniInchiOutput:testGetLog">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
 <Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S13" Value="1"/>
 <Cov CovItemId="S2" Value="1"/>
 <Cov CovItemId="S3" Value="1"/>
 <Cov CovItemId="S4" Value="1"/>
@@ -8117,9 +8034,14 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233642" Name="net.sf.jniinchi.TestJniInchiOutput:testGetInchi">
+<TestCase Comment="" Date="1430167337163" Name="net.sf.jniinchi.TestJniInchiBond:testJniInchiBondJniInchiAtomJniInchiAtomINCHI_BOND_TYPE">
 <CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S12" Value="1"/>
+<Cov CovItemId="S13" Value="1"/>
 <Cov CovItemId="S2" Value="1"/>
 <Cov CovItemId="S3" Value="1"/>
 <Cov CovItemId="S4" Value="1"/>
@@ -8132,7 +8054,25 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233642" Name="net.sf.jniinchi.TestJniInchiOutput:testGetAuxInfo">
+<TestCase Comment="" Date="1430167337163" Name="net.sf.jniinchi.TestJniInchiBond:testSetStereoDefinition">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S13" Value="2"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337163" Name="net.sf.jniinchi.TestJniInchiOutput:testGetAuxInfo">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -8147,7 +8087,165 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233643" Name="net.sf.jniinchi.TestJniInchiStereo0D:testSetDisconnectedParity">
+<TestCase Comment="" Date="1430167337164" Name="net.sf.jniinchi.TestJniInchiOutput:testGetLog">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
+<Cov CovItemId="S11" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337164" Name="net.sf.jniinchi.TestJniInchiOutput:testGetInchi">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337164" Name="net.sf.jniinchi.TestJniInchiOutput:testGetReturnStatus">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337164" Name="net.sf.jniinchi.TestJniInchiOutput:testGetMessage">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337165" Name="net.sf.jniinchi.TestJniInchiStereo0D:testGetParity">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
+<Cov CovItemId="S10" Value="2"/>
+<Cov CovItemId="S16" Value="2"/>
+<Cov CovItemId="S2" Value="2"/>
+<Cov CovItemId="S3" Value="2"/>
+<Cov CovItemId="S4" Value="2"/>
+<Cov CovItemId="S5" Value="2"/>
+<Cov CovItemId="S6" Value="2"/>
+<Cov CovItemId="S7" Value="2"/>
+<Cov CovItemId="S8" Value="2"/>
+<Cov CovItemId="S9" Value="2"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337165" Name="net.sf.jniinchi.TestJniInchiStereo0D:testJniInchiStereo0D">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S13" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S16" Value="1"/>
+<Cov CovItemId="S18" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337166" Name="net.sf.jniinchi.TestJniInchiStereo0D:testGetCentralAtom">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
+<Cov CovItemId="S10" Value="2"/>
+<Cov CovItemId="S13" Value="2"/>
+<Cov CovItemId="S2" Value="2"/>
+<Cov CovItemId="S3" Value="2"/>
+<Cov CovItemId="S4" Value="2"/>
+<Cov CovItemId="S5" Value="2"/>
+<Cov CovItemId="S6" Value="2"/>
+<Cov CovItemId="S7" Value="2"/>
+<Cov CovItemId="S8" Value="2"/>
+<Cov CovItemId="S9" Value="2"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337166" Name="net.sf.jniinchi.TestJniInchiStereo0D:testGetNeighbors">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
+<Cov CovItemId="S10" Value="1"/>
+<Cov CovItemId="S14" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337166" Name="net.sf.jniinchi.TestJniInchiStereo0D:testGetStereoType">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
+<Cov CovItemId="S10" Value="2"/>
+<Cov CovItemId="S18" Value="2"/>
+<Cov CovItemId="S2" Value="2"/>
+<Cov CovItemId="S3" Value="2"/>
+<Cov CovItemId="S4" Value="2"/>
+<Cov CovItemId="S5" Value="2"/>
+<Cov CovItemId="S6" Value="2"/>
+<Cov CovItemId="S7" Value="2"/>
+<Cov CovItemId="S8" Value="2"/>
+<Cov CovItemId="S9" Value="2"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337166" Name="net.sf.jniinchi.TestJniInchiStereo0D:testSetDisconnectedParity">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
 <Cov CovItemId="S10" Value="1"/>
@@ -8167,105 +8265,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233643" Name="net.sf.jniinchi.TestJniInchiStereo0D:testGetParity">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
-<Cov CovItemId="S10" Value="2"/>
-<Cov CovItemId="S16" Value="2"/>
-<Cov CovItemId="S2" Value="2"/>
-<Cov CovItemId="S3" Value="2"/>
-<Cov CovItemId="S4" Value="2"/>
-<Cov CovItemId="S5" Value="2"/>
-<Cov CovItemId="S6" Value="2"/>
-<Cov CovItemId="S7" Value="2"/>
-<Cov CovItemId="S8" Value="2"/>
-<Cov CovItemId="S9" Value="2"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233644" Name="net.sf.jniinchi.TestJniInchiStereo0D:testJniInchiStereo0D">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S13" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S16" Value="1"/>
-<Cov CovItemId="S18" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233644" Name="net.sf.jniinchi.TestJniInchiStereo0D:testGetCentralAtom">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
-<Cov CovItemId="S10" Value="2"/>
-<Cov CovItemId="S13" Value="2"/>
-<Cov CovItemId="S2" Value="2"/>
-<Cov CovItemId="S3" Value="2"/>
-<Cov CovItemId="S4" Value="2"/>
-<Cov CovItemId="S5" Value="2"/>
-<Cov CovItemId="S6" Value="2"/>
-<Cov CovItemId="S7" Value="2"/>
-<Cov CovItemId="S8" Value="2"/>
-<Cov CovItemId="S9" Value="2"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233644" Name="net.sf.jniinchi.TestJniInchiStereo0D:testGetNeighbors">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
-<Cov CovItemId="S10" Value="1"/>
-<Cov CovItemId="S14" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233644" Name="net.sf.jniinchi.TestJniInchiStereo0D:testGetStereoType">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStereo0D.java">
-<Cov CovItemId="S10" Value="2"/>
-<Cov CovItemId="S18" Value="2"/>
-<Cov CovItemId="S2" Value="2"/>
-<Cov CovItemId="S3" Value="2"/>
-<Cov CovItemId="S4" Value="2"/>
-<Cov CovItemId="S5" Value="2"/>
-<Cov CovItemId="S6" Value="2"/>
-<Cov CovItemId="S7" Value="2"/>
-<Cov CovItemId="S8" Value="2"/>
-<Cov CovItemId="S9" Value="2"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233646" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromHydrogenChlorideImplicitH">
+<TestCase Comment="" Date="1430167337168" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromHydrogenChlorideImplicitH">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -8347,7 +8347,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233646" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromHydrogenChlorideImplicitP">
+<TestCase Comment="" Date="1430167337168" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromHydrogenChlorideImplicitP">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -8429,7 +8429,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233647" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromHydrogenChlorideImplicitD">
+<TestCase Comment="" Date="1430167337169" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromHydrogenChlorideImplicitD">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -8511,7 +8511,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233647" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromHydrogenChlorideImplicitT">
+<TestCase Comment="" Date="1430167337169" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromHydrogenChlorideImplicitT">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -8593,7 +8593,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233648" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetHydrogenChlorideImplicitHFromInchi">
+<TestCase Comment="" Date="1430167337170" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetHydrogenChlorideImplicitHFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -8671,7 +8671,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233648" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetHydrogenChlorideImplicitPFromInchi">
+<TestCase Comment="" Date="1430167337170" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetHydrogenChlorideImplicitPFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -8749,7 +8749,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233649" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetHydrogenChlorideImplicitDFromInchi">
+<TestCase Comment="" Date="1430167337171" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetHydrogenChlorideImplicitDFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -8827,7 +8827,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233649" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetHydrogenChlorideImplicitTFromInchi">
+<TestCase Comment="" Date="1430167337172" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetHydrogenChlorideImplicitTFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -8905,7 +8905,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233650" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetEandZ12Dichloroethene0DFromInchi">
+<TestCase Comment="" Date="1430167337172" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetEandZ12Dichloroethene0DFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S3" Value="13"/>
@@ -9031,7 +9031,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233651" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInputFromAuxInfoE12DiChloroEthane">
+<TestCase Comment="" Date="1430167337173" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInputFromAuxInfoE12DiChloroEthane">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S3" Value="3"/>
@@ -9148,7 +9148,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233651" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromChlorine37ByIstopicMassShiftAtom">
+<TestCase Comment="" Date="1430167337174" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromChlorine37ByIstopicMassShiftAtom">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -9231,7 +9231,23 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233652" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromChlorine37Atom">
+<TestCase Comment="" Date="1430167337174" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckOptionsList">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
+<Cov CovItemId="S29" Value="1"/>
+<Cov CovItemId="S31" Value="1"/>
+<Cov CovItemId="S32" Value="1"/>
+<Cov CovItemId="S33" Value="2"/>
+<Cov CovItemId="S34" Value="2"/>
+<Cov CovItemId="S35" Value="2"/>
+<Cov CovItemId="S37" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337174" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromChlorine37Atom">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -9314,7 +9330,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233652" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromSodiumHydroxide">
+<TestCase Comment="" Date="1430167337175" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromSodiumHydroxide">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -9420,7 +9436,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233653" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiEandZ12Dichloroethene2D">
+<TestCase Comment="" Date="1430167337175" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiEandZ12Dichloroethene2D">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="6"/>
@@ -9525,7 +9541,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233653" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromLandDAlanine3D">
+<TestCase Comment="" Date="1430167337176" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromLandDAlanine3D">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="10"/>
@@ -9630,7 +9646,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233655" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiStereoBondDirection1">
+<TestCase Comment="" Date="1430167337177" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiStereoBondDirection1">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="5"/>
@@ -9736,7 +9752,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233655" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiStereoBondDirection2">
+<TestCase Comment="" Date="1430167337178" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiStereoBondDirection2">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="5"/>
@@ -9842,7 +9858,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233656" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromLandDAlanine0D">
+<TestCase Comment="" Date="1430167337178" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromLandDAlanine0D">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="18"/>
@@ -9975,7 +9991,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233657" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiEandZ12Dichloroethene0D">
+<TestCase Comment="" Date="1430167337181" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiEandZ12Dichloroethene0D">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="9"/>
@@ -10108,7 +10124,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233659" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetChargeFromSodiumHydroxide">
+<TestCase Comment="" Date="1430167337181" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetChargeFromSodiumHydroxide">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S3" Value="2"/>
@@ -10186,7 +10202,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233659" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetChlorine37AtomFromInchi">
+<TestCase Comment="" Date="1430167337182" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetChlorine37AtomFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -10264,7 +10280,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233660" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetLandDAlanine0DFromInchi">
+<TestCase Comment="" Date="1430167337183" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetLandDAlanine0DFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S3" Value="17"/>
@@ -10390,7 +10406,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233661" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiKeyInputInvalidPrefix">
+<TestCase Comment="" Date="1430167337184" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiKeyInputInvalidPrefix">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -10421,7 +10437,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233662" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiKeyInputInvalidInchi">
+<TestCase Comment="" Date="1430167337184" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiKeyInputInvalidInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -10452,13 +10468,13 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233663" Name="net.sf.jniinchi.TestJniInchiWrapper:@Ignore: testGetInchiKeyInputInvalidInchi1">
+<TestCase Comment="" Date="1430167337186" Name="net.sf.jniinchi.TestJniInchiWrapper:@Ignore: testGetInchiKeyInputInvalidInchi1">
 <CovList/>
 <AssgnmntList/>
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233663" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyInvalidLengthLong">
+<TestCase Comment="" Date="1430167337186" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyInvalidLengthLong">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY_STATUS.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -10484,7 +10500,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233664" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyInvalidLengthShort">
+<TestCase Comment="" Date="1430167337186" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyInvalidLengthShort">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY_STATUS.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -10510,7 +10526,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233664" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyInvalidLayout">
+<TestCase Comment="" Date="1430167337186" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyInvalidLayout">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY_STATUS.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -10536,7 +10552,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233664" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyInvalidVersion">
+<TestCase Comment="" Date="1430167337187" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyInvalidVersion">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY_STATUS.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -10562,7 +10578,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233665" Name="net.sf.jniinchi.TestJniInchiWrapper:testStructureToInchiBug2085031a">
+<TestCase Comment="" Date="1430167337187" Name="net.sf.jniinchi.TestJniInchiWrapper:testStructureToInchiBug2085031a">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S3" Value="33"/>
@@ -10656,7 +10672,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233666" Name="net.sf.jniinchi.TestJniInchiWrapper:testStructureToInchiBug2085031b">
+<TestCase Comment="" Date="1430167337188" Name="net.sf.jniinchi.TestJniInchiWrapper:testStructureToInchiBug2085031b">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RET.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -10702,7 +10718,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233667" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInputFromAuxInfoLAlanine3D">
+<TestCase Comment="" Date="1430167337188" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInputFromAuxInfoLAlanine3D">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S3" Value="5"/>
@@ -10795,7 +10811,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233667" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromChlorineAtom">
+<TestCase Comment="" Date="1430167337189" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromChlorineAtom">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -10877,7 +10893,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233668" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromChlorineIon">
+<TestCase Comment="" Date="1430167337190" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromChlorineIon">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -10960,7 +10976,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233668" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromMethylRadical">
+<TestCase Comment="" Date="1430167337190" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromMethylRadical">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -11043,7 +11059,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233669" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromEthane">
+<TestCase Comment="" Date="1430167337191" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromEthane">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -11148,7 +11164,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233669" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromEthene">
+<TestCase Comment="" Date="1430167337191" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromEthene">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -11253,7 +11269,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233670" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromEthyne">
+<TestCase Comment="" Date="1430167337191" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromEthyne">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="1"/>
@@ -11358,7 +11374,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233670" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromAlanine2D">
+<TestCase Comment="" Date="1430167337192" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromAlanine2D">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="5"/>
@@ -11464,113 +11480,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233671" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromLAlanine2D">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
-<Cov CovItemId="S2" Value="5"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_TYPE.java">
-<Cov CovItemId="S2" Value="5"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
-<Cov CovItemId="S2" Value="6"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RET.java">
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="6"/>
-<Cov CovItemId="S11" Value="6"/>
-<Cov CovItemId="S12" Value="6"/>
-<Cov CovItemId="S14" Value="6"/>
-<Cov CovItemId="S2" Value="6"/>
-<Cov CovItemId="S20" Value="4"/>
-<Cov CovItemId="S24" Value="6"/>
-<Cov CovItemId="S25" Value="6"/>
-<Cov CovItemId="S27" Value="6"/>
-<Cov CovItemId="S28" Value="6"/>
-<Cov CovItemId="S29" Value="6"/>
-<Cov CovItemId="S3" Value="6"/>
-<Cov CovItemId="S30" Value="6"/>
-<Cov CovItemId="S31" Value="6"/>
-<Cov CovItemId="S32" Value="6"/>
-<Cov CovItemId="S33" Value="6"/>
-<Cov CovItemId="S34" Value="6"/>
-<Cov CovItemId="S35" Value="6"/>
-<Cov CovItemId="S4" Value="6"/>
-<Cov CovItemId="S5" Value="6"/>
-<Cov CovItemId="S6" Value="6"/>
-<Cov CovItemId="S7" Value="6"/>
-<Cov CovItemId="S8" Value="6"/>
-<Cov CovItemId="S9" Value="6"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
-<Cov CovItemId="S1" Value="5"/>
-<Cov CovItemId="S10" Value="5"/>
-<Cov CovItemId="S11" Value="5"/>
-<Cov CovItemId="S16" Value="5"/>
-<Cov CovItemId="S17" Value="5"/>
-<Cov CovItemId="S2" Value="5"/>
-<Cov CovItemId="S3" Value="5"/>
-<Cov CovItemId="S4" Value="5"/>
-<Cov CovItemId="S5" Value="5"/>
-<Cov CovItemId="S6" Value="5"/>
-<Cov CovItemId="S8" Value="5"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInput.java">
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S11" Value="5"/>
-<Cov CovItemId="S12" Value="5"/>
-<Cov CovItemId="S17" Value="6"/>
-<Cov CovItemId="S18" Value="5"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S23" Value="10"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="6"/>
-<Cov CovItemId="S8" Value="6"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
-<Cov CovItemId="S117" Value="1"/>
-<Cov CovItemId="S118" Value="1"/>
-<Cov CovItemId="S24" Value="1"/>
-<Cov CovItemId="S28" Value="1"/>
-<Cov CovItemId="S38" Value="1"/>
-<Cov CovItemId="S40" Value="1"/>
-<Cov CovItemId="S41" Value="1"/>
-<Cov CovItemId="S42" Value="1"/>
-<Cov CovItemId="S52" Value="1"/>
-<Cov CovItemId="S53" Value="1"/>
-<Cov CovItemId="S55" Value="1"/>
-<Cov CovItemId="S56" Value="1"/>
-<Cov CovItemId="S57" Value="1"/>
-<Cov CovItemId="S58" Value="1"/>
-<Cov CovItemId="S59" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233671" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromDAlanine2D">
+<TestCase Comment="" Date="1430167337192" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromLAlanine2D">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="5"/>
@@ -11676,7 +11586,113 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233672" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromNSC7414a">
+<TestCase Comment="" Date="1430167337193" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromDAlanine2D">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
+<Cov CovItemId="S2" Value="5"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_TYPE.java">
+<Cov CovItemId="S2" Value="5"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
+<Cov CovItemId="S2" Value="6"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RET.java">
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
+<Cov CovItemId="S10" Value="6"/>
+<Cov CovItemId="S11" Value="6"/>
+<Cov CovItemId="S12" Value="6"/>
+<Cov CovItemId="S14" Value="6"/>
+<Cov CovItemId="S2" Value="6"/>
+<Cov CovItemId="S20" Value="4"/>
+<Cov CovItemId="S24" Value="6"/>
+<Cov CovItemId="S25" Value="6"/>
+<Cov CovItemId="S27" Value="6"/>
+<Cov CovItemId="S28" Value="6"/>
+<Cov CovItemId="S29" Value="6"/>
+<Cov CovItemId="S3" Value="6"/>
+<Cov CovItemId="S30" Value="6"/>
+<Cov CovItemId="S31" Value="6"/>
+<Cov CovItemId="S32" Value="6"/>
+<Cov CovItemId="S33" Value="6"/>
+<Cov CovItemId="S34" Value="6"/>
+<Cov CovItemId="S35" Value="6"/>
+<Cov CovItemId="S4" Value="6"/>
+<Cov CovItemId="S5" Value="6"/>
+<Cov CovItemId="S6" Value="6"/>
+<Cov CovItemId="S7" Value="6"/>
+<Cov CovItemId="S8" Value="6"/>
+<Cov CovItemId="S9" Value="6"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
+<Cov CovItemId="S1" Value="5"/>
+<Cov CovItemId="S10" Value="5"/>
+<Cov CovItemId="S11" Value="5"/>
+<Cov CovItemId="S16" Value="5"/>
+<Cov CovItemId="S17" Value="5"/>
+<Cov CovItemId="S2" Value="5"/>
+<Cov CovItemId="S3" Value="5"/>
+<Cov CovItemId="S4" Value="5"/>
+<Cov CovItemId="S5" Value="5"/>
+<Cov CovItemId="S6" Value="5"/>
+<Cov CovItemId="S8" Value="5"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInput.java">
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S11" Value="5"/>
+<Cov CovItemId="S12" Value="5"/>
+<Cov CovItemId="S17" Value="6"/>
+<Cov CovItemId="S18" Value="5"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S23" Value="10"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="6"/>
+<Cov CovItemId="S8" Value="6"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
+<Cov CovItemId="S117" Value="1"/>
+<Cov CovItemId="S118" Value="1"/>
+<Cov CovItemId="S24" Value="1"/>
+<Cov CovItemId="S28" Value="1"/>
+<Cov CovItemId="S38" Value="1"/>
+<Cov CovItemId="S40" Value="1"/>
+<Cov CovItemId="S41" Value="1"/>
+<Cov CovItemId="S42" Value="1"/>
+<Cov CovItemId="S52" Value="1"/>
+<Cov CovItemId="S53" Value="1"/>
+<Cov CovItemId="S55" Value="1"/>
+<Cov CovItemId="S56" Value="1"/>
+<Cov CovItemId="S57" Value="1"/>
+<Cov CovItemId="S58" Value="1"/>
+<Cov CovItemId="S59" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337194" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromNSC7414a">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="11"/>
@@ -11782,7 +11798,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233673" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckOptionsString">
+<TestCase Comment="" Date="1430167337194" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckOptionsString">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_OPTION.java">
 <Cov CovItemId="S1" Value="2"/>
@@ -11809,7 +11825,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233673" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetChlorineAtomFromInchi">
+<TestCase Comment="" Date="1430167337195" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetChlorineAtomFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -11887,210 +11903,90 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233674" Name="net.sf.jniinchi.TestJniInchiWrapper:@Ignore: testGetMethylRadicalFromInchi">
+<TestCase Comment="" Date="1430167337195" Name="net.sf.jniinchi.TestJniInchiWrapper:@Ignore: testGetMethylRadicalFromInchi">
 <CovList/>
 <AssgnmntList/>
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150233674" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckOptionsList">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
-<Cov CovItemId="S29" Value="1"/>
-<Cov CovItemId="S31" Value="1"/>
-<Cov CovItemId="S32" Value="1"/>
-<Cov CovItemId="S33" Value="2"/>
-<Cov CovItemId="S34" Value="2"/>
-<Cov CovItemId="S35" Value="2"/>
-<Cov CovItemId="S37" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233674" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromBenzeneNonKekule">
-<CovList>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
-<Cov CovItemId="S2" Value="6"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_TYPE.java">
-<Cov CovItemId="S2" Value="6"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
-<Cov CovItemId="S2" Value="6"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RET.java">
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="6"/>
-<Cov CovItemId="S11" Value="6"/>
-<Cov CovItemId="S12" Value="6"/>
-<Cov CovItemId="S14" Value="6"/>
-<Cov CovItemId="S15" Value="6"/>
-<Cov CovItemId="S2" Value="6"/>
-<Cov CovItemId="S24" Value="6"/>
-<Cov CovItemId="S25" Value="6"/>
-<Cov CovItemId="S27" Value="6"/>
-<Cov CovItemId="S28" Value="6"/>
-<Cov CovItemId="S29" Value="6"/>
-<Cov CovItemId="S3" Value="6"/>
-<Cov CovItemId="S30" Value="6"/>
-<Cov CovItemId="S31" Value="6"/>
-<Cov CovItemId="S32" Value="6"/>
-<Cov CovItemId="S33" Value="6"/>
-<Cov CovItemId="S34" Value="6"/>
-<Cov CovItemId="S35" Value="6"/>
-<Cov CovItemId="S4" Value="6"/>
-<Cov CovItemId="S5" Value="6"/>
-<Cov CovItemId="S6" Value="6"/>
-<Cov CovItemId="S7" Value="6"/>
-<Cov CovItemId="S8" Value="6"/>
-<Cov CovItemId="S9" Value="6"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
-<Cov CovItemId="S1" Value="6"/>
-<Cov CovItemId="S10" Value="6"/>
-<Cov CovItemId="S11" Value="6"/>
-<Cov CovItemId="S16" Value="6"/>
-<Cov CovItemId="S17" Value="6"/>
-<Cov CovItemId="S2" Value="6"/>
-<Cov CovItemId="S3" Value="6"/>
-<Cov CovItemId="S4" Value="6"/>
-<Cov CovItemId="S5" Value="6"/>
-<Cov CovItemId="S6" Value="6"/>
-<Cov CovItemId="S8" Value="6"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInput.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="1"/>
-<Cov CovItemId="S8" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
-<Cov CovItemId="S1" Value="1"/>
-<Cov CovItemId="S10" Value="6"/>
-<Cov CovItemId="S11" Value="6"/>
-<Cov CovItemId="S12" Value="6"/>
-<Cov CovItemId="S13" Value="1"/>
-<Cov CovItemId="S14" Value="6"/>
-<Cov CovItemId="S17" Value="18"/>
-<Cov CovItemId="S18" Value="6"/>
-<Cov CovItemId="S2" Value="1"/>
-<Cov CovItemId="S23" Value="12"/>
-<Cov CovItemId="S3" Value="1"/>
-<Cov CovItemId="S4" Value="1"/>
-<Cov CovItemId="S5" Value="1"/>
-<Cov CovItemId="S6" Value="1"/>
-<Cov CovItemId="S7" Value="6"/>
-<Cov CovItemId="S8" Value="6"/>
-<Cov CovItemId="S9" Value="1"/>
-</CovPrefix>
-<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
-<Cov CovItemId="S117" Value="1"/>
-<Cov CovItemId="S118" Value="1"/>
-<Cov CovItemId="S24" Value="1"/>
-<Cov CovItemId="S28" Value="1"/>
-<Cov CovItemId="S53" Value="1"/>
-<Cov CovItemId="S55" Value="1"/>
-<Cov CovItemId="S56" Value="1"/>
-<Cov CovItemId="S57" Value="1"/>
-<Cov CovItemId="S58" Value="1"/>
-<Cov CovItemId="S59" Value="1"/>
-</CovPrefix>
-</CovList>
-<AssgnmntList/>
-<ObjMetaDataList/>
-<MetaDataList/>
-</TestCase>
-<TestCase Comment="" Date="1430150233675" Name="net.sf.jniinchi.TestJniInchiWrapper:multithreading">
+<TestCase Comment="" Date="1430167337195" Name="net.sf.jniinchi.TestJniInchiWrapper:multithreading">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
-<Cov CovItemId="S2" Value="4257"/>
+<Cov CovItemId="S2" Value="3961"/>
 </CovPrefix>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RET.java">
-<Cov CovItemId="S3" Value="4257"/>
-<Cov CovItemId="S6" Value="4257"/>
+<Cov CovItemId="S3" Value="3961"/>
+<Cov CovItemId="S6" Value="3961"/>
 </CovPrefix>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
-<Cov CovItemId="S10" Value="4257"/>
-<Cov CovItemId="S11" Value="4257"/>
-<Cov CovItemId="S12" Value="4257"/>
-<Cov CovItemId="S14" Value="4257"/>
-<Cov CovItemId="S2" Value="4257"/>
-<Cov CovItemId="S20" Value="4257"/>
-<Cov CovItemId="S24" Value="4257"/>
-<Cov CovItemId="S25" Value="4257"/>
-<Cov CovItemId="S27" Value="4257"/>
-<Cov CovItemId="S28" Value="4257"/>
-<Cov CovItemId="S29" Value="4257"/>
-<Cov CovItemId="S3" Value="4257"/>
-<Cov CovItemId="S30" Value="4257"/>
-<Cov CovItemId="S31" Value="4257"/>
-<Cov CovItemId="S32" Value="4257"/>
-<Cov CovItemId="S33" Value="4257"/>
-<Cov CovItemId="S34" Value="4257"/>
-<Cov CovItemId="S35" Value="4257"/>
-<Cov CovItemId="S4" Value="4257"/>
-<Cov CovItemId="S5" Value="4257"/>
-<Cov CovItemId="S6" Value="4257"/>
-<Cov CovItemId="S7" Value="4257"/>
-<Cov CovItemId="S8" Value="4257"/>
-<Cov CovItemId="S9" Value="4257"/>
+<Cov CovItemId="S10" Value="3961"/>
+<Cov CovItemId="S11" Value="3961"/>
+<Cov CovItemId="S12" Value="3961"/>
+<Cov CovItemId="S14" Value="3961"/>
+<Cov CovItemId="S2" Value="3961"/>
+<Cov CovItemId="S20" Value="3961"/>
+<Cov CovItemId="S24" Value="3961"/>
+<Cov CovItemId="S25" Value="3961"/>
+<Cov CovItemId="S27" Value="3961"/>
+<Cov CovItemId="S28" Value="3961"/>
+<Cov CovItemId="S29" Value="3961"/>
+<Cov CovItemId="S3" Value="3961"/>
+<Cov CovItemId="S30" Value="3961"/>
+<Cov CovItemId="S31" Value="3961"/>
+<Cov CovItemId="S32" Value="3961"/>
+<Cov CovItemId="S33" Value="3961"/>
+<Cov CovItemId="S34" Value="3961"/>
+<Cov CovItemId="S35" Value="3961"/>
+<Cov CovItemId="S4" Value="3961"/>
+<Cov CovItemId="S5" Value="3961"/>
+<Cov CovItemId="S6" Value="3961"/>
+<Cov CovItemId="S7" Value="3961"/>
+<Cov CovItemId="S8" Value="3961"/>
+<Cov CovItemId="S9" Value="3961"/>
 </CovPrefix>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInput.java">
-<Cov CovItemId="S1" Value="4257"/>
-<Cov CovItemId="S8" Value="4257"/>
+<Cov CovItemId="S1" Value="3961"/>
+<Cov CovItemId="S8" Value="3961"/>
 </CovPrefix>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
-<Cov CovItemId="S1" Value="4257"/>
-<Cov CovItemId="S2" Value="4257"/>
-<Cov CovItemId="S3" Value="4257"/>
-<Cov CovItemId="S4" Value="4257"/>
-<Cov CovItemId="S5" Value="4257"/>
-<Cov CovItemId="S6" Value="4257"/>
-<Cov CovItemId="S7" Value="4257"/>
-<Cov CovItemId="S8" Value="4257"/>
+<Cov CovItemId="S1" Value="3961"/>
+<Cov CovItemId="S2" Value="3961"/>
+<Cov CovItemId="S3" Value="3961"/>
+<Cov CovItemId="S4" Value="3961"/>
+<Cov CovItemId="S5" Value="3961"/>
+<Cov CovItemId="S6" Value="3961"/>
+<Cov CovItemId="S7" Value="3961"/>
+<Cov CovItemId="S8" Value="3961"/>
 </CovPrefix>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
-<Cov CovItemId="S1" Value="4257"/>
-<Cov CovItemId="S17" Value="8509"/>
-<Cov CovItemId="S2" Value="4257"/>
-<Cov CovItemId="S3" Value="4257"/>
-<Cov CovItemId="S4" Value="4257"/>
-<Cov CovItemId="S5" Value="4257"/>
-<Cov CovItemId="S6" Value="4257"/>
-<Cov CovItemId="S7" Value="4257"/>
-<Cov CovItemId="S8" Value="4257"/>
+<Cov CovItemId="S1" Value="3961"/>
+<Cov CovItemId="S17" Value="7919"/>
+<Cov CovItemId="S2" Value="3961"/>
+<Cov CovItemId="S3" Value="3961"/>
+<Cov CovItemId="S4" Value="3961"/>
+<Cov CovItemId="S5" Value="3961"/>
+<Cov CovItemId="S6" Value="3961"/>
+<Cov CovItemId="S7" Value="3961"/>
+<Cov CovItemId="S8" Value="3961"/>
 </CovPrefix>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
-<Cov CovItemId="S117" Value="4257"/>
-<Cov CovItemId="S118" Value="4257"/>
-<Cov CovItemId="S24" Value="4257"/>
-<Cov CovItemId="S28" Value="4257"/>
-<Cov CovItemId="S53" Value="4257"/>
-<Cov CovItemId="S55" Value="4257"/>
-<Cov CovItemId="S56" Value="4256"/>
-<Cov CovItemId="S57" Value="4257"/>
-<Cov CovItemId="S58" Value="4257"/>
-<Cov CovItemId="S59" Value="4257"/>
+<Cov CovItemId="S117" Value="3961"/>
+<Cov CovItemId="S118" Value="3961"/>
+<Cov CovItemId="S24" Value="3961"/>
+<Cov CovItemId="S28" Value="3961"/>
+<Cov CovItemId="S53" Value="3961"/>
+<Cov CovItemId="S55" Value="3961"/>
+<Cov CovItemId="S56" Value="3960"/>
+<Cov CovItemId="S57" Value="3961"/>
+<Cov CovItemId="S58" Value="3961"/>
+<Cov CovItemId="S59" Value="3961"/>
 </CovPrefix>
 </CovList>
 <AssgnmntList/>
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234178" Name="net.sf.jniinchi.TestJniInchiWrapper:testTooManyAtoms">
+<TestCase Comment="" Date="1430167337696" Name="net.sf.jniinchi.TestJniInchiWrapper:testTooManyAtoms">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
 <Cov CovItemId="S10" Value="2000"/>
@@ -12136,7 +12032,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234179" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetStdInchi">
+<TestCase Comment="" Date="1430167337697" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetStdInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="6"/>
@@ -12267,7 +12163,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234180" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyNull">
+<TestCase Comment="" Date="1430167337698" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyNull">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
 <Cov CovItemId="S88" Value="1"/>
@@ -12278,7 +12174,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234180" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiNull">
+<TestCase Comment="" Date="1430167337698" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiNull">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
 <Cov CovItemId="S53" Value="1"/>
@@ -12289,7 +12185,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234180" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiKeyNull">
+<TestCase Comment="" Date="1430167337698" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiKeyNull">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
 <Cov CovItemId="S81" Value="1"/>
@@ -12300,7 +12196,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234181" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetStdInchiNull">
+<TestCase Comment="" Date="1430167337698" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetStdInchiNull">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
 <Cov CovItemId="S60" Value="1"/>
@@ -12311,7 +12207,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234181" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromInchi">
+<TestCase Comment="" Date="1430167337699" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RET.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -12350,7 +12246,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234181" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetEthaneFromInchi">
+<TestCase Comment="" Date="1430167337699" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetEthaneFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -12450,7 +12346,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234182" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetEtheneFromInchi">
+<TestCase Comment="" Date="1430167337700" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetEtheneFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -12550,7 +12446,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234182" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetEthyneFromInchi">
+<TestCase Comment="" Date="1430167337700" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetEthyneFromInchi">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -12650,7 +12546,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234182" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiKeyForCafeine">
+<TestCase Comment="" Date="1430167337700" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiKeyForCafeine">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -12683,7 +12579,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234183" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetStdInchiKeyForCafeine">
+<TestCase Comment="" Date="1430167337701" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetStdInchiKeyForCafeine">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -12716,7 +12612,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234183" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiKeyEmptyInput">
+<TestCase Comment="" Date="1430167337701" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiKeyEmptyInput">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -12747,7 +12643,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234183" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyValid">
+<TestCase Comment="" Date="1430167337701" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiKeyValid">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_KEY_STATUS.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -12773,7 +12669,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234184" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckOptionsListNull">
+<TestCase Comment="" Date="1430167337702" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckOptionsListNull">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
 <Cov CovItemId="S29" Value="1"/>
@@ -12784,7 +12680,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234184" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckOptionsStringNull">
+<TestCase Comment="" Date="1430167337702" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckOptionsStringNull">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
 <Cov CovItemId="S38" Value="1"/>
@@ -12795,7 +12691,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234184" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromInchiNull">
+<TestCase Comment="" Date="1430167337702" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromInchiNull">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
 <Cov CovItemId="S67" Value="1"/>
@@ -12806,7 +12702,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234185" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetStructureFromInchiNull">
+<TestCase Comment="" Date="1430167337703" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetStructureFromInchiNull">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
 <Cov CovItemId="S74" Value="1"/>
@@ -12817,7 +12713,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234186" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInputFromLAlanine2D">
+<TestCase Comment="" Date="1430167337703" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInputFromLAlanine2D">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S11" Value="1"/>
@@ -12911,7 +12807,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234186" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiValidStd">
+<TestCase Comment="" Date="1430167337703" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiValidStd">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_STATUS.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -12937,13 +12833,13 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234186" Name="net.sf.jniinchi.TestJniInchiWrapper:@Ignore: testCheckInchiValidStdStrict">
+<TestCase Comment="" Date="1430167337704" Name="net.sf.jniinchi.TestJniInchiWrapper:@Ignore: testCheckInchiValidStdStrict">
 <CovList/>
 <AssgnmntList/>
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234187" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiValidNonStd">
+<TestCase Comment="" Date="1430167337705" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiValidNonStd">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_STATUS.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -12969,7 +12865,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234187" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiInvalidVersion">
+<TestCase Comment="" Date="1430167337705" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiInvalidVersion">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_STATUS.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -12995,7 +12891,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234187" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiInvalidPrefix">
+<TestCase Comment="" Date="1430167337706" Name="net.sf.jniinchi.TestJniInchiWrapper:testCheckInchiInvalidPrefix">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_STATUS.java">
 <Cov CovItemId="S3" Value="1"/>
@@ -13021,7 +12917,7 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234187" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromBenzeneKekule">
+<TestCase Comment="" Date="1430167337706" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromBenzeneKekule">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
 <Cov CovItemId="S2" Value="6"/>
@@ -13125,7 +13021,111 @@
 <ObjMetaDataList/>
 <MetaDataList/>
 </TestCase>
-<TestCase Comment="" Date="1430150234188" Name="net.sf.jniinchi.TestJniInchiInput:testGetOptions">
+<TestCase Comment="" Date="1430167337706" Name="net.sf.jniinchi.TestJniInchiWrapper:testGetInchiFromBenzeneNonKekule">
+<CovList>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_STEREO.java">
+<Cov CovItemId="S2" Value="6"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_BOND_TYPE.java">
+<Cov CovItemId="S2" Value="6"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RADICAL.java">
+<Cov CovItemId="S2" Value="6"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.INCHI_RET.java">
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiAtom.java">
+<Cov CovItemId="S10" Value="6"/>
+<Cov CovItemId="S11" Value="6"/>
+<Cov CovItemId="S12" Value="6"/>
+<Cov CovItemId="S14" Value="6"/>
+<Cov CovItemId="S15" Value="6"/>
+<Cov CovItemId="S2" Value="6"/>
+<Cov CovItemId="S24" Value="6"/>
+<Cov CovItemId="S25" Value="6"/>
+<Cov CovItemId="S27" Value="6"/>
+<Cov CovItemId="S28" Value="6"/>
+<Cov CovItemId="S29" Value="6"/>
+<Cov CovItemId="S3" Value="6"/>
+<Cov CovItemId="S30" Value="6"/>
+<Cov CovItemId="S31" Value="6"/>
+<Cov CovItemId="S32" Value="6"/>
+<Cov CovItemId="S33" Value="6"/>
+<Cov CovItemId="S34" Value="6"/>
+<Cov CovItemId="S35" Value="6"/>
+<Cov CovItemId="S4" Value="6"/>
+<Cov CovItemId="S5" Value="6"/>
+<Cov CovItemId="S6" Value="6"/>
+<Cov CovItemId="S7" Value="6"/>
+<Cov CovItemId="S8" Value="6"/>
+<Cov CovItemId="S9" Value="6"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiBond.java">
+<Cov CovItemId="S1" Value="6"/>
+<Cov CovItemId="S10" Value="6"/>
+<Cov CovItemId="S11" Value="6"/>
+<Cov CovItemId="S16" Value="6"/>
+<Cov CovItemId="S17" Value="6"/>
+<Cov CovItemId="S2" Value="6"/>
+<Cov CovItemId="S3" Value="6"/>
+<Cov CovItemId="S4" Value="6"/>
+<Cov CovItemId="S5" Value="6"/>
+<Cov CovItemId="S6" Value="6"/>
+<Cov CovItemId="S8" Value="6"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInput.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiOutput.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="1"/>
+<Cov CovItemId="S8" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiStructure.java">
+<Cov CovItemId="S1" Value="1"/>
+<Cov CovItemId="S10" Value="6"/>
+<Cov CovItemId="S11" Value="6"/>
+<Cov CovItemId="S12" Value="6"/>
+<Cov CovItemId="S13" Value="1"/>
+<Cov CovItemId="S14" Value="6"/>
+<Cov CovItemId="S17" Value="18"/>
+<Cov CovItemId="S18" Value="6"/>
+<Cov CovItemId="S2" Value="1"/>
+<Cov CovItemId="S23" Value="12"/>
+<Cov CovItemId="S3" Value="1"/>
+<Cov CovItemId="S4" Value="1"/>
+<Cov CovItemId="S5" Value="1"/>
+<Cov CovItemId="S6" Value="1"/>
+<Cov CovItemId="S7" Value="6"/>
+<Cov CovItemId="S8" Value="6"/>
+<Cov CovItemId="S9" Value="1"/>
+</CovPrefix>
+<CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiWrapper.java">
+<Cov CovItemId="S117" Value="1"/>
+<Cov CovItemId="S118" Value="1"/>
+<Cov CovItemId="S24" Value="1"/>
+<Cov CovItemId="S28" Value="1"/>
+<Cov CovItemId="S53" Value="1"/>
+<Cov CovItemId="S55" Value="1"/>
+<Cov CovItemId="S56" Value="1"/>
+<Cov CovItemId="S57" Value="1"/>
+<Cov CovItemId="S58" Value="1"/>
+<Cov CovItemId="S59" Value="1"/>
+</CovPrefix>
+</CovList>
+<AssgnmntList/>
+<ObjMetaDataList/>
+<MetaDataList/>
+</TestCase>
+<TestCase Comment="" Date="1430167337707" Name="net.sf.jniinchi.TestJniInchiInput:testGetOptions">
 <CovList>
 <CovPrefix CovItemPrefix="net.sf.jniinchi.JniInchiInput.java">
 <Cov CovItemId="S1" Value="1"/>
