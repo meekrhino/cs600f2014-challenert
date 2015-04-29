@@ -22,7 +22,7 @@ cases.  Conversely, Set-intersection defines the initial set as the set
 of all statements visited by every passed case but not by the failed
 test case.  Nearest Neighbor works similarly to the previous techniques,
 but instead of considering all of the passed test cases, it only
-considers one.  By some method, the passed test cases that is most
+considers one.  By some method, the passed test case that is most
 similar to the failed test case is identified.  Nearest Neighbor defines
 the initial set as the set of all statements visited by the failed case
 and not by the passed case.
@@ -33,7 +33,7 @@ techniques in order of suspiciousness.  However, Tarantula still
 utilizes per-test coverage reporting.  In their paper, Jones and Harrold
 present an empirical analysis which indicates the superiority of
 Tarantula in both efficiency and effectiveness when compared to the
-other techniques described above, as shown in Figure 1 \cite{harrold}.  Since Tarantula
+other techniques described above, as shown in Figure \ref{tareval} \cite{harrold}.  Since Tarantula
 uses per-test coverage, this provides substantial evidence for the
 importance of per-test coverage in the fault localization process.
 
@@ -131,7 +131,7 @@ We notice first that a large number of the negative results from Parnin and Orso
 study, in regards to the effectiveness of automatic fault localization, may have
 stemmed from the simplicity of the Eclipse plugin tested.  We therefore hypothesize
 that with a more sophisticated tool, programmers will have significantly improved
-performance over use of traditional debugging techniques.  Since the goal of our
+performance over the use of traditional debugging techniques.  Since the goal of our
 tool is to provide per-test coverage as context for suspiciousness, we suggest that
 our tool is likely to outperform traditional debugging.
 
@@ -162,7 +162,7 @@ these files are manually marked, since there may be source files for
 which coverage information is unnecessary.  The statements that are 
 inserted during instrumentation record various information as the code
 is executed, including which existing Java statements were executed, and
-which test case or method exeucted them.  After instrumentation is
+which test case or method executed them.  After instrumentation is
 complete, the newly instrumented source files, as well as any other source
 files, are compiled as normal.
 
@@ -206,7 +206,7 @@ introduced fault was in fact logically equivalent to the original code.
 
 MAJOR can perform a number of conditional mutations, including replacing
 binary arithmetic, logical, relational, shift and unary operators with
-valid alternatives.  Figure 4 shows an example of one
+valid alternatives.  Figure \ref{majorex} shows an example of one
 possible mutation performed by MAJOR.  The tool can also replace literal
 values with alternatives; these various mutation types can be selected
 with compiler operators.  Along with the domain specific language

@@ -21,7 +21,7 @@ implementation can be broken into four distinct sections:
 When CodeCover produces per-test coverage information, it stores the results in
 a container.  Though CodeCover features several coverage report export types, 
 including hierarchical HTML, these reports do not include all of the information
-necessary for this project.  Specifically, these export formals only include
+necessary for this project.  Specifically, these export formats only include
 general per-test coverage information, displaying percent coverage for each test.
 They do not include information related to precisely which tests executed each 
 statement, which is a requirement for suspiciousness analysis.  
@@ -30,7 +30,7 @@ Due to the limitations in CodeCover export formats, we are forced to make use of
 the more complex XML container.  Since the container is in XML format, we must
 first parse the file before we can perform analysis.  To that end, we utilize
 DOM (document object model) parsing to store the entire container as a tree structure.  
-We chose DOM over SAX(simple API for XML) due to the complexity of the container file.
+We chose DOM over SAX (simple API for XML) due to the complexity of the container file.
 Since SAX does not store the document in memory in its entirety, multi-pass analysis
 is both more efficient and less complex when using DOM parsing.
 
@@ -66,7 +66,7 @@ Each \texttt{TestFile} object contains the name and source code of the file as \
 A \texttt{TestStatement} includes an ID and source code for the statement, each stored as \texttt{String}s.  In addition, the \texttt{TestStatement} object stores a \texttt{TestFile} 
 parent object and the suspiciousness value associated with the statement.  Finally, the statement 
 includes a \texttt{boolean} list, where each element corresponds to a test case.  These boolean 
-values indicate whether the respective test case executed this statment.  A \texttt{TestStatement} 
+values indicate whether the respective test case executed this statement.  A \texttt{TestStatement} 
 can be uniquely identified by the combination of its source file and ID.
 
 CodeCover coverage containers include all required
@@ -99,8 +99,8 @@ file list.
 
 Once we have located the source files, we must identify the statements.  To do so, we first
 locate the hierarchical statement definition root.  Beginning with that root node, we recursively
-traverse the entire sub-tree.  Within a the hierarchical component of a CodeCover container, there
-exists a \texttt{BasicStmnt} node, demonstrated by the excerpt shown in Figure \ref{fig:xml-basic}, for every basic statment in the source code.  For each \texttt{BasicStmnt} node, we add a new statement to the 
+traverse the entire sub-tree.  Within the hierarchical component of a CodeCover container, there
+exists a \texttt{BasicStmnt} node, demonstrated by the excerpt shown in Figure \ref{fig:xml-basic}, for every basic statement in the source code.  For each \texttt{BasicStmnt} node, we add a new statement to the 
 correct \texttt{TestFile}.  In order to do so, we must first identify the \texttt{LocList} child
 node, followed by its \texttt{Loc} child node.  The attributes of the \texttt{Loc} node include
 the source code character offset for the basic statement in question.  Between the attributes of
@@ -113,7 +113,7 @@ all basic statements.
 \centering
 \input{content/xml-basic}
 \caption{Excerpt of a container showing a single \texttt{BasicStmnt} element.  This excerpt is taken
-from the CodeCover container produced from the JniInchi case application.  The statement defined here
+from the CodeCover container produced from the Jni-Inchi case application.  The statement defined here
 has the ID \texttt{S19} and consists of the source code from character position \texttt{3672} to 
 \texttt{3716} within the file with name \texttt{net.sf.jniinchi.JniInchiStructure.java}.}
 \label{fig:xml-basic}
@@ -145,7 +145,7 @@ false indicates a one in which a failure occurred.
 
 \section{Simplified Representation} \label{sec:sir}
 
-The intermediate representation discussed in section \ref{sec:ir} is appropriate as a preliminary
+The intermediate representation discussed in Section \ref{sec:ir} is appropriate as a preliminary
 data structure.  However, it is not conducive to suspiciousness analysis.  All of the risk evaluation
 functions considered in this project require four pieces of information for each statement that
 must be evaluated: $ae_f, ae_p, an_f, \text{ and } an_p$ \cite{theory}.  These variables represent the number
@@ -202,7 +202,23 @@ abstract methods for returning the name of the function and for evaluating the f
 $ae_f, ae_p, an_f, \text{ and } an_p$.  Figure \ref{fig:re} provides an example implementation of
 the REFunction interface.  For each function included, we create an implementation of
 \texttt{REFunction}.  A complete list of \texttt{REFunctions} is stored in a static array of the
-same name in \texttt{CoverageReport} for ease of iteratively performing all evaluation functions.  
+same name in \texttt{CoverageReport} for ease of iteratively performing all evaluation functions.  The
+risk evaluation functions studied are listed in Table \ref{tab:ref}.
+
+\begin{table}[tb]
+\centering
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|c|}\hline
+Name & Formula expression\\\hline
+Tarantula & $\displaystyle{\frac{a_{ef}}{a_{ef} + a_{nf}} / \left( \frac{a_{ef}}{a_{ef} + a_{nf}} + \frac{a_{ep}}{a_{ep} + a_{np}}\right)}$\\\hline
+Jaccard & $\displaystyle{\frac{a_{ef}}{a_{ef} + a_{nf} + a_{ep}}}$\\\hline
+Kulczynski2 & $\displaystyle{\frac{1}{2}\left( \frac{a_{ef}}{a_{ef} + a_{nf}} + \frac{a_{ef}}{a_{ef} + a_{np}} \right)}$\\\hline
+Ochiai & $\displaystyle{ \frac{a_{ef}}{\sqrt{(a_{ef} + a_{nf})(a_{ef} + a_{ep})}}}$\\\hline
+AMPLE2 & $\displaystyle{ \frac{a_{ef}}{a_{ef} + a_{nf}} - \frac{a_{ep}}{a_{ep} + a_{np}} }$\\\hline
+\end{tabular}}
+\caption{Complete list of risk evaluation functions studied in this project.}
+\label{tab:ref}
+\end{table}
 
 \begin{figure}[tb]
 \centering
@@ -255,74 +271,3 @@ dataset to its structure'', in that each variable forms a column and each observ
 This organizational structure allows for reliably simple evaluation of data using statistical 
 analysis tools.  Though tidy data contains extensive redundancy, that redundancy simplifies
 the data analysis and visualization process.
-
-%\section{Test Environment}
-%Algorithm \ref{widgmin} (from \cite{Fiori:2013}) shows a high-level description of an
-%algorithm. There are many options for the display of
-%pseudocode; this uses the {\tt algorithm2e} package \cite{Fiori:2013}, 
-%but there are a number of others available at the Comprehensive \TeX\ Archive
-%Network (\url{ctan.org}). Using any of these
-%other packages might require the additon of one or more
-%``\verb$\usepackage{...}$'' commands in the main {\tt AllegThesis.tex} file.
-%
-%%   *******************************************************************
-%%   * SEE CHAPTER ch_01overview.tex FOR INFORMATION ON CONTROLLING    *
-%%   * PLACEMENT OF FIGURES.                                           *
-%%   *                                                                 *
-%%   * THERE ARE MANY DIFFERENT ALGORITHM ENVIRONMENTS. HERE, WE USE   *
-%%   * THE "algorithm2e" PACKAGE, BUT YOU SHOULD LOOK TO SEE IF        *
-%%   * OTHER PACKAGES BETTER MEET YOUR NEEDS. REGARDLESS OF WHICH      *
-%%   * PACKAGE YOU USE, EXPECT TO SPEND TIME READING THE USER MANUAL   *
-%%   * AS THERE ARE USUALLY A LARGE NUMBER OF PARAMETERS THAT CAN      *
-%%   * SIGNIFICANTLY AFFECT THE FINAL APPEARANCE OF THE ALGORITHM.     *
-%%   *******************************************************************
-%
-%\begin{algorithm}[htbp]
-% %\SetLine % For v3.9
-% \SetAlgoLined % For previous releases [?]
-% \KwData{this text}
-% \KwResult{how to write algorithm with \LaTeX2e }
-% initialization\;
-% \While{not at end of this document}{
-%  read current\;
-%  \eIf{understand}{
-%   go to next section\;
-%   current section becomes this one\;
-%   }{
-%   go back to the beginning of current section\;
-%  }
-% }
-% \caption{How to write algorithms (from \cite{Fiori:2013})}
-%\label{widgmin}
-%\end{algorithm}
-%
-%\section{Experiments}
-%
-%Figure \ref{javaprog} shows a Java program. There are many, many options for
-%providing program listings; only a few of the basic ones are shown
-%in the figure. Some thought must be given to making code suitable
-%for display in a paper. In particular long lines, tabbed indents, and
-%several other practices should be avoided. Figure \ref{javaprog} makes
-%use of the {\tt listings} style file \cite{Heinz:2013}.
-%
-%%   *******************************************************************
-%%   * SEE CHAPTER ch_01overview.tex FOR INFORMATION ON CONTROLLING    *
-%%   * PLACEMENT OF FIGURES.                                           *
-%%   *                                                                 *
-%%   * SEE THE MAIN FILE "AllegThesis.tex" FOR THE "\lstset" COMMAND   *
-%%   * THAT DEFINES HOW PROGRAM LISTINGS WILL LOOK.                    *
-%%   *                                                                 *
-%%   * AS WITH EVERYTHING IN LATEX, LOOK AT THE USER MANUAL, SEARCH    *
-%%   * FOR EXAMPLES ONLINE, CUSTOMIZE TO GET A PLEASING LOOK.          *
-%%   *******************************************************************
-%
-%
-%\begin{figure}[htbp]
-%\centering
-%\lstinputlisting{SampleProgUncommented.java}
-%\caption{{\tt SampleProg}: A very simple program}
-%\label{javaprog}
-%\end{figure}
-%
-%\section{Threats to Validity}
-%
