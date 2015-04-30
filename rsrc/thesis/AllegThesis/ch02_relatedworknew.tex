@@ -9,16 +9,16 @@
 \section{Automated Fault Localization Techniques}\label{sec:afl}
 
 There are a wide variety of existing fault localization techniques
-\cite{harrold}. Many of these methods make use of per-test coverage
-analysis, such as Set-union, Set-intersection, Nearest Neighbor, and
-Tarantula.  There are other AFLs that do not use per-test coverage, such
+\cite{harrold}. Many of these methods, such as set union, set intersection, 
+nearest neighbor, and Tarantula make use of per-test coverage
+analysis.  There are other AFLs that do not use per-test coverage, such
 as Cause Transitions \cite{cause}, but they are outside the scope of this project.  
 
-Set-union and Set-intersection compare the coverage of a single failed
+Set union and set intersection compare the coverage of a single failed
 test case to the coverage of all of the passed test cases.  Set-union
 defines the initial set of suspicious statements by the set of all test
 cases visited by the failed test case but not visited by any passed test
-cases.  Conversely, Set-intersection defines the initial set as the set
+cases.  Conversely, set intersection defines the initial set as the set
 of all statements visited by every passed case but not by the failed
 test case.  Nearest Neighbor works similarly to the previous techniques,
 but instead of considering all of the passed test cases, it only
@@ -68,11 +68,11 @@ performed a detailed empirical to study the practical effectiveness of the
 theoretically maximal functions as proven by Xi et al.  This study includes
 a wide variety of risk evaluation functions, and compares them by applying 
 them to practical, real-world programs and faults.  The various formulas
-were inserting them into popular automated program repair system GenProg.
+were inserted into popular automated program repair system GenProg.
 GenProg uses genetic programming, applying a risk evaluation function to 
 repeatedly alter a faulty program by mutating suspicious statements.  In their
 study, Qi et al. \hspace*{-0.5mm}modified GenProg to use several different formulas.  By 
-comparing the effectiveness of automated repair when using each different 
+comparing the effectiveness of automated repair when using each 
 risk evaluation function, they were able to provide substantial empirical
 evidence regarding the superiority of certain formulas.  Note that this method
 of comparison differs from that pursued by Jones and Harrold \cite{harrold}, 
@@ -84,24 +84,23 @@ Instead, they found that several functions, eliminated from consideration
 as maximal functions early in the proof provided by Xie et al., were actually 
 better than expected. Specifically,
 Qi et al. show that in practice, the Jaccard risk evaluation function performed
-equally as well or better than all other formulas considered.  They conclude that,
+as well or better than all other formulas considered.  They conclude that,
 at least within the context of automated program repair, Jaccard should be 
 favored when choosing a risk evaluation function.  In addition, they further 
 conclude that the EXAM score method of comparing these formulas does not 
 accurately reflect their relative performance in the context of automated
 program repair.
 
-In another paper \cite{parnin}, Parnin and Orso performed a human study about the
+In another paper \cite{parnin}, Parnin and Orso performed a human study on the
 real-world effectiveness of fault localization techniques.  In that
 study, they asked participants, graduate students in computer science
 with varying levels of experience, to perform debugging tasks.
 Participants were asked to compare their experiences when using standard
 debugging practices with using an Eclipse plugin designed to display
-Tarantula suspiciousness ranking.  This plugin was as simple as possible,
-to eliminate from consideration any other factors besides suspiciousness
-ranking.  The only functionality provided was a list of suspicious statements
+Tarantula suspiciousness ranking.  This plugin was made as simple as possible
+so as to only consider suspiciousness.  The only functionality provided was a list of suspicious statements
 which, when selected, navigated the environment to that line in the source
-code.  When evaluating their hypotheses, he authors considered the
+code.  When evaluating their hypotheses, the authors considered the
 relative average amount of time required for each task, with and without
 the plugin.  They also considered the relative experience level of the 
 participants, which they evaluated based on number of tasks completed.  In 
@@ -112,10 +111,10 @@ visited the suspicious statements, and asked the participants to complete
 a questionnaire about their experiences and use of the tool.
 
 Parnin and Orso came to a number of conclusions regarding several different
-comparisons.  First, they noticed that in general, the participants did not
-on average complete the tasks faster with statistical significance.  However,
+comparisons.  First, they noticed that, in general, the participants did not
+complete the tasks faster to any degree of statistical significance.  However,
 they did notice a significant improvement in performance when using the tool
-if the subject in question was more experience.  This suggests that, if the
+if the subject in question was more experienced.  This suggests that, if the
 tool were more refined and participants more used to the tool, it might actually
 be significantly more helpful.  They also found evidence that suggests that the
 exact rank of the statement does not significantly affect the difficulty of
@@ -206,8 +205,8 @@ introduced fault was in fact logically equivalent to the original code.
 
 MAJOR can perform a number of conditional mutations, including replacing
 binary arithmetic, logical, relational, shift and unary operators with
-valid alternatives.  Figure \ref{majorex} shows an example of one
-possible mutation performed by MAJOR.  The tool can also replace literal
+valid alternatives.  One example of a possible mutation performed by
+MAJOR is shown in Figure \ref{majorex}.  The tool can also replace literal
 values with alternatives; these various mutation types can be selected
 with compiler operators.  Along with the domain specific language
 provided by MAJOR, this allows for great flexibility and extensibility.

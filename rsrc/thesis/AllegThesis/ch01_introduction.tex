@@ -11,7 +11,7 @@ The process of debugging can be complex and difficult.  The first task
 associated with debugging is identifying the fault, and this step,
 \emph{fault localization}, is the most expensive in terms of time cost
 \cite{harrold}. In this chapter, we discuss current techniques for
-fault localization.  In addition, we highlight the major goals of this
+fault localization and highlight the major goals of this
 research project.
 
 \section{Current State of the Art}\label{sec:state}
@@ -28,7 +28,7 @@ information regarding which statements are covered by a supplied test
 suite.  By analyzing code coverage for different test cases, these AFLs
 seek to determine which statements are most likely to contain the fault.
 
-Many Coverage tools exist, including those designed for integrated development
+Many coverage tools exist, including those designed for integrated development
 environments such as Eclipse.  For example, JaCoCo provides interactive
 coverage monitoring within Eclipse.  However, JaCoCo only reports total
 coverage for a test suite; that is, the tool reports which statements
@@ -57,7 +57,7 @@ study has made the specific comparison necessary.
 
 The second goal of this project is the development of an Eclipse plugin
 which displays the per-test coverage from a test suite and per-statement
-suspiciousness analysis, through an interactive system, as well as to
+suspiciousness analysis through an interactive system, as well as to
 demonstrate its effectiveness.  The plugin will allow a programmer to
 select individual or multiple test cases and view their coverage, or
 to select individual statements and view a list of covering test cases
@@ -67,8 +67,8 @@ We hypothesize that making per-test coverage (in addition to suspiciousness
 information), the basis for many fault
 localization techniques, readily available will allow programmers to
 more rapidly identify faults in programs.  This hypothesis will be
-investigated through human study, employing experienced programmers,
-specifically undergraduate students, to compare
+investigated through human study, employing experienced programmers
+(specifically undergraduate students) to compare
 the benefits of per-test coverage when compared to full suite coverage.
 To generate test cases for evaluating our plugin, we will introduce
 faults into programs using the MAJOR mutation analysis system
@@ -82,9 +82,9 @@ existing tools which we will incorporate into our final system or make
 use of to produce intermediate data.  Chapter 3 features a thorough
 discussion of the method of approach used to achieve the results.  Specifically,
 we relate the details of our test environment and setup for the empirical
-comparison of risk evaluation functions, including test programs, method of
+comparison of risk evaluation functions, including test programs, method for
 producing per-test coverage, and system for evaluating risk evaluation functions.
-In addition, Chapter 3 covers implementation details of the Eclipse plugin.
+Chapter 3 also covers implementation details of the Eclipse plugin.
 
 Chapter 4 provides the empirical results of the risk evaluation function
 comparison study.  This includes various data visualization figures and
@@ -95,4 +95,4 @@ plugin, beginning with the format and setup details and including the results
 of the study.  We also discuss our conclusions based on the results of the study.
 The final chapter reviews the project as a whole, annotates difficulties 
 encountered, reiterates conclusions drawn in the previous chapters, 
-and a discusses future work.
+and discusses future work.
