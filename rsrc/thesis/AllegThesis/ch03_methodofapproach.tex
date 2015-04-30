@@ -99,7 +99,7 @@ file list.
 
 Once we have located the source files, we must identify the statements.  To do so, we first
 locate the hierarchical statement definition root.  Beginning with that root node, we recursively
-traverse the entire sub-tree.  Within the hierarchical component of a CodeCover container, there
+traverse the entire sub-tree.  Within the hierarchical component of a CodeCover container there
 exists a \texttt{BasicStmnt} node, demonstrated by the excerpt shown in Figure \ref{fig:xml-basic}, for every basic statement in the source code.  For each \texttt{BasicStmnt} node, we add a new statement to the 
 correct \texttt{TestFile}.  In order to do so, we must first identify the \texttt{LocList} child
 node, followed by its \texttt{Loc} child node.  The attributes of the \texttt{Loc} node include
